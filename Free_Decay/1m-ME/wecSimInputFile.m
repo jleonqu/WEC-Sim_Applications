@@ -21,11 +21,12 @@ body(1).momOfInertia = [20907301 21306090.66 37085481.11];
 body(1).initDisp.initLinDisp = [ 0 0 1];    % Initial Displacement [m]
 
 % Morison Element Implementation
-body(1).morisonElement.cd = [0 0 1];
-body(1).morisonElement.ca = [0 0 1];
-body(1).morisonElement.characteristicArea = [0 0 1];
+body(1).morisonElement.cd = [0 1];
+body(1).morisonElement.ca = [0 1];
+body(1).morisonElement.characteristicArea = [0 1];
 body(1).morisonElement.VME = [0.01];
 body(1).morisonElement.rgME = [0 0 -2];
+body(1).morisonElement.z = [0 0 -1];
 
 %% PTO and Constraint Parameters
 % Floating (3DOF) Joint
