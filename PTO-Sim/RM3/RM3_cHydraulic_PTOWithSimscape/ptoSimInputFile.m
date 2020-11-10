@@ -116,3 +116,5 @@ Disp_max = 1.9794e+03;
 % 
 % plot(FlowRateResults_SimScape(:,1),FlowRateResults_SimScape(:,2),RM3_CHydraulic_resultsOriginal(:,1),-1*RM3_CHydraulic_resultsOriginal(:,4))
 % legend('Simscape','Original Results')
+
+%This is a comment to test something on github
