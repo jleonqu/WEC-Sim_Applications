@@ -1,13 +1,15 @@
 %% Simulation Data
+VariableDefinition;
+
 simu = simulationClass();               % Initialize Simulation Class
 simu.simMechanicsFile = 'OSWEC.slx';    % Specify Simulink Model File
 simu.mode = 'normal';                   % Specify Simulation Mode ('normal','accelerator','rapid-accelerator')
-simu.explorer = 'on';                   % Turn SimMechanics Explorer (on/off)
+simu.explorer = 'off';                   % Turn SimMechanics Explorer (on/off)
 simu.startTime = 0;                     % Simulation Start Time [s]
 simu.rampTime = 100;                    % Wave Ramp Time [s]
 simu.endTime = 400;                     % Simulation End Time [s]        
-simu.solver = 'ode4';                   % simu.solver = 'ode4' for fixed step & simu.solver = 'ode45' for variable step 
-simu.dt = 0.1;                          % Simulation Time-Step [s]
+simu.solver = 'ode14x';                   % simu.solver = 'ode4' for fixed step & simu.solver = 'ode45' for variable step 
+simu.dt = 0.05;                          % Simulation Time-Step [s]
 simu.cicEndTime = 30;                   % Specify CI Time [s]
 
 %% Wave Information
@@ -15,17 +17,17 @@ simu.cicEndTime = 30;                   % Specify CI Time [s]
 % waves = waveClass('noWaveCIC');       % Initialize Wave Class and Specify Type  
 
 % % Regular Waves 
-% waves = waveClass('regular');           % Initialize Wave Class and Specify Type                                 
-% waves.height = 2.5;                     % Wave Height [m]
-% waves.period = 8;                       % Wave Period [s]
+waves = waveClass('regular');           % Initialize Wave Class and Specify Type                                 
+waves.height = 4;                     % Wave Height [m]
+waves.period = 4;                       % Wave Period [s]
 
 % Irregular Waves using PM Spectrum with Directionality 
-waves = waveClass('irregular');         % Initialize Wave Class and Specify Type
-waves.height = 2.5;                     % Significant Wave Height [m]
-waves.period = 8;                       % Peak Period [s]
-waves.spectrumType = 'PM';              % Specify Spectrum Type
-waves.direction = [0,30,90];            % Wave Directionality [deg]
-waves.spread = [0.1,0.2,0.7];           % Wave Directional Spreading [%]
+% waves = waveClass('irregular');         % Initialize Wave Class and Specify Type
+% waves.height = 2.5;                     % Significant Wave Height [m]
+% waves.period = 8;                       % Peak Period [s]
+% waves.spectrumType = 'PM';              % Specify Spectrum Type
+% waves.direction = [0,30,90];            % Wave Directionality [deg]
+% waves.spread = [0.1,0.2,0.7];           % Wave Directional Spreading [%]
 
 % % Irregular Waves with imported spectrum
 % waves = waveClass('spectrumImport');      % Create the Wave Variable and Specify Type

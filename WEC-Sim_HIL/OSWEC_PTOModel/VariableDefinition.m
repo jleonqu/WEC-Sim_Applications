@@ -1,13 +1,13 @@
 % Wave parameters
 %A = 2; %[m] wave amplitude
-T = 4; %[s] wave period
+%T = 4; %[s] wave period
 
 %load('WaveBotAdmittanceModel\WaveBot3XBEM.mat'); %Load admittance model and excitation force function
 
 %Yi = WaveBot3XBEM.sysA;
 %Hex = WaveBot3XBEM.HexBEM;
 %SampleTime = 0.01;
-f0 = 1/T;
+%f0 = 1/T;
 %Fe = A*interp1(WaveBot3XBEM.wFreq, WaveBot3XBEM.HexBEM, f0*2*pi);
 
 
@@ -26,6 +26,7 @@ Dp_in = 2; %[in] Piston rod diameter
 areaHC = (0.25*pi*(Dp_out*in2m)^2 - 0.25*pi*(Dp_in*in2m)^2); %[m^2] Hydraulic cylinder area
 strokePiston = 5; %[m] Piston stroke
 deadVolume = strokePiston*areaHC*0.01; %[m^3]
+pistonInitialPos = strokePiston*0.25;
 
 %Check valves
 pCrack = 10; %[psi] Cracking Pressure
