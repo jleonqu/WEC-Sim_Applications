@@ -1,0 +1,1468 @@
+﻿Drive name:	MOTOR
+Drive model:	ACS880-01-034A-5 (811)
+Firmware:	AINF6 v2.90
+Group	GroupName	Index	Name	Value	ValueName	Min	Max	Unit	
+1	Actual values	1	Motor speed used	0		-30000	30000	rpm
+1	Actual values	2	Motor speed estimated	0		-30000	30000	rpm
+1	Actual values	3	Motor speed %	0		-1000	1000	%
+1	Actual values	4	Encoder 1 speed filtered	0		-30000	30000	rpm
+1	Actual values	5	Encoder 2 speed filtered	0		-30000	30000	rpm
+1	Actual values	6	Output frequency	0		-600	600	Hz
+1	Actual values	7	Motor current	0		0	30000	A
+1	Actual values	8	Motor current % of motor nom	0		0	1000	%
+1	Actual values	10	Motor torque	0		-1600	1600	%
+1	Actual values	11	DC voltage	690.5		0	2000	V
+1	Actual values	13	Output voltage	0		0	2000	V
+1	Actual values	14	Output power	0		-32768	32767	hp
+1	Actual values	15	Output power % of motor nom	0		-300	300	%
+1	Actual values	17	Motor shaft power	0		-32768	32767	hp
+1	Actual values	18	Inverter GWh motoring	0		0	32767	GWh
+1	Actual values	19	Inverter MWh motoring	0		0	1000	MWh
+1	Actual values	20	Inverter kWh motoring	68.94958		0	1000	kWh
+1	Actual values	21	U-phase current	-0.02		-30000	30000	A
+1	Actual values	22	V-phase current	0.01		-30000	30000	A
+1	Actual values	23	W-phase current	-0.01		-30000	30000	A
+1	Actual values	24	Flux actual %	0		0	200	%
+1	Actual values	25	INU momentary cos φ	0		-1	1	NoUnit
+1	Actual values	29	Speed change rate	0		-15000	15000	rpm/s
+1	Actual values	30	Nominal torque scale	80.494		0	4000000	NoUnit
+1	Actual values	31	Ambient temperature	21.7		-40	200	°C
+1	Actual values	32	Inverter GWh regenerating	0		0	32767	GWh
+1	Actual values	33	Inverter MWh regenerating	0		0	1000	MWh
+1	Actual values	34	Inverter kWh regenerating	0.1497773		0	1000	kWh
+1	Actual values	35	Mot - regen energy GWh	0		-32768	32767	GWh
+1	Actual values	36	Mot - regen energy MWh	0		-1000	1000	MWh
+1	Actual values	37	Mot - regen energy kWh	68.7998		-1000	1000	kWh
+1	Actual values	61	Abs motor speed used	0		0	30000	rpm
+1	Actual values	62	Abs motor speed %	0		0	1000	%
+1	Actual values	63	Abs output frequency	0		0	600	Hz
+1	Actual values	64	Abs motor torque	0		0	1600	%
+1	Actual values	65	Abs output power	0		0	32767	hp
+1	Actual values	66	Abs output power % motor nom	0		0	300	%
+1	Actual values	68	Abs motor shaft power	0		0	32767	hp
+1	Actual values	70	Ambient temperature %	36.23		-200	200	%
+1	Actual values	71	Step-up motor current	0.01		0	30000	A
+1	Actual values	72	U-phase RMS current	0		0	30000	A
+1	Actual values	73	V-phase RMS current	0		0	30000	A
+1	Actual values	74	W-phase RMS current	0		0	30000	A
+3	Input references	1	Panel reference	1.97		-100000	100000	NoUnit
+3	Input references	2	Panel reference 2	0		-30000	30000	NoUnit
+3	Input references	5	FB A reference 1	0		-100000	100000	NoUnit
+3	Input references	6	FB A reference 2	0		-100000	100000	NoUnit
+3	Input references	7	FB B reference 1	0		-100000	100000	NoUnit
+3	Input references	8	FB B reference 2	0		-100000	100000	NoUnit
+3	Input references	9	EFB reference 1	0		-30000	30000	NoUnit
+3	Input references	10	EFB reference 2	0		-30000	30000	NoUnit
+3	Input references	11	DDCS controller ref 1	0		-30000	30000	NoUnit
+3	Input references	12	DDCS controller ref 2	0		-30000	30000	NoUnit
+3	Input references	13	M/F or D2D ref1	0		-30000	30000	NoUnit
+3	Input references	14	M/F or D2D ref2	0		-30000	30000	NoUnit
+3	Input references	30	FB A reference 1 int32	0		-2147483648	2147483647	NoUnit
+3	Input references	31	FB A reference 2 int32	0		-2147483648	2147483647	NoUnit
+3	Input references	51	IEC application panel reference	0		-100000	100000	NoUnit
+4	Warnings and faults	1	Tripping fault	29968		0	65535	NoUnit
+4	Warnings and faults	2	Active fault 2	0		0	65535	NoUnit
+4	Warnings and faults	3	Active fault 3	0		0	65535	NoUnit
+4	Warnings and faults	4	Active fault 4	0		0	65535	NoUnit
+4	Warnings and faults	5	Active fault 5	0		0	65535	NoUnit
+4	Warnings and faults	6	Active warning 1	0		0	65535	NoUnit
+4	Warnings and faults	7	Active warning 2	0		0	65535	NoUnit
+4	Warnings and faults	8	Active warning 3	0		0	65535	NoUnit
+4	Warnings and faults	9	Active warning 4	0		0	65535	NoUnit
+4	Warnings and faults	10	Active warning 5	0		0	65535	NoUnit
+4	Warnings and faults	11	Latest fault	29968		0	65535	NoUnit
+4	Warnings and faults	12	2nd latest fault	29968		0	65535	NoUnit
+4	Warnings and faults	13	3rd latest fault	29968		0	65535	NoUnit
+4	Warnings and faults	14	4th latest fault	29968		0	65535	NoUnit
+4	Warnings and faults	15	5th latest fault	29968		0	65535	NoUnit
+4	Warnings and faults	16	Latest warning	45035		0	65535	NoUnit
+4	Warnings and faults	17	2nd latest warning	45026		0	65535	NoUnit
+4	Warnings and faults	18	3rd latest warning	45025		0	65535	NoUnit
+4	Warnings and faults	19	4th latest warning	45035		0	65535	NoUnit
+4	Warnings and faults	20	5th latest warning	45026		0	65535	NoUnit
+4	Warnings and faults	21	Fault word 1	0		0	65535	NoUnit
+4	Warnings and faults	22	Fault word 2	4096		0	65535	NoUnit
+4	Warnings and faults	31	Warning word 1	0		0	65535	NoUnit
+4	Warnings and faults	32	Warning word 2	0		0	65535	NoUnit
+4	Warnings and faults	40	Event word 1	0		0	65535	NoUnit
+4	Warnings and faults	41	Event word 1 bit 0 code	0		0	65535	NoUnit
+4	Warnings and faults	42	Event word 1 bit 0 aux code	0		0	4294967295	NoUnit
+4	Warnings and faults	43	Event word 1 bit 1 code	0		0	65535	NoUnit
+4	Warnings and faults	44	Event word 1 bit 1 aux code	0		0	4294967295	NoUnit
+4	Warnings and faults	45	Event word 1 bit 2 code	0		0	65535	NoUnit
+4	Warnings and faults	46	Event word 1 bit 2 aux code	0		0	4294967295	NoUnit
+4	Warnings and faults	47	Event word 1 bit 3 code	0		0	65535	NoUnit
+4	Warnings and faults	48	Event word 1 bit 3 aux code	0		0	4294967295	NoUnit
+4	Warnings and faults	49	Event word 1 bit 4 code	0		0	65535	NoUnit
+4	Warnings and faults	50	Event word 1 bit 4 aux code	0		0	4294967295	NoUnit
+4	Warnings and faults	51	Event word 1 bit 5 code	0		0	65535	NoUnit
+4	Warnings and faults	52	Event word 1 bit 5 aux code	0		0	4294967295	NoUnit
+4	Warnings and faults	53	Event word 1 bit 6 code	0		0	65535	NoUnit
+4	Warnings and faults	54	Event word 1 bit 6 aux code	0		0	4294967295	NoUnit
+4	Warnings and faults	55	Event word 1 bit 7 code	0		0	65535	NoUnit
+4	Warnings and faults	56	Event word 1 bit 7 aux code	0		0	4294967295	NoUnit
+4	Warnings and faults	57	Event word 1 bit 8 code	0		0	65535	NoUnit
+4	Warnings and faults	58	Event word 1 bit 8 aux code	0		0	4294967295	NoUnit
+4	Warnings and faults	59	Event word 1 bit 9 code	0		0	65535	NoUnit
+4	Warnings and faults	60	Event word 1 bit 9 aux code	0		0	4294967295	NoUnit
+4	Warnings and faults	61	Event word 1 bit 10 code	0		0	65535	NoUnit
+4	Warnings and faults	62	Event word 1 bit 10 aux code	0		0	4294967295	NoUnit
+4	Warnings and faults	63	Event word 1 bit 11 code	0		0	65535	NoUnit
+4	Warnings and faults	64	Event word 1 bit 11 aux code	0		0	4294967295	NoUnit
+4	Warnings and faults	65	Event word 1 bit 12 code	0		0	65535	NoUnit
+4	Warnings and faults	66	Event word 1 bit 12 aux code	0		0	4294967295	NoUnit
+4	Warnings and faults	67	Event word 1 bit 13 code	0		0	65535	NoUnit
+4	Warnings and faults	68	Event word 1 bit 13 aux code	0		0	4294967295	NoUnit
+4	Warnings and faults	69	Event word 1 bit 14 code	0		0	65535	NoUnit
+4	Warnings and faults	70	Event word 1 bit 14 aux code	0		0	4294967295	NoUnit
+4	Warnings and faults	71	Event word 1 bit 15 code	0		0	65535	NoUnit
+4	Warnings and faults	72	Event word 1 bit 15 aux code	0		0	4294967295	NoUnit
+4	Warnings and faults	120	Fault/Warning word compatibility	0	ACS800 Standard ctrl program			NoUnit
+5	Diagnostics	1	On-time counter	11		0	65535	days
+5	Diagnostics	2	Run-time counter	1		0	65535	days
+5	Diagnostics	4	Fan on-time counter	11		0	65535	days
+5	Diagnostics	9	Time from power-up	23014298		0	4294967295	NoUnit
+5	Diagnostics	11	Inverter temperature	14.5		-40	160	%
+5	Diagnostics	22	Diagnostic word 3	0		0	65535	NoUnit
+5	Diagnostics	41	Main fan service counter	0.3609425		0	150	%
+5	Diagnostics	42	Aux. fan service counter	0		0	150	%
+6	Control and status words	1	Main control word	3190		0	65535	NoUnit
+6	Control and status words	2	Application control word	0		0	65535	NoUnit
+6	Control and status words	3	FBA A transparent control word	0		0	4294967295	NoUnit
+6	Control and status words	4	FBA B transparent control word	0		0	4294967295	NoUnit
+6	Control and status words	5	EFB transparent control word	0		0	4294967295	NoUnit
+6	Control and status words	11	Main status word	6712		0	65535	NoUnit
+6	Control and status words	16	Drive status word 1	2055		0	65535	NoUnit
+6	Control and status words	17	Drive status word 2	5		0	65535	NoUnit
+6	Control and status words	18	Start inhibit status word	8		0	65535	NoUnit
+6	Control and status words	19	Speed control status word	33		0	65535	NoUnit
+6	Control and status words	20	Constant speed status word	0		0	65535	NoUnit
+6	Control and status words	21	Drive status word 3	0		0	65535	NoUnit
+6	Control and status words	25	Drive inhibit status word 2	0		0	65535	NoUnit
+6	Control and status words	29	MSW bit 10 sel	2	Above limit	0	4294967295	NoUnit
+6	Control and status words	30	MSW bit 11 sel	2	Ext ctrl loc	0	4294967295	NoUnit
+6	Control and status words	31	MSW bit 12 sel	2	Ext run enable	0	4294967295	NoUnit
+6	Control and status words	32	MSW bit 13 sel	0	False	0	4294967295	NoUnit
+6	Control and status words	33	MSW bit 14 sel	0	False	0	4294967295	NoUnit
+6	Control and status words	45	Follower CW user bit 0 selection	2	MCW user bit 0	0	4294967295	NoUnit
+6	Control and status words	46	Follower CW user bit 1 selection	3	MCW user bit 1	0	4294967295	NoUnit
+6	Control and status words	47	Follower CW user bit 2 selection	4	MCW user bit 2	0	4294967295	NoUnit
+6	Control and status words	48	Follower CW user bit 3 selection	5	MCW user bit 3	0	4294967295	NoUnit
+6	Control and status words	50	User status word 1	3200		0	65535	NoUnit
+6	Control and status words	60	User status word 1 bit 0 sel	0	FALSE	0	4294967295	NoUnit
+6	Control and status words	61	User status word 1 bit 1 sel	2	Out of window	0	4294967295	NoUnit
+6	Control and status words	62	User status word 1 bit 2 sel	2	Emergency stop failed	0	4294967295	NoUnit
+6	Control and status words	63	User status word 1 bit 3 sel	2	Magnetized	0	4294967295	NoUnit
+6	Control and status words	64	User status word 1 bit 4 sel	2	Run disable	0	4294967295	NoUnit
+6	Control and status words	65	User status word 1 bit 5 sel	0	FALSE	0	4294967295	NoUnit
+6	Control and status words	66	User status word 1 bit 6 sel	0	FALSE	0	4294967295	NoUnit
+6	Control and status words	67	User status word 1 bit 7 sel	2	Identification run done	0	4294967295	NoUnit
+6	Control and status words	68	User status word 1 bit 8 sel	2	Start inhibition	0	4294967295	NoUnit
+6	Control and status words	69	User status word 1 bit 9 sel	2	Limiting	0	4294967295	NoUnit
+6	Control and status words	70	User status word 1 bit 10 sel	2	Torque control	0	4294967295	NoUnit
+6	Control and status words	71	User status word 1 bit 11 sel	2	Zero speed	0	4294967295	NoUnit
+6	Control and status words	72	User status word 1 bit 12 sel	2	Internal speed feedback	0	4294967295	NoUnit
+6	Control and status words	73	User status word 1 bit 13 sel	0	FALSE	0	4294967295	NoUnit
+6	Control and status words	74	User status word 1 bit 14 sel	0	FALSE	0	4294967295	NoUnit
+6	Control and status words	75	User status word 1 bit 15 sel	0	FALSE	0	4294967295	NoUnit
+6	Control and status words	100	User control word 1	0		0	65535	NoUnit
+6	Control and status words	101	User control word 2	0		0	65535	NoUnit
+7	System info	3	Drive rating id	811	ACS880-01-034A-5 (811)	0	65535	NoUnit
+7	System info	4	Firmware name	2765351822	2765351822	0	4294967295	NoUnit
+7	System info	5	Firmware version	39452672		0	4294967295	NoUnit
+7	System info	6	Loading package name	2765352590	2765352590	0	4294967295	NoUnit
+7	System info	7	Loading package version	39452672		0	4294967295	NoUnit
+7	System info	8	Bootloader version	38797312		0	4294967295	NoUnit
+7	System info	11	Cpu usage	65		0	100	%
+7	System info	13	PU logic version number	4160		0	65535	NoUnit
+7	System info	15	FPGA logic version number	4400		0	65535	NoUnit
+7	System info	25	Customization package name	3774351712	3774351712	0	4294967295	NoUnit
+7	System info	26	Customization package version	0		0	4294967295	NoUnit
+7	System info	30	Adaptive program status	8		0	65535	NoUnit
+7	System info	51	Slot 1 option module	25	FECA-01	0	65535	NoUnit
+7	System info	52	Slot 2 option module	0	No option	0	65535	NoUnit
+7	System info	53	Slot 3 option module	1021	FEN-31	0	65535	NoUnit
+10	Standard DI, RO	1	DI status	32768		0	65535	NoUnit
+10	Standard DI, RO	2	DI delayed status	32768		0	65535	NoUnit
+10	Standard DI, RO	3	DI force selection	0		0	65535	NoUnit
+10	Standard DI, RO	4	DI force data	0		0	65535	NoUnit
+10	Standard DI, RO	5	DI1 ON delay	0		0	3000	s
+10	Standard DI, RO	6	DI1 OFF delay	0		0	3000	s
+10	Standard DI, RO	7	DI2 ON delay	0		0	3000	s
+10	Standard DI, RO	8	DI2 OFF delay	0		0	3000	s
+10	Standard DI, RO	9	DI3 ON delay	0		0	3000	s
+10	Standard DI, RO	10	DI3 OFF delay	0		0	3000	s
+10	Standard DI, RO	11	DI4 ON delay	0		0	3000	s
+10	Standard DI, RO	12	DI4 OFF delay	0		0	3000	s
+10	Standard DI, RO	13	DI5 ON delay	0		0	3000	s
+10	Standard DI, RO	14	DI5 OFF delay	0		0	3000	s
+10	Standard DI, RO	15	DI6 ON delay	0		0	3000	s
+10	Standard DI, RO	16	DI6 OFF delay	0		0	3000	s
+10	Standard DI, RO	21	RO status	0		0	65535	NoUnit
+10	Standard DI, RO	24	RO1 source	0	Not energized	0	4294967295	NoUnit
+10	Standard DI, RO	25	RO1 ON delay	0		0	3000	s
+10	Standard DI, RO	26	RO1 OFF delay	0		0	3000	s
+10	Standard DI, RO	27	RO2 source	7	Running	0	4294967295	NoUnit
+10	Standard DI, RO	28	RO2 ON delay	0		0	3000	s
+10	Standard DI, RO	29	RO2 OFF delay	0		0	3000	s
+10	Standard DI, RO	30	RO3 source	15	Fault (-1)	0	4294967295	NoUnit
+10	Standard DI, RO	31	RO3 ON delay	0		0	3000	s
+10	Standard DI, RO	32	RO3 OFF delay	0		0	3000	s
+10	Standard DI, RO	51	DI filter time	10		0.3	100	ms
+10	Standard DI, RO	99	RO/DIO control word	0		0	65535	NoUnit
+11	Standard DIO, FI, FO	1	DIO status	0		0	65535	NoUnit
+11	Standard DIO, FI, FO	2	DIO delayed status	0		0	65535	NoUnit
+11	Standard DIO, FI, FO	5	DIO1 function	0	Output			NoUnit
+11	Standard DIO, FI, FO	6	DIO1 output source	2	Ready run	0	4294967295	NoUnit
+11	Standard DIO, FI, FO	7	DIO1 ON delay	0		0	3000	s
+11	Standard DIO, FI, FO	8	DIO1 OFF delay	0		0	3000	s
+11	Standard DIO, FI, FO	9	DIO2 function	0	Output			NoUnit
+11	Standard DIO, FI, FO	10	DIO2 output source	7	Running	0	4294967295	NoUnit
+11	Standard DIO, FI, FO	11	DIO2 ON delay	0		0	3000	s
+11	Standard DIO, FI, FO	12	DIO2 OFF delay	0		0	3000	s
+11	Standard DIO, FI, FO	38	Freq in 1 actual value	0		0	16000	Hz
+11	Standard DIO, FI, FO	39	Freq in 1 scaled	0		-32768	32767	NoUnit
+11	Standard DIO, FI, FO	42	Freq in 1 min	0		0	16000	Hz
+11	Standard DIO, FI, FO	43	Freq in 1 max	16000		0	16000	Hz
+11	Standard DIO, FI, FO	44	Freq in 1 at scaled min	0		-32768	32767	NoUnit
+11	Standard DIO, FI, FO	45	Freq in 1 at scaled max	1800		-32768	32767	NoUnit
+11	Standard DIO, FI, FO	54	Freq out 1 actual value	0		0	16000	Hz
+11	Standard DIO, FI, FO	55	Freq out 1 source	1	Motor speed used	0	4294967295	NoUnit
+11	Standard DIO, FI, FO	58	Freq out 1 src min	0		-32768	32767	NoUnit
+11	Standard DIO, FI, FO	59	Freq out 1 src max	1800		-32768	32767	NoUnit
+11	Standard DIO, FI, FO	60	Freq out 1 at src min	0		0	16000	Hz
+11	Standard DIO, FI, FO	61	Freq out 1 at src max	16000		0	16000	Hz
+11	Standard DIO, FI, FO	81	DIO filter time	10		0.3	100	ms
+12	Standard AI	1	AI tune	0	No action			NoUnit
+12	Standard AI	3	AI supervision function	0	No action			NoUnit
+12	Standard AI	4	AI supervision selection	0		0	65535	NoUnit
+12	Standard AI	5	AI supervision force	0		0	65535	NoUnit
+12	Standard AI	11	AI1 actual value	-0.045		-22	22	mA
+12	Standard AI	12	AI1 scaled value	0.542		-32768	32767	NoUnit
+12	Standard AI	15	AI1 unit selection	10	mA			NoUnit
+12	Standard AI	16	AI1 filter time	0.1		0	30	s
+12	Standard AI	17	AI1 min	-0.046		-22	22	mA
+12	Standard AI	18	AI1 max	19.94		-22	22	mA
+12	Standard AI	19	AI1 scaled at AI1 min	0		-32768	32767	NoUnit
+12	Standard AI	20	AI1 scaled at AI1 max	9999.999		-32768	32767	NoUnit
+12	Standard AI	21	AI2 actual value	0.014		-22	22	mA
+12	Standard AI	22	AI2 scaled value	0		-32768	32767	NoUnit
+12	Standard AI	25	AI2 unit selection	10	mA			NoUnit
+12	Standard AI	26	AI2 filter time	0.1		0	30	s
+12	Standard AI	27	AI2 min	0.014		-22	22	mA
+12	Standard AI	28	AI2 max	20.04		-22	22	mA
+12	Standard AI	29	AI2 scaled at AI2 min	0		-32768	32767	NoUnit
+12	Standard AI	30	AI2 scaled at AI2 max	177		-32768	32767	NoUnit
+13	Standard AO	11	AO1 actual value	0		0	22	mA
+13	Standard AO	12	AO1 source	1	Motor speed used	0	4294967295	NoUnit
+13	Standard AO	16	AO1 filter time	0.1		0	30	s
+13	Standard AO	17	AO1 source min	0		-32768	32767	NoUnit
+13	Standard AO	18	AO1 source max	1800		-32768	32767	NoUnit
+13	Standard AO	19	AO1 out at AO1 src min	0		0	22	mA
+13	Standard AO	20	AO1 out at AO1 src max	20		0	22	mA
+13	Standard AO	21	AO2 actual value	0		0	22	mA
+13	Standard AO	22	AO2 source	4	Motor current	0	4294967295	NoUnit
+13	Standard AO	26	AO2 filter time	0.1		0	30	s
+13	Standard AO	27	AO2 source min	0		-32768	32767	NoUnit
+13	Standard AO	28	AO2 source max	100		-32768	32767	NoUnit
+13	Standard AO	29	AO2 out at AO2 src min	0		0	22	mA
+13	Standard AO	30	AO2 out at AO2 src max	20		0	22	mA
+13	Standard AO	91	AO1 data storage	0		-327.68	327.67	NoUnit
+13	Standard AO	92	AO2 data storage	0		-327.68	327.67	NoUnit
+14	I/O extension module 1	1	Module 1 type	0	None			NoUnit
+14	I/O extension module 1	2	Module 1 location	1	Slot 1	1	254	NoUnit
+14	I/O extension module 1	3	Module 1 status	0	No option			NoUnit
+15	I/O extension module 2	1	Module 2 type	0	None			NoUnit
+15	I/O extension module 2	2	Module 2 location	1	Slot 1	1	254	NoUnit
+15	I/O extension module 2	3	Module 2 status	0	No option			NoUnit
+16	I/O extension module 3	1	Module 3 type	0	None			NoUnit
+16	I/O extension module 3	2	Module 3 location	1	Slot 1	1	254	NoUnit
+16	I/O extension module 3	3	Module 3 status	0	No option			NoUnit
+19	Operation mode	1	Actual operation mode	3	Torque			NoUnit
+19	Operation mode	11	Ext1/Ext2 selection	2	FBA A MCW bit 11	0	4294967295	NoUnit
+19	Operation mode	12	Ext1 control mode	2	Speed			NoUnit
+19	Operation mode	14	Ext2 control mode	3	Torque			NoUnit
+19	Operation mode	16	Local control mode	1	Torque			NoUnit
+19	Operation mode	17	Local control disable	0	No			NoUnit
+19	Operation mode	20	Scalar control reference unit	1	Rpm			NoUnit
+20	Start/stop/direction	1	Ext1 commands	12	Fieldbus A			NoUnit
+20	Start/stop/direction	2	Ext1 start trigger type	1	Level			NoUnit
+20	Start/stop/direction	3	Ext1 in1 source	0	Not selected	0	4294967295	NoUnit
+20	Start/stop/direction	4	Ext1 in2 source	0	Not selected	0	4294967295	NoUnit
+20	Start/stop/direction	5	Ext1 in3 source	0	Not selected	0	4294967295	NoUnit
+20	Start/stop/direction	6	Ext2 commands	12	Fieldbus A			NoUnit
+20	Start/stop/direction	7	Ext2 start trigger type	1	Level			NoUnit
+20	Start/stop/direction	8	Ext2 in1 source	0	Not selected	0	4294967295	NoUnit
+20	Start/stop/direction	9	Ext2 in2 source	0	Not selected	0	4294967295	NoUnit
+20	Start/stop/direction	10	Ext2 in3 source	0	Not selected	0	4294967295	NoUnit
+20	Start/stop/direction	11	Run enable stop mode	0	Coast			NoUnit
+20	Start/stop/direction	12	Run enable 1 source	33	DIIL	0	4294967295	NoUnit
+20	Start/stop/direction	19	Enable start command	1	Selected	0	4294967295	NoUnit
+20	Start/stop/direction	23	Positive speed enable	1	Selected	0	4294967295	NoUnit
+20	Start/stop/direction	24	Negative speed enable	1	Selected	0	4294967295	NoUnit
+20	Start/stop/direction	25	Jogging enable	0	Not selected	0	4294967295	NoUnit
+20	Start/stop/direction	26	Jogging 1 start source	0	Not selected	0	4294967295	NoUnit
+20	Start/stop/direction	27	Jogging 2 start source	0	Not selected	0	4294967295	NoUnit
+20	Start/stop/direction	29	Local start trigger type	0	Edge			NoUnit
+20	Start/stop/direction	30	Enable signals warning function	0		0	65535	NoUnit
+21	Start/stop mode	1	Start mode	2	Automatic			NoUnit
+21	Start/stop mode	2	Magnetization time	500		0	10000	ms
+21	Start/stop mode	3	Stop mode	0	Coast			NoUnit
+21	Start/stop mode	4	Emergency stop mode	0	Ramp stop (Off1)			NoUnit
+21	Start/stop mode	5	Emergency stop source	1	Inactive (true)	0	4294967295	NoUnit
+21	Start/stop mode	6	Zero speed limit	30		0	30000	rpm
+21	Start/stop mode	7	Zero speed delay	0		0	30000	ms
+21	Start/stop mode	8	DC current control	0		0	65535	NoUnit
+21	Start/stop mode	9	DC hold speed	5		0	1000	rpm
+21	Start/stop mode	10	DC current reference	30		0	100	%
+21	Start/stop mode	11	Post magnetization time	0		0	3000	s
+21	Start/stop mode	12	Continuous magnetization command	0	Off	0	4294967295	NoUnit
+21	Start/stop mode	13	Autophasing mode	0	Turning			NoUnit
+21	Start/stop mode	14	Pre-heating input source	0	Inactive (false)	0	4294967295	NoUnit
+21	Start/stop mode	16	Pre-heating current	0		0	30	%
+21	Start/stop mode	18	Auto restart time	5		0	5	s
+21	Start/stop mode	19	Scalar start mode	0	Normal			NoUnit
+21	Start/stop mode	20	Follower force ramp stop	0	Not selected	0	4294967295	NoUnit
+22	Speed reference selection	1	Speed ref unlimited	0		-30000	30000	rpm
+22	Speed reference selection	11	Speed ref1 source	4	FB A ref1	0	4294967295	NoUnit
+22	Speed reference selection	12	Speed ref2 source	4	FB A ref1	0	4294967295	NoUnit
+22	Speed reference selection	13	Speed ref1 function	0	Ref1			NoUnit
+22	Speed reference selection	14	Speed ref1/2 selection	2	Follow Ext1/Ext2 selection	0	4294967295	NoUnit
+22	Speed reference selection	15	Speed additive 1 source	0	Zero	0	4294967295	NoUnit
+22	Speed reference selection	16	Speed share	1		-8	8	NoUnit
+22	Speed reference selection	17	Speed additive 2 source	0	Zero	0	4294967295	NoUnit
+22	Speed reference selection	21	Constant speed function	0		0	65535	NoUnit
+22	Speed reference selection	22	Constant speed sel1	0	Not selected	0	4294967295	NoUnit
+22	Speed reference selection	23	Constant speed sel2	0	Not selected	0	4294967295	NoUnit
+22	Speed reference selection	24	Constant speed sel3	0	Not selected	0	4294967295	NoUnit
+22	Speed reference selection	26	Constant speed 1	0		-30000	30000	rpm
+22	Speed reference selection	27	Constant speed 2	0		-30000	30000	rpm
+22	Speed reference selection	28	Constant speed 3	0		-30000	30000	rpm
+22	Speed reference selection	29	Constant speed 4	0		-30000	30000	rpm
+22	Speed reference selection	30	Constant speed 5	0		-30000	30000	rpm
+22	Speed reference selection	31	Constant speed 6	0		-30000	30000	rpm
+22	Speed reference selection	32	Constant speed 7	0		-30000	30000	rpm
+22	Speed reference selection	41	Speed ref safe	0		-30000	30000	rpm
+22	Speed reference selection	42	Jogging 1 ref	0		-30000	30000	rpm
+22	Speed reference selection	43	Jogging 2 ref	0		-30000	30000	rpm
+22	Speed reference selection	51	Critical speed function	0		0	65535	NoUnit
+22	Speed reference selection	52	Critical speed 1 low	0		-30000	30000	rpm
+22	Speed reference selection	53	Critical speed 1 high	0		-30000	30000	rpm
+22	Speed reference selection	54	Critical speed 2 low	0		-30000	30000	rpm
+22	Speed reference selection	55	Critical speed 2 high	0		-30000	30000	rpm
+22	Speed reference selection	56	Critical speed 3 low	0		-30000	30000	rpm
+22	Speed reference selection	57	Critical speed 3 high	0		-30000	30000	rpm
+22	Speed reference selection	71	Motor potentiometer function	0	Disabled			NoUnit
+22	Speed reference selection	72	Motor potentiometer initial value	0		-32768	32767	NoUnit
+22	Speed reference selection	73	Motor potentiometer up source	0	Not selected	0	4294967295	NoUnit
+22	Speed reference selection	74	Motor potentiometer down source	0	Not selected	0	4294967295	NoUnit
+22	Speed reference selection	75	Motor potentiometer ramp time	60		0	3600	s
+22	Speed reference selection	76	Motor potentiometer min value	-1500		-32768	32767	NoUnit
+22	Speed reference selection	77	Motor potentiometer max value	1500		-32768	32767	NoUnit
+22	Speed reference selection	80	Motor potentiometer ref act	0		-32768	32767	NoUnit
+22	Speed reference selection	81	Speed reference act 1	0		-30000	30000	rpm
+22	Speed reference selection	82	Speed reference act 2	0		-30000	30000	rpm
+22	Speed reference selection	83	Speed reference act 3	0		-30000	30000	rpm
+22	Speed reference selection	84	Speed reference act 4	0		-30000	30000	rpm
+22	Speed reference selection	85	Speed reference act 5	0		-30000	30000	rpm
+22	Speed reference selection	86	Speed reference act 6	0		-30000	30000	rpm
+22	Speed reference selection	87	Speed reference act 7	0		-30000	30000	rpm
+23	Speed reference ramp	1	Speed ref ramp input	0		-30000	30000	rpm
+23	Speed reference ramp	2	Speed ref ramp output	0		-30000	30000	rpm
+23	Speed reference ramp	11	Ramp set selection	0	Acc/Dec time 1	0	4294967295	NoUnit
+23	Speed reference ramp	12	Acceleration time 1	0.18		0	1800	s
+23	Speed reference ramp	13	Deceleration time 1	0.18		0	1800	s
+23	Speed reference ramp	14	Acceleration time 2	60		0	1800	s
+23	Speed reference ramp	15	Deceleration time 2	60		0	1800	s
+23	Speed reference ramp	16	Shape time acc 1	0		0	1800	s
+23	Speed reference ramp	17	Shape time acc 2	0		0	1800	s
+23	Speed reference ramp	18	Shape time dec 1	0		0	1800	s
+23	Speed reference ramp	19	Shape time dec 2	0		0	1800	s
+23	Speed reference ramp	20	Acc time jogging	60		0	1800	s
+23	Speed reference ramp	21	Dec time jogging	60		0	1800	s
+23	Speed reference ramp	23	Emergency stop time	3		0	1800	s
+23	Speed reference ramp	24	Speed ramp in zero source	1	Inactive	0	4294967295	NoUnit
+23	Speed reference ramp	26	Ramp out balancing enable	0	Not selected	0	4294967295	NoUnit
+23	Speed reference ramp	27	Ramp out balancing ref	0		-30000	30000	rpm
+23	Speed reference ramp	28	Variable slope enable	0	Off	0	4294967295	NoUnit
+23	Speed reference ramp	29	Variable slope rate	50		2	30000	ms
+23	Speed reference ramp	39	Follower speed correction out	0		-30000	30000	rpm
+23	Speed reference ramp	40	Follower speed correction enable	0	Not selected	0	4294967295	NoUnit
+23	Speed reference ramp	41	Follower speed correction gain	1		0	100	%
+23	Speed reference ramp	42	Follower speed corr torq source	1	MF ref 2	0	4294967295	NoUnit
+24	Speed reference conditioning	1	Used speed reference	0		-30000	30000	rpm
+24	Speed reference conditioning	2	Used speed feedback	0		-30000	30000	rpm
+24	Speed reference conditioning	3	Speed error filtered	0		-30000	30000	rpm
+24	Speed reference conditioning	4	Speed error inverted	0		-30000	30000	rpm
+24	Speed reference conditioning	11	Speed correction	0		-10000	10000	rpm
+24	Speed reference conditioning	12	Speed error filter time	0		0	10000	ms
+24	Speed reference conditioning	13	RFE speed filter	0	Off			NoUnit
+24	Speed reference conditioning	14	Frequency of zero	45		0.5	500	Hz
+24	Speed reference conditioning	15	Damping of zero	0		-1	1	NoUnit
+24	Speed reference conditioning	16	Frequency of pole	40		0.5	500	Hz
+24	Speed reference conditioning	17	Damping of pole	0.25		-1	1	NoUnit
+24	Speed reference conditioning	41	Speed error window control enable	0	Disable	0	4294967295	NoUnit
+24	Speed reference conditioning	42	Speed window control mode	0	Normal speed control			NoUnit
+24	Speed reference conditioning	43	Speed error window high	0		0	3000	rpm
+24	Speed reference conditioning	44	Speed error window low	0		0	3000	rpm
+24	Speed reference conditioning	46	Speed error step	0		-3000	3000	rpm
+25	Speed control	1	Torque reference speed control	0		-1600	1600	%
+25	Speed control	2	Speed proportional gain	5.84		0	250	NoUnit
+25	Speed control	3	Speed integration time	0.33		0	1000	s
+25	Speed control	4	Speed derivation time	0		0	10	s
+25	Speed control	5	Derivation filter time	8		0	10000	ms
+25	Speed control	6	Acc comp derivation time	0		0	1000	s
+25	Speed control	7	Acc comp filter time	8		0	1000	ms
+25	Speed control	8	Drooping rate	0		0	100	%
+25	Speed control	9	Speed ctrl balancing enable	0	Not selected	0	4294967295	NoUnit
+25	Speed control	10	Speed ctrl balancing ref	0		-300	300	%
+25	Speed control	11	Speed control min torque	-300		-1600	0	%
+25	Speed control	12	Speed control max torque	300		0	1600	%
+25	Speed control	13	Min torq sp ctrl em stop	-400		-1600	0	%
+25	Speed control	14	Max torq sp ctrl em stop	400		0	1600	%
+25	Speed control	15	Proportional gain em stop	10		1	250	NoUnit
+25	Speed control	18	Speed adapt min limit	0		0	30000	rpm
+25	Speed control	19	Speed adapt max limit	0		0	30000	rpm
+25	Speed control	21	Kp adapt coef at min speed	1		0	10	NoUnit
+25	Speed control	22	Ti adapt coef at min speed	1		0	10	NoUnit
+25	Speed control	25	Torque adapt max limit	0		0	1600	%
+25	Speed control	26	Torque adapt filt time	0		0	100	s
+25	Speed control	27	Kp adapt coef at min torque	1		0	10	NoUnit
+25	Speed control	30	Flux adaptation enable	1	Enable			NoUnit
+25	Speed control	33	Speed controller autotune	0	Off	0	4294967295	NoUnit
+25	Speed control	34	Speed controller autotune mode	1	Normal			NoUnit
+25	Speed control	37	Mechanical time constant	0.48		0	1000	s
+25	Speed control	38	Autotune torque step	10		0	100	%
+25	Speed control	39	Autotune speed step	10		0	100	%
+25	Speed control	40	Autotune repeat times	10		1	10	NoUnit
+25	Speed control	41	Torque reference Autotune2	0		-1600	1600	%
+25	Speed control	42	Integral term enable	1	Selected	0	4294967295	NoUnit
+25	Speed control	53	Torque prop reference	0		-30000	30000	%
+25	Speed control	54	Torque integral reference	0		-30000	30000	%
+25	Speed control	55	Torque deriv reference	0		-30000	30000	%
+25	Speed control	56	Torque acc compensation	0		-30000	30000	%
+25	Speed control	57	Torque reference unbalanced	0		-30000	30000	%
+26	Torque reference chain	1	Torque reference to TC	0		-1600	1600	%
+26	Torque reference chain	2	Torque reference used	0		-1600	1600	%
+26	Torque reference chain	8	Minimum torque ref	-300		-1000	0	%
+26	Torque reference chain	9	Maximum torque ref	300		0	1000	%
+26	Torque reference chain	11	Torque ref1 source	5	FB A ref2	0	4294967295	NoUnit
+26	Torque reference chain	12	Torque ref2 source	5	FB A ref2	0	4294967295	NoUnit
+26	Torque reference chain	13	Torque ref1 function	0	Ref1			NoUnit
+26	Torque reference chain	14	Torque ref1/2 selection	1	Torque reference 2	0	4294967295	NoUnit
+26	Torque reference chain	15	Load share	1		-8	8	NoUnit
+26	Torque reference chain	16	Torque additive 1 source	0	Zero	0	4294967295	NoUnit
+26	Torque reference chain	17	Torque ref filter time	0		0	30	s
+26	Torque reference chain	18	Torque ramp up time	0		0	60	s
+26	Torque reference chain	19	Torque ramp down time	0		0	60	s
+26	Torque reference chain	25	Torque additive 2 source	0	Zero	0	4294967295	NoUnit
+26	Torque reference chain	26	Force torque ref add 2 zero	0	Not selected	0	4294967295	NoUnit
+26	Torque reference chain	41	Torque step	0		-300	300	%
+26	Torque reference chain	42	Torque step enable	0	Disable			NoUnit
+26	Torque reference chain	43	Torque step pointer enable	1	Selected	0	4294967295	NoUnit
+26	Torque reference chain	44	Torque step source	0	Zero	0	4294967295	NoUnit
+26	Torque reference chain	51	Oscillation damping	0	Not selected	0	4294967295	NoUnit
+26	Torque reference chain	52	Oscillation damping out enable	0	Not selected	0	4294967295	NoUnit
+26	Torque reference chain	53	Oscillation compensation input	0	Speed error			NoUnit
+26	Torque reference chain	55	Oscillation damping frequency	31		0.1	60	Hz
+26	Torque reference chain	56	Oscillation damping phase	180		0	360	deg
+26	Torque reference chain	57	Oscillation damping gain	1		0	100	%
+26	Torque reference chain	58	Oscillation damping output	0		-1600	1600	%
+26	Torque reference chain	70	Torque reference act 1	0		-1600	1600	%
+26	Torque reference chain	71	Torque reference act 2	0		-1600	1600	%
+26	Torque reference chain	72	Torque reference act 3	0		-1600	1600	%
+26	Torque reference chain	73	Torque reference act 4	0		-1600	1600	%
+26	Torque reference chain	74	Torque ref ramp out	0		-1600	1600	%
+26	Torque reference chain	75	Torque reference act 5	0		-1600	1600	%
+26	Torque reference chain	76	Torque reference act 6	0		-1600	1600	%
+26	Torque reference chain	77	Torque ref add A actual	0		-1600	1600	%
+26	Torque reference chain	78	Torque ref add B actual	0		-1600	1600	%
+26	Torque reference chain	81	Rush control gain	10		0	10000	NoUnit
+26	Torque reference chain	82	Rush control integration time	2		0	10	s
+28	Frequency reference chain	1	Frequency ref ramp input	0		-598	598	Hz
+28	Frequency reference chain	2	Frequency ref ramp output	0		-598	598	Hz
+28	Frequency reference chain	11	Frequency ref1 source	0	Zero	0	4294967295	NoUnit
+28	Frequency reference chain	12	Frequency ref2 source	0	Zero	0	4294967295	NoUnit
+28	Frequency reference chain	13	Frequency ref1 function	0	Ref1			NoUnit
+28	Frequency reference chain	14	Frequency ref1/2 selection	2	Follow Ext1/Ext2 selection	0	4294967295	NoUnit
+28	Frequency reference chain	21	Constant frequency function	0		0	65535	NoUnit
+28	Frequency reference chain	22	Constant frequency sel1	0	Not selected	0	4294967295	NoUnit
+28	Frequency reference chain	23	Constant frequency sel2	0	Not selected	0	4294967295	NoUnit
+28	Frequency reference chain	24	Constant frequency sel3	0	Not selected	0	4294967295	NoUnit
+28	Frequency reference chain	26	Constant frequency 1	0		-598	598	Hz
+28	Frequency reference chain	27	Constant frequency 2	0		-598	598	Hz
+28	Frequency reference chain	28	Constant frequency 3	0		-598	598	Hz
+28	Frequency reference chain	29	Constant frequency 4	0		-598	598	Hz
+28	Frequency reference chain	30	Constant frequency 5	0		-598	598	Hz
+28	Frequency reference chain	31	Constant frequency 6	0		-598	598	Hz
+28	Frequency reference chain	32	Constant frequency 7	0		-598	598	Hz
+28	Frequency reference chain	41	Frequency ref safe	0		-598	598	Hz
+28	Frequency reference chain	51	Critical frequency function	0		0	65535	NoUnit
+28	Frequency reference chain	52	Critical frequency 1 low	0		-598	598	Hz
+28	Frequency reference chain	53	Critical frequency 1 high	0		-598	598	Hz
+28	Frequency reference chain	54	Critical frequency 2 low	0		-598	598	Hz
+28	Frequency reference chain	55	Critical frequency 2 high	0		-598	598	Hz
+28	Frequency reference chain	56	Critical frequency 3 low	0		-598	598	Hz
+28	Frequency reference chain	57	Critical frequency 3 high	0		-598	598	Hz
+28	Frequency reference chain	71	Freq ramp set selection	0	Acc/Dec time 1	0	4294967295	NoUnit
+28	Frequency reference chain	72	Freq acceleration time 1	20		0	1800	s
+28	Frequency reference chain	73	Freq deceleration time 1	20		0	1800	s
+28	Frequency reference chain	74	Freq acceleration time 2	60		0	1800	s
+28	Frequency reference chain	75	Freq deceleration time 2	60		0	1800	s
+28	Frequency reference chain	76	Freq ramp in zero source	1	Inactive	0	4294967295	NoUnit
+28	Frequency reference chain	77	Freq ramp hold	1	Inactive	0	4294967295	NoUnit
+28	Frequency reference chain	78	Freq ramp output balancing	0		-598	598	Hz
+28	Frequency reference chain	79	Freq ramp out balancing enable	0	Not selected	0	4294967295	NoUnit
+28	Frequency reference chain	90	Frequency ref act 1	0		-598	598	Hz
+28	Frequency reference chain	91	Frequency ref act 2	0		-598	598	Hz
+28	Frequency reference chain	92	Frequency ref act 3	0		-598	598	Hz
+28	Frequency reference chain	96	Frequency ref act 7	0		-598	598	Hz
+28	Frequency reference chain	97	Frequency ref unlimited	0		-598	598	Hz
+30	Limits	1	Limit word 1	0		0	65535	NoUnit
+30	Limits	2	Torque limit status	0		0	65535	NoUnit
+30	Limits	11	Minimum speed	-1750		-30000	30000	rpm
+30	Limits	12	Maximum speed	1750		-30000	30000	rpm
+30	Limits	13	Minimum frequency	-60		-598	598	Hz
+30	Limits	14	Maximum frequency	60		-598	598	Hz
+30	Limits	15	Maximum start current enable	0	Disable			NoUnit
+30	Limits	16	Maximum start current	54.4		0	30000	A
+30	Limits	17	Maximum current	54.4		0	30000	A
+30	Limits	18	Minimum torque sel	0	Minimum torque 1	0	4294967295	NoUnit
+30	Limits	19	Minimum torque 1	-150		-1600	0	%
+30	Limits	20	Maximum torque 1	150		0	1600	%
+30	Limits	21	Minimum torque 2 source	6	Minimum torque 2	0	4294967295	NoUnit
+30	Limits	22	Maximum torque 2 source	6	Maximum torque 2	0	4294967295	NoUnit
+30	Limits	23	Minimum torque 2	-150		-1600	0	%
+30	Limits	24	Maximum torque 2	150		0	1600	%
+30	Limits	25	Maximum torque sel	0	Maximum torque 1	0	4294967295	NoUnit
+30	Limits	26	Power motoring limit	120		0	600	%
+30	Limits	27	Power generating limit	-120		-600	0	%
+30	Limits	30	Overvoltage control	1	Enable			NoUnit
+30	Limits	31	Undervoltage control	1	Enable			NoUnit
+30	Limits	35	Thermal current limitation	1	Enable			NoUnit
+31	Fault functions	1	External event 1 source	1	Inactive (true)	0	4294967295	NoUnit
+31	Fault functions	2	External event 1 type	0	Fault			NoUnit
+31	Fault functions	3	External event 2 source	1	Inactive (true)	0	4294967295	NoUnit
+31	Fault functions	4	External event 2 type	0	Fault			NoUnit
+31	Fault functions	5	External event 3 source	1	Inactive (true)	0	4294967295	NoUnit
+31	Fault functions	6	External event 3 type	0	Fault			NoUnit
+31	Fault functions	7	External event 4 source	1	Inactive (true)	0	4294967295	NoUnit
+31	Fault functions	8	External event 4 type	0	Fault			NoUnit
+31	Fault functions	9	External event 5 source	1	Inactive (true)	0	4294967295	NoUnit
+31	Fault functions	10	External event 5 type	0	Fault			NoUnit
+31	Fault functions	11	Fault reset selection	0	Not selected	0	4294967295	NoUnit
+31	Fault functions	12	Autoreset selection	0		0	65535	NoUnit
+31	Fault functions	13	User selectable fault	0		0	65535	NoUnit
+31	Fault functions	14	Number of trials	0		0	5	NoUnit
+31	Fault functions	15	Total trials time	30		1	600	s
+31	Fault functions	16	Delay time	0		0	120	s
+31	Fault functions	19	Motor phase loss	1	Fault			NoUnit
+31	Fault functions	20	Earth fault	2	Fault			NoUnit
+31	Fault functions	22	STO indication run/stop	0	Fault/Fault			NoUnit
+31	Fault functions	23	Wiring or earth fault	1	Fault			NoUnit
+31	Fault functions	24	Stall function	2	Fault			NoUnit
+31	Fault functions	25	Stall current limit	200		0	1600	%
+31	Fault functions	26	Stall speed limit	180		0	10000	rpm
+31	Fault functions	27	Stall frequency limit	18		0	500	Hz
+31	Fault functions	28	Stall time	20		0	3600	s
+31	Fault functions	30	Overspeed trip margin	500		0	10000	rpm
+31	Fault functions	32	Emergency ramp supervision	0		0	300	%
+31	Fault functions	33	Emergency ramp supervision delay	0		0	32767	s
+31	Fault functions	35	Main fan fault function	1	Warning			NoUnit
+31	Fault functions	36	Aux fan fault function	0	Fault			NoUnit
+31	Fault functions	37	Ramp stop supervision	0		0	300	%
+31	Fault functions	38	Ramp stop supervision delay	0		0	32767	s
+31	Fault functions	40	Disable warning messages	0		0	65535	NoUnit
+31	Fault functions	42	Overcurrent fault limit	0		0	30000	A
+31	Fault functions	54	Fault action	0	Coast			NoUnit
+32	Supervision	1	Supervision status	0		0	65535	NoUnit
+32	Supervision	5	Supervision 1 function	0	Disabled			NoUnit
+32	Supervision	6	Supervision 1 action	0	No action			NoUnit
+32	Supervision	7	Supervision 1 signal	0	Zero	0	4294967295	NoUnit
+32	Supervision	8	Supervision 1 filter time	0		0	30	s
+32	Supervision	9	Supervision 1 low	0		-21474830	21474830	NoUnit
+32	Supervision	10	Supervision 1 high	0		-21474830	21474830	NoUnit
+32	Supervision	15	Supervision 2 function	0	Disabled			NoUnit
+32	Supervision	16	Supervision 2 action	0	No action			NoUnit
+32	Supervision	17	Supervision 2 signal	0	Zero	0	4294967295	NoUnit
+32	Supervision	18	Supervision 2 filter time	0		0	30	s
+32	Supervision	19	Supervision 2 low	0		-21474830	21474830	NoUnit
+32	Supervision	20	Supervision 2 high	0		-21474830	21474830	NoUnit
+32	Supervision	25	Supervision 3 function	0	Disabled			NoUnit
+32	Supervision	26	Supervision 3 action	0	No action			NoUnit
+32	Supervision	27	Supervision 3 signal	0	Zero	0	4294967295	NoUnit
+32	Supervision	28	Supervision 3 filter time	0		0	30	s
+32	Supervision	29	Supervision 3 low	0		-21474830	21474830	NoUnit
+32	Supervision	30	Supervision 3 high	0		-21474830	21474830	NoUnit
+33	Generic timer & counter	1	Counter status	0		0	65535	NoUnit
+33	Generic timer & counter	10	On-time 1 actual	0		0	4294967295	s
+33	Generic timer & counter	11	On-time 1 warn limit	0		0	4294967295	s
+33	Generic timer & counter	12	On-time 1 function	0		0	65535	NoUnit
+33	Generic timer & counter	13	On-time 1 source	0	False	0	4294967295	NoUnit
+33	Generic timer & counter	14	On-time 1 warn message	0	On-time 1 exceeded			NoUnit
+33	Generic timer & counter	20	On-time 2 actual	0		0	4294967295	s
+33	Generic timer & counter	21	On-time 2 warn limit	0		0	4294967295	s
+33	Generic timer & counter	22	On-time 2 function	0		0	65535	NoUnit
+33	Generic timer & counter	23	On-time 2 source	0	False	0	4294967295	NoUnit
+33	Generic timer & counter	24	On-time 2 warn message	1	On-time 2 exceeded			NoUnit
+33	Generic timer & counter	30	Edge counter 1 actual	0		0	4294967295	NoUnit
+33	Generic timer & counter	31	Edge counter 1 warn limit	0		0	4294967295	NoUnit
+33	Generic timer & counter	32	Edge counter 1 function	0		0	65535	NoUnit
+33	Generic timer & counter	33	Edge counter 1 source	0	False	0	4294967295	NoUnit
+33	Generic timer & counter	34	Edge counter 1 divider	1		1	4294967295	NoUnit
+33	Generic timer & counter	35	Edge counter 1 warn message	2	Edge counter 1 exceeded			NoUnit
+33	Generic timer & counter	40	Edge counter 2 actual	0		0	4294967295	NoUnit
+33	Generic timer & counter	41	Edge counter 2 warn limit	0		0	4294967295	NoUnit
+33	Generic timer & counter	42	Edge counter 2 function	0		0	65535	NoUnit
+33	Generic timer & counter	43	Edge counter 2 source	0	False	0	4294967295	NoUnit
+33	Generic timer & counter	44	Edge counter 2 divider	1		1	4294967295	NoUnit
+33	Generic timer & counter	45	Edge counter 2 warn message	3	Edge counter 2 exceeded			NoUnit
+33	Generic timer & counter	50	Value counter 1 actual	0		-2.147483E+09	2.147483E+09	NoUnit
+33	Generic timer & counter	51	Value counter 1 warn limit	0		-2.147483E+09	2.147483E+09	NoUnit
+33	Generic timer & counter	52	Value counter 1 function	0		0	65535	NoUnit
+33	Generic timer & counter	53	Value counter 1 source	0	Not selected	0	4294967295	NoUnit
+33	Generic timer & counter	54	Value counter 1 divider	1		0.001	2147483	NoUnit
+33	Generic timer & counter	55	Value counter 1 warn message	4	Value counter 1 exceeded			NoUnit
+33	Generic timer & counter	60	Value counter 2 actual	0		-2.147483E+09	2.147483E+09	NoUnit
+33	Generic timer & counter	61	Value counter 2 warn limit	0		-2.147483E+09	2.147483E+09	NoUnit
+33	Generic timer & counter	62	Value counter 2 function	0		0	65535	NoUnit
+33	Generic timer & counter	63	Value counter 2 source	0	Not selected	0	4294967295	NoUnit
+33	Generic timer & counter	64	Value counter 2 divider	1		0.001	2147483	NoUnit
+33	Generic timer & counter	65	Value counter 2 warn message	5	Value counter 2 exceeded			NoUnit
+35	Motor thermal protection	1	Motor estimated temperature	21.03919		-60	1000	°C
+35	Motor thermal protection	2	Measured temperature 1	0		-60	1000	°C
+35	Motor thermal protection	3	Measured temperature 2	0		-60	1000	°C
+35	Motor thermal protection	4	FPTC status word	0		0	65535	NoUnit
+35	Motor thermal protection	11	Temperature 1 source	0	Disabled			NoUnit
+35	Motor thermal protection	12	Temperature 1 fault limit	130		-60	1000	°C
+35	Motor thermal protection	13	Temperature 1 warning limit	110		-60	1000	°C
+35	Motor thermal protection	14	Temperature 1 AI source	0	Not selected	0	4294967295	NoUnit
+35	Motor thermal protection	21	Temperature 2 source	0	Disabled			NoUnit
+35	Motor thermal protection	22	Temperature 2 fault limit	130		-60	1000	°C
+35	Motor thermal protection	23	Temperature 2 warning limit	110		-60	1000	°C
+35	Motor thermal protection	24	Temperature 2 AI source	0	Not selected	0	4294967295	NoUnit
+35	Motor thermal protection	30	FPTC configuration word	42		0	65535	NoUnit
+35	Motor thermal protection	50	Motor ambient temperature	20		-60	100	°C
+35	Motor thermal protection	51	Motor load curve	100		50	150	%
+35	Motor thermal protection	52	Zero speed load	70		25	150	%
+35	Motor thermal protection	53	Break point	45		1	500	Hz
+35	Motor thermal protection	54	Motor nominal temperature rise	80		0	300	°C
+35	Motor thermal protection	55	Motor thermal time constant	256		100	10000	s
+35	Motor thermal protection	60	Cable temperature	0		0	200	%
+35	Motor thermal protection	61	Cable nominal current	10000		0	10000	A
+35	Motor thermal protection	62	Cable thermal rise time	1		0	50000	s
+35	Motor thermal protection	100	DOL starter control source	0	Off	0	4294967295	NoUnit
+35	Motor thermal protection	101	DOL starter on delay	0		0	42949673	s
+35	Motor thermal protection	102	DOL starter off delay	20		0	715828	min
+35	Motor thermal protection	103	DOL starter feedback source	0	Not selected	0	4294967295	NoUnit
+35	Motor thermal protection	104	DOL starter feedback delay	0		0	42949673	s
+35	Motor thermal protection	105	DOL starter status word	8		0	65535	NoUnit
+35	Motor thermal protection	106	DOL starter event type	2	Fault			NoUnit
+36	Load analyzer	1	PVL signal source	8	Power inu out	0	4294967295	NoUnit
+36	Load analyzer	2	PVL filter time	2		0	120	s
+36	Load analyzer	6	AL2 signal source	20	Ambient temperature	0	4294967295	NoUnit
+36	Load analyzer	7	AL2 signal scaling	100		0	32767	NoUnit
+36	Load analyzer	8	Logger function	0		0	65535	NoUnit
+36	Load analyzer	9	Reset loggers	0	Done			NoUnit
+36	Load analyzer	10	PVL peak value	19.56		-32768	32767	NoUnit
+36	Load analyzer	11	PVL peak date	15681		0	65535	NoUnit
+36	Load analyzer	12	PVL peak time	55085		0	4294967295	NoUnit
+36	Load analyzer	13	PVL current at peak	22.72		-32768	32767	A
+36	Load analyzer	14	PVL DC voltage at peak	659.13		0	2000	V
+36	Load analyzer	15	PVL speed at peak	1721.26		-32768	32767	rpm
+36	Load analyzer	16	PVL reset date	14252		0	65535	NoUnit
+36	Load analyzer	17	PVL reset time	56106		0	4294967295	NoUnit
+36	Load analyzer	20	AL1 below 10%	91.5		0	100	%
+36	Load analyzer	21	AL1 10 to 20%	4.79		0	100	%
+36	Load analyzer	22	AL1 20 to 30%	2.2		0	100	%
+36	Load analyzer	23	AL1 30 to 40%	1.05		0	100	%
+36	Load analyzer	24	AL1 40 to 50%	0.45		0	100	%
+36	Load analyzer	25	AL1 50 to 60%	0		0	100	%
+36	Load analyzer	26	AL1 60 to 70%	0		0	100	%
+36	Load analyzer	27	AL1 70 to 80%	0		0	100	%
+36	Load analyzer	28	AL1 80 to 90%	0		0	100	%
+36	Load analyzer	29	AL1 over 90%	0		0	100	%
+36	Load analyzer	40	AL2 below 10%	0		0	100	%
+36	Load analyzer	41	AL2 10 to 20%	0		0	100	%
+36	Load analyzer	42	AL2 20 to 30%	0.54		0	100	%
+36	Load analyzer	43	AL2 30 to 40%	99.2		0	100	%
+36	Load analyzer	44	AL2 40 to 50%	0.26		0	100	%
+36	Load analyzer	45	AL2 50 to 60%	0		0	100	%
+36	Load analyzer	46	AL2 60 to 70%	0		0	100	%
+36	Load analyzer	47	AL2 70 to 80%	0		0	100	%
+36	Load analyzer	48	AL2 80 to 90%	0		0	100	%
+36	Load analyzer	49	AL2 over 90%	0		0	100	%
+36	Load analyzer	50	AL2 reset date	14252		0	65535	NoUnit
+36	Load analyzer	51	AL2 reset time	56106		0	4294967295	NoUnit
+37	User load curve	1	ULC output status word	0		0	65535	NoUnit
+37	User load curve	2	ULC supervision signal	0	Not selected	0	4294967295	NoUnit
+37	User load curve	3	ULC overload actions	0	Disabled			NoUnit
+37	User load curve	4	ULC underload actions	0	Disabled			NoUnit
+37	User load curve	11	ULC speed table point 1	150		0	30000	rpm
+37	User load curve	12	ULC speed table point 2	750		0	30000	rpm
+37	User load curve	13	ULC speed table point 3	1290		0	30000	rpm
+37	User load curve	14	ULC speed table point 4	1500		0	30000	rpm
+37	User load curve	15	ULC speed table point 5	1800		0	30000	rpm
+37	User load curve	16	ULC frequency table point 1	5		0	598	Hz
+37	User load curve	17	ULC frequency table point 2	25		0	598	Hz
+37	User load curve	18	ULC frequency table point 3	43		0	598	Hz
+37	User load curve	19	ULC frequency table point 4	50		0	598	Hz
+37	User load curve	20	ULC frequency table point 5	60		0	598	Hz
+37	User load curve	21	ULC underload point 1	10		0	1600	%
+37	User load curve	22	ULC underload point 2	15		0	1600	%
+37	User load curve	23	ULC underload point 3	25		0	1600	%
+37	User load curve	24	ULC underload point 4	30		0	1600	%
+37	User load curve	25	ULC underload point 5	30		0	1600	%
+37	User load curve	31	ULC overload point 1	300		0	1600	%
+37	User load curve	32	ULC overload point 2	300		0	1600	%
+37	User load curve	33	ULC overload point 3	300		0	1600	%
+37	User load curve	34	ULC overload point 4	300		0	1600	%
+37	User load curve	35	ULC overload point 5	300		0	1600	%
+37	User load curve	41	ULC overload timer	20		0	10000	s
+37	User load curve	42	ULC underload timer	20		0	10000	s
+40	Process PID set 1	1	Process PID output actual	0		-32768	32767	NoUnit
+40	Process PID set 1	2	Process PID feedback actual	0		-32768	32767	%
+40	Process PID set 1	3	Process PID setpoint actual	0		-32768	32767	%
+40	Process PID set 1	4	Process PID deviation actual	0		-32768	32767	%
+40	Process PID set 1	5	Process PID trim output act	0		-32768	32767	NoUnit
+40	Process PID set 1	6	Process PID status word	0		0	65535	NoUnit
+40	Process PID set 1	7	Set 1 PID operation mode	0	Off			NoUnit
+40	Process PID set 1	8	Set 1 feedback 1 source	1	AI1 scaled	0	4294967295	NoUnit
+40	Process PID set 1	9	Set 1 feedback 2 source	0	Not selected	0	4294967295	NoUnit
+40	Process PID set 1	10	Set 1 feedback function	0	In1			NoUnit
+40	Process PID set 1	11	Set 1 feedback filter time	0		0	30	s
+40	Process PID set 1	12	Set 1 unit selection	4	%			NoUnit
+40	Process PID set 1	14	Set 1 setpoint scaling	100		-32768	32767	NoUnit
+40	Process PID set 1	15	Set 1 output scaling	1800		-32768	32767	NoUnit
+40	Process PID set 1	16	Set 1 setpoint 1 source	2	Internal setpoint	0	4294967295	NoUnit
+40	Process PID set 1	17	Set 1 setpoint 2 source	0	Not selected	0	4294967295	NoUnit
+40	Process PID set 1	18	Set 1 setpoint function	0	In1 or In2			NoUnit
+40	Process PID set 1	19	Set 1 internal setpoint sel1	0	Not selected	0	4294967295	NoUnit
+40	Process PID set 1	20	Set 1 internal setpoint sel2	0	Not selected	0	4294967295	NoUnit
+40	Process PID set 1	21	Set 1 internal setpoint 1	0		-32768	32767	%
+40	Process PID set 1	22	Set 1 internal setpoint 2	0		-32768	32767	%
+40	Process PID set 1	23	Set 1 internal setpoint 3	0		-32768	32767	%
+40	Process PID set 1	24	Set 1 internal setpoint 4	0		-32768	32767	%
+40	Process PID set 1	25	Set 1 setpoint selection	0	Setpoint source 1	0	4294967295	NoUnit
+40	Process PID set 1	26	Set 1 setpoint min	0		-32768	32767	NoUnit
+40	Process PID set 1	27	Set 1 setpoint max	32767		-32768	32767	NoUnit
+40	Process PID set 1	28	Set 1 setpoint increase time	0		0	1800	s
+40	Process PID set 1	29	Set 1 setpoint decrease time	0		0	1800	s
+40	Process PID set 1	30	Set 1 setpoint freeze enable	0	Not selected	0	4294967295	NoUnit
+40	Process PID set 1	31	Set 1 deviation inversion	0	Not inverted (Ref - Fbk)	0	4294967295	NoUnit
+40	Process PID set 1	32	Set 1 gain	1		0.1	100	NoUnit
+40	Process PID set 1	33	Set 1 integration time	60		0	32767	s
+40	Process PID set 1	34	Set 1 derivation time	0		0	10	s
+40	Process PID set 1	35	Set 1 derivation filter time	0		0	10	s
+40	Process PID set 1	36	Set 1 output min	0		-32768	32767	NoUnit
+40	Process PID set 1	37	Set 1 output max	1800		-32768	32767	NoUnit
+40	Process PID set 1	38	Set 1 output freeze enable	0	Not selected	0	4294967295	NoUnit
+40	Process PID set 1	39	Set 1 deadband range	0		0	32767	NoUnit
+40	Process PID set 1	40	Set 1 deadband delay	0		0	3600	s
+40	Process PID set 1	41	Set 1 sleep mode	0	Not selected			NoUnit
+40	Process PID set 1	42	Set 1 sleep enable	0	Not selected	0	4294967295	NoUnit
+40	Process PID set 1	43	Set 1 sleep level	0		0	32767	NoUnit
+40	Process PID set 1	44	Set 1 sleep delay	60		0	3600	s
+40	Process PID set 1	45	Set 1 sleep boost time	0		0	3600	s
+40	Process PID set 1	46	Set 1 sleep boost step	0		0	32767	NoUnit
+40	Process PID set 1	47	Set 1 wake-up deviation	0		-32768	32767	%
+40	Process PID set 1	48	Set 1 wake-up delay	0.5		0	60	s
+40	Process PID set 1	49	Set 1 tracking mode	0	Not selected	0	4294967295	NoUnit
+40	Process PID set 1	50	Set 1 tracking ref selection	0	Not selected	0	4294967295	NoUnit
+40	Process PID set 1	51	Set 1 trim mode	0	Off			NoUnit
+40	Process PID set 1	52	Set 1 trim selection	1	Torque			NoUnit
+40	Process PID set 1	53	Set 1 trimmed ref pointer	0	Not selected	0	4294967295	NoUnit
+40	Process PID set 1	54	Set 1 trim mix	0		0	1	NoUnit
+40	Process PID set 1	55	Set 1 trim adjust	1		-100	100	NoUnit
+40	Process PID set 1	56	Set 1 trim source	1	PID ref			NoUnit
+40	Process PID set 1	57	PID set1/set2 selection	0	PID set 1	0	4294967295	NoUnit
+40	Process PID set 1	60	Set 1 PID activation source	1	On	0	4294967295	NoUnit
+40	Process PID set 1	91	Feedback data storage	0		-327.68	327.67	NoUnit
+40	Process PID set 1	92	Setpoint data storage	0		-327.68	327.67	NoUnit
+41	Process PID set 2	7	Set 2 PID operation mode	0	Off			NoUnit
+41	Process PID set 2	8	Set 2 feedback 1 source	1	AI1 scaled	0	4294967295	NoUnit
+41	Process PID set 2	9	Set 2 feedback 2 source	0	Not selected	0	4294967295	NoUnit
+41	Process PID set 2	10	Set 2 feedback function	0	In1			NoUnit
+41	Process PID set 2	11	Set 2 feedback filter time	0		0	30	s
+41	Process PID set 2	12	Set 2 unit selection	4	%			NoUnit
+41	Process PID set 2	14	Set 2 setpoint scaling	100		-32768	32767	NoUnit
+41	Process PID set 2	15	Set 2 output scaling	1800		-32768	32767	NoUnit
+41	Process PID set 2	16	Set 2 setpoint 1 source	2	Internal setpoint	0	4294967295	NoUnit
+41	Process PID set 2	17	Set 2 setpoint 2 source	0	Not selected	0	4294967295	NoUnit
+41	Process PID set 2	18	Set 2 setpoint function	0	In1 or In2			NoUnit
+41	Process PID set 2	19	Set 2 internal setpoint sel1	0	Not selected	0	4294967295	NoUnit
+41	Process PID set 2	20	Set 2 internal setpoint sel2	0	Not selected	0	4294967295	NoUnit
+41	Process PID set 2	21	Set 2 internal setpoint 1	0		-32768	32767	%
+41	Process PID set 2	22	Set 2 internal setpoint 2	0		-32768	32767	%
+41	Process PID set 2	23	Set 2 internal setpoint 3	0		-32768	32767	%
+41	Process PID set 2	24	Set 2 internal setpoint 4	0		-32768	32767	%
+41	Process PID set 2	25	Set 2 setpoint selection	0	Setpoint source 1	0	4294967295	NoUnit
+41	Process PID set 2	26	Set 2 setpoint min	0		-32768	32767	NoUnit
+41	Process PID set 2	27	Set 2 setpoint max	32767		-32768	32767	NoUnit
+41	Process PID set 2	28	Set 2 setpoint increase time	0		0	1800	s
+41	Process PID set 2	29	Set 2 setpoint decrease time	0		0	1800	s
+41	Process PID set 2	30	Set 2 setpoint freeze enable	0	Not selected	0	4294967295	NoUnit
+41	Process PID set 2	31	Set 2 deviation inversion	0	Not inverted (Ref - Fbk)	0	4294967295	NoUnit
+41	Process PID set 2	32	Set 2 gain	1		0.1	100	NoUnit
+41	Process PID set 2	33	Set 2 integration time	60		0	32767	s
+41	Process PID set 2	34	Set 2 derivation time	0		0	10	s
+41	Process PID set 2	35	Set 2 derivation filter time	0		0	10	s
+41	Process PID set 2	36	Set 2 output min	0		-32768	32767	NoUnit
+41	Process PID set 2	37	Set 2 output max	1800		-32768	32767	NoUnit
+41	Process PID set 2	38	Set 2 output freeze enable	0	Not selected	0	4294967295	NoUnit
+41	Process PID set 2	39	Set 2 deadband range	0		0	32767	NoUnit
+41	Process PID set 2	40	Set 2 deadband delay	0		0	3600	s
+41	Process PID set 2	41	Set 2 sleep mode	0	Not selected			NoUnit
+41	Process PID set 2	42	Set 2 sleep enable	0	Not selected	0	4294967295	NoUnit
+41	Process PID set 2	43	Set 2 sleep level	0		0	32767	NoUnit
+41	Process PID set 2	44	Set 2 sleep delay	60		0	3600	s
+41	Process PID set 2	45	Set 2 sleep boost time	0		0	3600	s
+41	Process PID set 2	46	Set 2 sleep boost step	0		0	32767	NoUnit
+41	Process PID set 2	47	Set 2 wake-up deviation	0		-32768	32767	%
+41	Process PID set 2	48	Set 2 wake-up delay	0.5		0	60	s
+41	Process PID set 2	49	Set 2 tracking mode	0	Not selected	0	4294967295	NoUnit
+41	Process PID set 2	50	Set 2 tracking ref selection	0	Not selected	0	4294967295	NoUnit
+41	Process PID set 2	51	Set 2 trim mode	0	Off			NoUnit
+41	Process PID set 2	52	Set 2 trim selection	1	Torque			NoUnit
+41	Process PID set 2	53	Set 2 trimmed ref pointer	0	Not selected	0	4294967295	NoUnit
+41	Process PID set 2	54	Set 2 trim mix	0		0	1	NoUnit
+41	Process PID set 2	55	Set 2 trim adjust	1		-100	100	NoUnit
+41	Process PID set 2	56	Set 2 trim source	1	PID ref			NoUnit
+41	Process PID set 2	60	Set 2 PID activation source	1	On	0	4294967295	NoUnit
+43	Brake chopper	1	Braking resistor temperature	0		0	120	%
+43	Brake chopper	6	Brake chopper function	0	Disabled			NoUnit
+43	Brake chopper	7	Brake chopper run enable	1	On	0	4294967295	NoUnit
+43	Brake chopper	8	Brake resistor thermal tc	0		0	10000	s
+43	Brake chopper	9	Brake resistor Pmax cont	0		0	10000	kW
+43	Brake chopper	10	Brake resistance	0		0	1000	Ohm
+43	Brake chopper	11	Brake resistor fault limit	105		0	150	%
+43	Brake chopper	12	Brake resistor warning limit	95		0	150	%
+44	Mechanical brake control	1	Brake control status	0		0	65535	NoUnit
+44	Mechanical brake control	2	Brake torque memory	0		-1600	1600	%
+44	Mechanical brake control	3	Brake open torque reference	0		-1600	1600	%
+44	Mechanical brake control	6	Brake control enable	0	Not selected	0	4294967295	NoUnit
+44	Mechanical brake control	7	Brake acknowledge selection	2	No acknowledge	0	4294967295	NoUnit
+44	Mechanical brake control	8	Brake open delay	0		0	5	s
+44	Mechanical brake control	9	Brake open torque source	8	Brake open torque	0	4294967295	NoUnit
+44	Mechanical brake control	10	Brake open torque	0		-1600	1600	%
+44	Mechanical brake control	11	Keep brake closed	0	Not selected	0	4294967295	NoUnit
+44	Mechanical brake control	12	Brake close request	0	Not selected	0	4294967295	NoUnit
+44	Mechanical brake control	13	Brake close delay	0		0	60	s
+44	Mechanical brake control	14	Brake close level	10		0	1000	rpm
+44	Mechanical brake control	15	Brake close level delay	0		0	10	s
+44	Mechanical brake control	16	Brake reopen delay	0		0	10	s
+44	Mechanical brake control	17	Brake fault function	0	Fault			NoUnit
+44	Mechanical brake control	18	Brake fault delay	0		0	60	s
+44	Mechanical brake control	21	Filter time brake torque momery	100		0	100	ms
+45	Energy efficiency	1	Saved GW hours	0		0	65535	GWh
+45	Energy efficiency	2	Saved MW hours	0		0	999	MWh
+45	Energy efficiency	3	Saved kW hours	0		0	999.9	kWh
+45	Energy efficiency	5	Saved money x1000	0		0	4294967295	USD
+45	Energy efficiency	6	Saved money	0		0	999.99	USD
+45	Energy efficiency	8	CO2 reduction in kilotons	0		0	65535	metric kiloton
+45	Energy efficiency	9	CO2 reduction in tons	0		0	999.9	metric ton
+45	Energy efficiency	11	Energy optimizer	0	Disable			NoUnit
+45	Energy efficiency	12	Energy tariff 1	1		0	4294966.296	USD
+45	Energy efficiency	13	Energy tariff 2	2		0	4294966.296	USD
+45	Energy efficiency	14	Tariff selection	0	Energy tariff 1	0	4294967295	NoUnit
+45	Energy efficiency	17	Tariff currency unit	102	USD			NoUnit
+45	Energy efficiency	18	CO2 conversion factor	0.5		0	65.535	tn/MWh
+45	Energy efficiency	19	Comparison power	0		0	100000	kW
+45	Energy efficiency	21	Energy calculations reset	0	Done			NoUnit
+46	Monitoring/scaling settings	1	Speed scaling	2000		0.1	30000	rpm
+46	Monitoring/scaling settings	2	Frequency scaling	60		0.1	1000	Hz
+46	Monitoring/scaling settings	3	Torque scaling	100		0.1	1000	%
+46	Monitoring/scaling settings	4	Power scaling	100		0.1	30000	hp
+46	Monitoring/scaling settings	5	Current scaling	100		0	30000	A
+46	Monitoring/scaling settings	6	Speed ref zero scaling	0		0	30000	rpm
+46	Monitoring/scaling settings	7	Frequency ref zero scaling	0		0	1000	Hz
+46	Monitoring/scaling settings	11	Filter time motor speed	3		0	20000	ms
+46	Monitoring/scaling settings	12	Filter time output frequency	10		0	20000	ms
+46	Monitoring/scaling settings	13	Filter time motor torque	10		0	20000	ms
+46	Monitoring/scaling settings	14	Filter time power out	10		0	20000	ms
+46	Monitoring/scaling settings	21	At speed hysteresis	100		0	30000	rpm
+46	Monitoring/scaling settings	22	At frequency hysteresis	10		0	1000	Hz
+46	Monitoring/scaling settings	23	At torque hysteresis	10		0	300	%
+46	Monitoring/scaling settings	31	Above speed limit	1500		0	30000	rpm
+46	Monitoring/scaling settings	32	Above frequency limit	50		0	1000	Hz
+46	Monitoring/scaling settings	33	Above torque limit	300		0	1600	%
+46	Monitoring/scaling settings	42	Torque decimals	1		0	2	NoUnit
+47	Data storage	1	DataStorage 1 real32	0		-2147483	2147483	NoUnit
+47	Data storage	2	DataStorage 2 real32	0		-2147483	2147483	NoUnit
+47	Data storage	3	DataStorage 3 real32	0		-2147483	2147483	NoUnit
+47	Data storage	4	DataStorage 4 real32	0		-2147483	2147483	NoUnit
+47	Data storage	5	DataStorage 5 real32	0		-2147483	2147483	NoUnit
+47	Data storage	6	DataStorage 6 real32	0		-2147483	2147483	NoUnit
+47	Data storage	7	DataStorage 7 real32	0		-2147483	2147483	NoUnit
+47	Data storage	8	DataStorage 8 real32	0		-2147483	2147483	NoUnit
+47	Data storage	11	DataStorage 1 int32	0		-2147483648	2147483647	NoUnit
+47	Data storage	12	DataStorage 2 int32	0		-2147483648	2147483647	NoUnit
+47	Data storage	13	DataStorage 3 int32	0		-2147483648	2147483647	NoUnit
+47	Data storage	14	DataStorage 4 int32	0		-2147483648	2147483647	NoUnit
+47	Data storage	15	DataStorage 5 int32	0		-2147483648	2147483647	NoUnit
+47	Data storage	16	DataStorage 6 int32	0		-2147483648	2147483647	NoUnit
+47	Data storage	17	DataStorage 7 int32	0		-2147483648	2147483647	NoUnit
+47	Data storage	18	DataStorage 8 int32	0		-2147483648	2147483647	NoUnit
+47	Data storage	21	DataStorage 1 int16	0		-32768	32767	NoUnit
+47	Data storage	22	DataStorage 2 int16	0		-32768	32767	NoUnit
+47	Data storage	23	DataStorage 3 int16	0		-32768	32767	NoUnit
+47	Data storage	24	DataStorage 4 int16	0		-32768	32767	NoUnit
+47	Data storage	25	DataStorage 5 int16	0		-32768	32767	NoUnit
+47	Data storage	26	DataStorage 6 int16	0		-32768	32767	NoUnit
+47	Data storage	27	DataStorage 7 int16	0		-32768	32767	NoUnit
+47	Data storage	28	DataStorage 8 int16	0		-32768	32767	NoUnit
+47	Data storage	31	DataStorage 1 real32 type	0	Unscaled			NoUnit
+47	Data storage	32	DataStorage 2 real32 type	0	Unscaled			NoUnit
+47	Data storage	33	DataStorage 3 real32 type	0	Unscaled			NoUnit
+47	Data storage	34	DataStorage 4 real32 type	0	Unscaled			NoUnit
+47	Data storage	35	DataStorage 5 real32 type	0	Unscaled			NoUnit
+47	Data storage	36	DataStorage 6 real32 type	0	Unscaled			NoUnit
+47	Data storage	37	DataStorage 7 real32 type	0	Unscaled			NoUnit
+47	Data storage	38	DataStorage 8 real32 type	0	Unscaled			NoUnit
+49	Panel port communication	1	Node ID number	1		1	32	NoUnit
+49	Panel port communication	3	Baud rate	5	230.4 kbps			NoUnit
+49	Panel port communication	4	Communication loss time	10		0.3	3000	s
+49	Panel port communication	5	Communication loss action	1	Fault			NoUnit
+49	Panel port communication	6	Refresh settings	0	Done			NoUnit
+49	Panel port communication	7	Panel comm supervision force	0		0	65535	NoUnit
+49	Panel port communication	8	Secondary comm. loss action	0	No action			NoUnit
+49	Panel port communication	14	Panel speed reference unit	0	rpm			NoUnit
+49	Panel port communication	15	Minimum ext speed ref panel	-30000		-30000	30000	rpm
+49	Panel port communication	16	Maximum ext speed ref panel	30000		-30000	30000	rpm
+49	Panel port communication	17	Minimum ext frequency ref panel	-500		-598	598	Hz
+49	Panel port communication	18	Maximum ext frequency ref panel	500		-598	598	Hz
+49	Panel port communication	24	Panel actual source	0	Automatic	0	4294967295	NoUnit
+50	Fieldbus adapter (FBA)	1	FBA A enable	1	Option slot 1			NoUnit
+50	Fieldbus adapter (FBA)	2	FBA A comm loss func	1	Fault			NoUnit
+50	Fieldbus adapter (FBA)	3	FBA A comm loss t out	0.3		0.3	6553.5	s
+50	Fieldbus adapter (FBA)	4	FBA A ref1 type	4	Speed			NoUnit
+50	Fieldbus adapter (FBA)	5	FBA A ref2 type	3	Torque			NoUnit
+50	Fieldbus adapter (FBA)	7	FBA A actual 1 type	1	Transparent			NoUnit
+50	Fieldbus adapter (FBA)	8	FBA A actual 2 type	2	General			NoUnit
+50	Fieldbus adapter (FBA)	9	FBA A SW transparent source	0	Not selected	0	0	NoUnit
+50	Fieldbus adapter (FBA)	10	FBA A act1 transparent source	68620		0	0	NoUnit
+50	Fieldbus adapter (FBA)	11	FBA A act2 transparent source	68630		0	0	NoUnit
+50	Fieldbus adapter (FBA)	12	FBA A debug mode	1	Fast			NoUnit
+50	Fieldbus adapter (FBA)	13	FBA A control word	3190		0	4294967295	NoUnit
+50	Fieldbus adapter (FBA)	14	FBA A reference 1	0		-2147483648	2147483647	NoUnit
+50	Fieldbus adapter (FBA)	15	FBA A reference 2	0		-2147483648	2147483647	NoUnit
+50	Fieldbus adapter (FBA)	16	FBA A status word	6705		0	4294967295	NoUnit
+50	Fieldbus adapter (FBA)	17	FBA A actual value 1	0		-2147483648	2147483647	NoUnit
+50	Fieldbus adapter (FBA)	18	FBA A actual value 2	0		-2147483648	2147483647	NoUnit
+50	Fieldbus adapter (FBA)	21	FBA A timelevel sel	0	Normal			NoUnit
+50	Fieldbus adapter (FBA)	26	FBA A comm supervision force	0		0	65535	NoUnit
+50	Fieldbus adapter (FBA)	31	FBA B enable	0	Disable			NoUnit
+50	Fieldbus adapter (FBA)	32	FBA B comm loss func	0	No action			NoUnit
+50	Fieldbus adapter (FBA)	33	FBA B comm loss timeout	0.3		0.3	6553.5	s
+50	Fieldbus adapter (FBA)	34	FBA B ref1 type	0	Auto			NoUnit
+50	Fieldbus adapter (FBA)	35	FBA B ref2 type	0	Auto			NoUnit
+50	Fieldbus adapter (FBA)	37	FBA B actual 1 type	0	Auto			NoUnit
+50	Fieldbus adapter (FBA)	38	FBA B actual 2 type	0	Auto			NoUnit
+50	Fieldbus adapter (FBA)	39	FBA B SW transparent source	0	Not selected	0	0	NoUnit
+50	Fieldbus adapter (FBA)	40	FBA B act1 transparent source	0	Not selected	0	0	NoUnit
+50	Fieldbus adapter (FBA)	41	FBA B act2 transparent source	0	Not selected	0	0	NoUnit
+50	Fieldbus adapter (FBA)	42	FBA B debug mode	0	Disable			NoUnit
+50	Fieldbus adapter (FBA)	43	FBA B control word	0		0	4294967295	NoUnit
+50	Fieldbus adapter (FBA)	44	FBA B reference 1	0		-2147483648	2147483647	NoUnit
+50	Fieldbus adapter (FBA)	45	FBA B reference 2	0		-2147483648	2147483647	NoUnit
+50	Fieldbus adapter (FBA)	46	FBA B status word	0		0	4294967295	NoUnit
+50	Fieldbus adapter (FBA)	47	FBA B actual value 1	0		-2147483648	2147483647	NoUnit
+50	Fieldbus adapter (FBA)	48	FBA B actual value 2	0		-2147483648	2147483647	NoUnit
+50	Fieldbus adapter (FBA)	51	FBA B timelevel sel	0	Normal			NoUnit
+50	Fieldbus adapter (FBA)	56	FBA B comm supervision force	0		0	65535	NoUnit
+51	FBA A settings	1	FBA A type	135	EtherCAT			NoUnit
+51	FBA A settings	2	Profile	1	ABB Drives	0	3	NoUnit
+51	FBA A settings	3	Station alias	0		0	65535	NoUnit
+51	FBA A settings	4	-	0		0	65535	NoUnit
+51	FBA A settings	5	-	0		0	65535	NoUnit
+51	FBA A settings	6	-	0		0	65535	NoUnit
+51	FBA A settings	7	-	0		0	65535	NoUnit
+51	FBA A settings	8	-	0		0	65535	NoUnit
+51	FBA A settings	9	-	0		0	65535	NoUnit
+51	FBA A settings	10	-	0		0	65535	NoUnit
+51	FBA A settings	11	-	0		0	65535	NoUnit
+51	FBA A settings	12	-	0		0	65535	NoUnit
+51	FBA A settings	13	-	0		0	65535	NoUnit
+51	FBA A settings	14	-	0		0	65535	NoUnit
+51	FBA A settings	15	-	0		0	65535	NoUnit
+51	FBA A settings	16	-	0		0	65535	NoUnit
+51	FBA A settings	17	-	0		0	65535	NoUnit
+51	FBA A settings	18	-	0		0	65535	NoUnit
+51	FBA A settings	19	-	0		0	65535	NoUnit
+51	FBA A settings	20	-	0		0	65535	NoUnit
+51	FBA A settings	21	Erase FBA config	0	No	0	1	NoUnit
+51	FBA A settings	22	-	0		0	1	NoUnit
+51	FBA A settings	23	-	0		0	65535	NoUnit
+51	FBA A settings	24	-	0		0	65535	NoUnit
+51	FBA A settings	25	-	0		0	65535	NoUnit
+51	FBA A settings	26	-	0		0	65535	NoUnit
+51	FBA A settings	27	FBA A par refresh	0	Done			NoUnit
+51	FBA A settings	28	FBA A par table ver	514		0	65535	NoUnit
+51	FBA A settings	29	FBA A drive type code	601		0	65535	NoUnit
+51	FBA A settings	30	FBA A mapping file ver	3		0	65535	NoUnit
+51	FBA A settings	31	D2FBA A comm status	4	Off-line			NoUnit
+51	FBA A settings	32	FBA A comm SW ver	257		0	65535	NoUnit
+51	FBA A settings	33	FBA A appl SW ver	305		0	65535	NoUnit
+52	FBA A data in	1	FBA A data in1	196865		0	24	NoUnit
+52	FBA A data in	2	FBA A data in2	196870		0	24	NoUnit
+52	FBA A data in	3	FBA A data in3	196871		0	24	NoUnit
+52	FBA A data in	4	FBA A data in4	196877		0	24	NoUnit
+52	FBA A data in	5	FBA A data in5	196874		0	24	NoUnit
+52	FBA A data in	6	FBA A data in6	196881		0	24	NoUnit
+52	FBA A data in	7	FBA A data in7	196895		0	24	NoUnit
+52	FBA A data in	8	FBA A data in8	0	None	0	24	NoUnit
+52	FBA A data in	9	FBA A data in9	0	None	0	24	NoUnit
+52	FBA A data in	10	FBA A data in10	0	None	0	24	NoUnit
+52	FBA A data in	11	FBA A data in11	0	None	0	24	NoUnit
+52	FBA A data in	12	FBA A data in12	0	None	0	24	NoUnit
+53	FBA A data out	1	FBA data out1	0	None	0	21	NoUnit
+53	FBA A data out	2	FBA data out2	0	None	0	21	NoUnit
+53	FBA A data out	3	FBA data out3	0	None	0	21	NoUnit
+53	FBA A data out	4	FBA data out4	0	None	0	21	NoUnit
+53	FBA A data out	5	FBA data out5	0	None	0	21	NoUnit
+53	FBA A data out	6	FBA data out6	0	None	0	21	NoUnit
+53	FBA A data out	7	FBA data out7	0	None	0	21	NoUnit
+53	FBA A data out	8	FBA data out8	0	None	0	21	NoUnit
+53	FBA A data out	9	FBA data out9	0	None	0	21	NoUnit
+53	FBA A data out	10	FBA data out10	0	None	0	21	NoUnit
+53	FBA A data out	11	FBA data out11	0	None	0	21	NoUnit
+53	FBA A data out	12	FBA data out12	0	None	0	21	NoUnit
+54	FBA B settings	1	FBA B type	0	None			NoUnit
+54	FBA B settings	2	FBA B Par2	0		0	65535	NoUnit
+54	FBA B settings	3	FBA B Par3	0		0	65535	NoUnit
+54	FBA B settings	4	FBA B Par4	0		0	65535	NoUnit
+54	FBA B settings	5	FBA B Par5	0		0	65535	NoUnit
+54	FBA B settings	6	FBA B Par6	0		0	65535	NoUnit
+54	FBA B settings	7	FBA B Par7	0		0	65535	NoUnit
+54	FBA B settings	8	FBA B Par8	0		0	65535	NoUnit
+54	FBA B settings	9	FBA B Par9	0		0	65535	NoUnit
+54	FBA B settings	10	FBA B Par10	0		0	65535	NoUnit
+54	FBA B settings	11	FBA B Par11	0		0	65535	NoUnit
+54	FBA B settings	12	FBA B Par12	0		0	65535	NoUnit
+54	FBA B settings	13	FBA B Par13	0		0	65535	NoUnit
+54	FBA B settings	14	FBA B Par14	0		0	65535	NoUnit
+54	FBA B settings	15	FBA B Par15	0		0	65535	NoUnit
+54	FBA B settings	16	FBA B Par16	0		0	65535	NoUnit
+54	FBA B settings	17	FBA B Par17	0		0	65535	NoUnit
+54	FBA B settings	18	FBA B Par18	0		0	65535	NoUnit
+54	FBA B settings	19	FBA B Par19	0		0	65535	NoUnit
+54	FBA B settings	20	FBA B Par20	0		0	65535	NoUnit
+54	FBA B settings	21	FBA B Par21	0		0	65535	NoUnit
+54	FBA B settings	22	FBA B Par22	0		0	65535	NoUnit
+54	FBA B settings	23	FBA B Par23	0		0	65535	NoUnit
+54	FBA B settings	24	FBA B Par24	0		0	65535	NoUnit
+54	FBA B settings	25	FBA B Par25	0		0	65535	NoUnit
+54	FBA B settings	26	FBA B Par26	0		0	65535	NoUnit
+54	FBA B settings	27	FBA B par refresh	0	Done			NoUnit
+54	FBA B settings	28	FBA B par table ver	0		0	65535	NoUnit
+54	FBA B settings	29	FBA B drive type code	0		0	65535	NoUnit
+54	FBA B settings	30	FBA B mapping file ver	0		0	65535	NoUnit
+54	FBA B settings	31	D2FBA B comm status	2	Time out			NoUnit
+54	FBA B settings	32	FBA B comm SW ver	0		0	65535	NoUnit
+54	FBA B settings	33	FBA B appl SW ver	0		0	65535	NoUnit
+55	FBA B data in	1	FBA B data in1	0	None	0	24	NoUnit
+55	FBA B data in	2	FBA B data in2	0	None	0	24	NoUnit
+55	FBA B data in	3	FBA B data in3	0	None	0	24	NoUnit
+55	FBA B data in	4	FBA B data in4	0	None	0	24	NoUnit
+55	FBA B data in	5	FBA B data in5	0	None	0	24	NoUnit
+55	FBA B data in	6	FBA B data in6	0	None	0	24	NoUnit
+55	FBA B data in	7	FBA B data in7	0	None	0	24	NoUnit
+55	FBA B data in	8	FBA B data in8	0	None	0	24	NoUnit
+55	FBA B data in	9	FBA B data in9	0	None	0	24	NoUnit
+55	FBA B data in	10	FBA B data in10	0	None	0	24	NoUnit
+55	FBA B data in	11	FBA B data in11	0	None	0	24	NoUnit
+55	FBA B data in	12	FBA B data in12	0	None	0	24	NoUnit
+56	FBA B data out	1	FBA B data out1	0	None	0	21	NoUnit
+56	FBA B data out	2	FBA B data out2	0	None	0	21	NoUnit
+56	FBA B data out	3	FBA B data out3	0	None	0	21	NoUnit
+56	FBA B data out	4	FBA B data out4	0	None	0	21	NoUnit
+56	FBA B data out	5	FBA B data out5	0	None	0	21	NoUnit
+56	FBA B data out	6	FBA B data out6	0	None	0	21	NoUnit
+56	FBA B data out	7	FBA B data out7	0	None	0	21	NoUnit
+56	FBA B data out	8	FBA B data out8	0	None	0	21	NoUnit
+56	FBA B data out	9	FBA B data out9	0	None	0	21	NoUnit
+56	FBA B data out	10	FBA B data out10	0	None	0	21	NoUnit
+56	FBA B data out	11	FBA B data out11	0	None	0	21	NoUnit
+56	FBA B data out	12	FBA B data out12	0	None	0	21	NoUnit
+58	Embedded fieldbus	1	Protocol enable	0	None			NoUnit
+60	DDCS communication	1	M/F communication port	0	Not in use			NoUnit
+60	DDCS communication	2	M/F node address	1		1	254	NoUnit
+60	DDCS communication	3	M/F mode	0	Not in use			NoUnit
+60	DDCS communication	5	M/F HW connection	0	Ring			NoUnit
+60	DDCS communication	7	M/F link control	10		1	15	NoUnit
+60	DDCS communication	8	M/F comm loss timeout	100		0	65535	ms
+60	DDCS communication	9	M/F comm loss function	2	Fault			NoUnit
+60	DDCS communication	10	M/F ref1 type	0	Auto			NoUnit
+60	DDCS communication	11	M/F ref2 type	3	Torque			NoUnit
+60	DDCS communication	12	M/F act1 type	0	Auto			NoUnit
+60	DDCS communication	13	M/F act2 type	0	Auto			NoUnit
+60	DDCS communication	14	M/F follower selection	0	None			NoUnit
+60	DDCS communication	15	Force master	0	FALSE	0	4294967295	NoUnit
+60	DDCS communication	16	Force follower	0	FALSE	0	4294967295	NoUnit
+60	DDCS communication	17	Follower fault action	2	Fault			NoUnit
+60	DDCS communication	18	Follower enable	3	Always			NoUnit
+60	DDCS communication	19	M/F comm supervision sel 1	0		0	65535	NoUnit
+60	DDCS communication	20	M/F comm supervision sel 2	0		0	65535	NoUnit
+60	DDCS communication	23	M/F status supervision sel 1	0		0	65535	NoUnit
+60	DDCS communication	24	M/F status supervision sel 2	0		0	65535	NoUnit
+60	DDCS communication	27	M/F status supv mode sel 1	0		0	65535	NoUnit
+60	DDCS communication	28	M/F status supv mode sel 2	0		0	65535	NoUnit
+60	DDCS communication	31	M/F wake up delay	60		0	180	s
+60	DDCS communication	32	M/F comm supervision force	0		0	65535	NoUnit
+60	DDCS communication	41	Extension adapter com port	0	Not in use			NoUnit
+60	DDCS communication	50	DDCS controller drive type	0	ABB engineered drive			NoUnit
+60	DDCS communication	51	DDCS controller comm port	0	Not in use			NoUnit
+60	DDCS communication	52	DDCS controller node address	1		1	254	NoUnit
+60	DDCS communication	55	DDCS controller HW connection	1	Star			NoUnit
+60	DDCS communication	56	DDCS controller baud rate	4	4 mbps			NoUnit
+60	DDCS communication	57	DDCS controller link control	10		1	15	NoUnit
+60	DDCS communication	58	DDCS controller comm loss time	100		0	60000	ms
+60	DDCS communication	59	DDCS controller comm loss function	1	Fault			NoUnit
+60	DDCS communication	60	DDCS controller ref1 type	0	Auto			NoUnit
+60	DDCS communication	61	DDCS controller ref2 type	0	Auto			NoUnit
+60	DDCS communication	62	DDCS controller act1 type	0	Auto			NoUnit
+60	DDCS communication	63	DDCS controller act2 type	0	Auto			NoUnit
+60	DDCS communication	64	Mailbox dataset selection	0	Dataset 32/33	0	1	NoUnit
+60	DDCS communication	65	DDCS controller comm supervision force	0		0	65535	NoUnit
+61	D2D and DDCS transmit data	1	M/F data 1 selection	27	Follower CW	0	6731	NoUnit
+61	D2D and DDCS transmit data	2	M/F data 2 selection	6145	Used speed reference	0	6731	NoUnit
+61	D2D and DDCS transmit data	3	M/F data 3 selection	6731	Torque reference act 5	0	6731	NoUnit
+61	D2D and DDCS transmit data	25	M/F data 1 value	0		0	65535	NoUnit
+61	D2D and DDCS transmit data	26	M/F data 2 value	0		0	65535	NoUnit
+61	D2D and DDCS transmit data	27	M/F data 3 value	0		0	65535	NoUnit
+61	D2D and DDCS transmit data	45	Data set 2 data 1 selection	0	None	0	6	NoUnit
+61	D2D and DDCS transmit data	46	Data set 2 data 2 selection	0	None	0	6	NoUnit
+61	D2D and DDCS transmit data	47	Data set 2 data 3 selection	0	None	0	6	NoUnit
+61	D2D and DDCS transmit data	48	Data set 4 data 1 selection	0	None	0	6	NoUnit
+61	D2D and DDCS transmit data	49	Data set 4 data 2 selection	0	None	0	6	NoUnit
+61	D2D and DDCS transmit data	50	Data set 4 data 3 selection	0	None	0	6	NoUnit
+61	D2D and DDCS transmit data	51	Data set 11 data 1 selection	0	None	0	6	NoUnit
+61	D2D and DDCS transmit data	52	Data set 11 data 2 selection	0	None	0	6	NoUnit
+61	D2D and DDCS transmit data	53	Data set 11 data 3 selection	0	None	0	6	NoUnit
+61	D2D and DDCS transmit data	54	Data set 13 data 1 selection	0	None	0	6	NoUnit
+61	D2D and DDCS transmit data	55	Data set 13 data 2 selection	0	None	0	6	NoUnit
+61	D2D and DDCS transmit data	56	Data set 13 data 3 selection	0	None	0	6	NoUnit
+61	D2D and DDCS transmit data	57	Data set 15 data 1 selection	0	None	0	6	NoUnit
+61	D2D and DDCS transmit data	58	Data set 15 data 2 selection	0	None	0	6	NoUnit
+61	D2D and DDCS transmit data	59	Data set 15 data 3 selection	0	None	0	6	NoUnit
+61	D2D and DDCS transmit data	60	Data set 17 data 1 selection	0	None	0	6	NoUnit
+61	D2D and DDCS transmit data	61	Data set 17 data 2 selection	0	None	0	6	NoUnit
+61	D2D and DDCS transmit data	62	Data set 17 data 3 selection	0	None	0	6	NoUnit
+61	D2D and DDCS transmit data	63	Data set 19 data 1 selection	0	None	0	6	NoUnit
+61	D2D and DDCS transmit data	64	Data set 19 data 2 selection	0	None	0	6	NoUnit
+61	D2D and DDCS transmit data	65	Data set 19 data 3 selection	0	None	0	6	NoUnit
+61	D2D and DDCS transmit data	66	Data set 21 data 1 selection	0	None	0	6	NoUnit
+61	D2D and DDCS transmit data	67	Data set 21 data 2 selection	0	None	0	6	NoUnit
+61	D2D and DDCS transmit data	68	Data set 21 data 3 selection	0	None	0	6	NoUnit
+61	D2D and DDCS transmit data	69	Data set 23 data 1 selection	0	None	0	6	NoUnit
+61	D2D and DDCS transmit data	70	Data set 23 data 2 selection	0	None	0	6	NoUnit
+61	D2D and DDCS transmit data	71	Data set 23 data 3 selection	0	None	0	6	NoUnit
+61	D2D and DDCS transmit data	72	Data set 25 data 1 selection	0	None	0	6	NoUnit
+61	D2D and DDCS transmit data	73	Data set 25 data 2 selection	0	None	0	6	NoUnit
+61	D2D and DDCS transmit data	74	Data set 25 data 3 selection	0	None	0	6	NoUnit
+61	D2D and DDCS transmit data	95	Data set 2 data 1 value	0		0	65535	NoUnit
+61	D2D and DDCS transmit data	96	Data set 2 data 2 value	0		0	65535	NoUnit
+61	D2D and DDCS transmit data	97	Data set 2 data 3 value	0		0	65535	NoUnit
+61	D2D and DDCS transmit data	98	Data set 4 data 1 value	0		0	65535	NoUnit
+61	D2D and DDCS transmit data	99	Data set 4 data 2 value	0		0	65535	NoUnit
+61	D2D and DDCS transmit data	100	Data set 4 data 3 value	0		0	65535	NoUnit
+61	D2D and DDCS transmit data	101	Data set 11 data 1 value	0		0	65535	NoUnit
+61	D2D and DDCS transmit data	102	Data set 11 data 2 value	0		0	65535	NoUnit
+61	D2D and DDCS transmit data	103	Data set 11 data 3 value	0		0	65535	NoUnit
+61	D2D and DDCS transmit data	104	Data set 13 data 1 value	0		0	65535	NoUnit
+61	D2D and DDCS transmit data	105	Data set 13 data 2 value	0		0	65535	NoUnit
+61	D2D and DDCS transmit data	106	Data set 13 data 3 value	0		0	65535	NoUnit
+61	D2D and DDCS transmit data	107	Data set 15 data 1 value	0		0	65535	NoUnit
+61	D2D and DDCS transmit data	108	Data set 15 data 2 value	0		0	65535	NoUnit
+61	D2D and DDCS transmit data	109	Data set 15 data 3 value	0		0	65535	NoUnit
+61	D2D and DDCS transmit data	110	Data set 17 data 1 value	0		0	65535	NoUnit
+61	D2D and DDCS transmit data	111	Data set 17 data 2 value	0		0	65535	NoUnit
+61	D2D and DDCS transmit data	112	Data set 17 data 3 value	0		0	65535	NoUnit
+61	D2D and DDCS transmit data	113	Data set 19 data 1 value	0		0	65535	NoUnit
+61	D2D and DDCS transmit data	114	Data set 19 data 2 value	0		0	65535	NoUnit
+61	D2D and DDCS transmit data	115	Data set 19 data 3 value	0		0	65535	NoUnit
+61	D2D and DDCS transmit data	116	Data set 21 data 1 value	0		0	65535	NoUnit
+61	D2D and DDCS transmit data	117	Data set 21 data 2 value	0		0	65535	NoUnit
+61	D2D and DDCS transmit data	118	Data set 21 data 3 value	0		0	65535	NoUnit
+61	D2D and DDCS transmit data	119	Data set 23 data 1 value	0		0	65535	NoUnit
+61	D2D and DDCS transmit data	120	Data set 23 data 2 value	0		0	65535	NoUnit
+61	D2D and DDCS transmit data	121	Data set 23 data 3 value	0		0	65535	NoUnit
+61	D2D and DDCS transmit data	122	Data set 25 data 1 value	0		0	65535	NoUnit
+61	D2D and DDCS transmit data	123	Data set 25 data 2 value	0		0	65535	NoUnit
+61	D2D and DDCS transmit data	124	Data set 25 data 3 value	0		0	65535	NoUnit
+62	D2D and DDCS receive data	1	M/F data 1 selection	0	None	0	3	NoUnit
+62	D2D and DDCS receive data	2	M/F data 2 selection	0	None	0	3	NoUnit
+62	D2D and DDCS receive data	3	M/F data 3 selection	0	None	0	3	NoUnit
+62	D2D and DDCS receive data	4	Follower node 2 data 1 sel	26	Follower SW	0	26	NoUnit
+62	D2D and DDCS receive data	5	Follower node 2 data 2 sel	0	None	0	26	NoUnit
+62	D2D and DDCS receive data	6	Follower node 2 data 3 sel	0	None	0	26	NoUnit
+62	D2D and DDCS receive data	7	Follower node 3 data 1 sel	26	Follower SW	0	26	NoUnit
+62	D2D and DDCS receive data	8	Follower node 3 data 2 sel	0	None	0	26	NoUnit
+62	D2D and DDCS receive data	9	Follower node 3 data 3 sel	0	None	0	26	NoUnit
+62	D2D and DDCS receive data	10	Follower node 4 data 1 sel	26	Follower SW	0	26	NoUnit
+62	D2D and DDCS receive data	11	Follower node 4 data 2 sel	0	None	0	26	NoUnit
+62	D2D and DDCS receive data	12	Follower node 4 data 3 sel	0	None	0	26	NoUnit
+62	D2D and DDCS receive data	25	M/F data 1 value	0		0	65535	NoUnit
+62	D2D and DDCS receive data	26	M/F data 2 value	0		0	65535	NoUnit
+62	D2D and DDCS receive data	27	M/F data 3 value	0		0	65535	NoUnit
+62	D2D and DDCS receive data	28	Follower node 2 data 1 value	0		0	65535	NoUnit
+62	D2D and DDCS receive data	29	Follower node 2 data 2 value	0		0	65535	NoUnit
+62	D2D and DDCS receive data	30	Follower node 2 data 3 value	0		0	65535	NoUnit
+62	D2D and DDCS receive data	31	Follower node 3 data 1 value	0		0	65535	NoUnit
+62	D2D and DDCS receive data	32	Follower node 3 data 2 value	0		0	65535	NoUnit
+62	D2D and DDCS receive data	33	Follower node 3 data 3 value	0		0	65535	NoUnit
+62	D2D and DDCS receive data	34	Follower node 4 data 1 value	0		0	65535	NoUnit
+62	D2D and DDCS receive data	35	Follower node 4 data 2 value	0		0	65535	NoUnit
+62	D2D and DDCS receive data	36	Follower node 4 data 3 value	0		0	65535	NoUnit
+62	D2D and DDCS receive data	37	M/F communication status 1	0		0	65535	NoUnit
+62	D2D and DDCS receive data	38	M/F communication status 2	0		0	65535	NoUnit
+62	D2D and DDCS receive data	41	M/F follower ready status 1	0		0	65535	NoUnit
+62	D2D and DDCS receive data	42	M/F follower ready status 2	0		0	65535	NoUnit
+62	D2D and DDCS receive data	45	Data set 1 data 1 selection	0	None	0	3	NoUnit
+62	D2D and DDCS receive data	46	Data set 1 data 2 selection	0	None	0	3	NoUnit
+62	D2D and DDCS receive data	47	Data set 1 data 3 selection	0	None	0	3	NoUnit
+62	D2D and DDCS receive data	48	Data set 3 data 1 selection	0	None	0	3	NoUnit
+62	D2D and DDCS receive data	49	Data set 3 data 2 selection	0	None	0	3	NoUnit
+62	D2D and DDCS receive data	50	Data set 3 data 3 selection	0	None	0	3	NoUnit
+62	D2D and DDCS receive data	51	Data set 10 data 1 selection	0	None	0	3	NoUnit
+62	D2D and DDCS receive data	52	Data set 10 data 2 selection	0	None	0	3	NoUnit
+62	D2D and DDCS receive data	53	Data set 10 data 3 selection	0	None	0	3	NoUnit
+62	D2D and DDCS receive data	54	Data set 12 data 1 selection	0	None	0	3	NoUnit
+62	D2D and DDCS receive data	55	Data set 12 data 2 selection	0	None	0	3	NoUnit
+62	D2D and DDCS receive data	56	Data set 12 data 3 selection	0	None	0	3	NoUnit
+62	D2D and DDCS receive data	57	Data set 14 data 1 selection	0	None	0	3	NoUnit
+62	D2D and DDCS receive data	58	Data set 14 data 2 selection	0	None	0	3	NoUnit
+62	D2D and DDCS receive data	59	Data set 14 data 3 selection	0	None	0	3	NoUnit
+62	D2D and DDCS receive data	60	Data set 16 data 1 selection	0	None	0	3	NoUnit
+62	D2D and DDCS receive data	61	Data set 16 data 2 selection	0	None	0	3	NoUnit
+62	D2D and DDCS receive data	62	Data set 16 data 3 selection	0	None	0	3	NoUnit
+62	D2D and DDCS receive data	63	Data set 18 data 1 selection	0	None	0	3	NoUnit
+62	D2D and DDCS receive data	64	Data set 18 data 2 selection	0	None	0	3	NoUnit
+62	D2D and DDCS receive data	65	Data set 18 data 3 selection	0	None	0	3	NoUnit
+62	D2D and DDCS receive data	66	Data set 20 data 1 selection	0	None	0	3	NoUnit
+62	D2D and DDCS receive data	67	Data set 20 data 2 selection	0	None	0	3	NoUnit
+62	D2D and DDCS receive data	68	Data set 20 data 3 selection	0	None	0	3	NoUnit
+62	D2D and DDCS receive data	69	Data set 22 data 1 selection	0	None	0	3	NoUnit
+62	D2D and DDCS receive data	70	Data set 22 data 2 selection	0	None	0	3	NoUnit
+62	D2D and DDCS receive data	71	Data set 22 data 3 selection	0	None	0	3	NoUnit
+62	D2D and DDCS receive data	72	Data set 24 data 1 selection	0	None	0	3	NoUnit
+62	D2D and DDCS receive data	73	Data set 24 data 2 selection	0	None	0	3	NoUnit
+62	D2D and DDCS receive data	74	Data set 24 data 3 selection	0	None	0	3	NoUnit
+62	D2D and DDCS receive data	95	Data set 1 data 1 value	0		0	65535	NoUnit
+62	D2D and DDCS receive data	96	Data set 1 data 2 value	0		0	65535	NoUnit
+62	D2D and DDCS receive data	97	Data set 1 data 3 value	0		0	65535	NoUnit
+62	D2D and DDCS receive data	98	Data set 3 data 1 value	0		0	65535	NoUnit
+62	D2D and DDCS receive data	99	Data set 3 data 2 value	0		0	65535	NoUnit
+62	D2D and DDCS receive data	100	Data set 3 data 3 value	0		0	65535	NoUnit
+62	D2D and DDCS receive data	101	Data set 10 data 1 value	0		0	65535	NoUnit
+62	D2D and DDCS receive data	102	Data set 10 data 2 value	0		0	65535	NoUnit
+62	D2D and DDCS receive data	103	Data set 10 data 3 value	0		0	65535	NoUnit
+62	D2D and DDCS receive data	104	Data set 12 data 1 value	0		0	65535	NoUnit
+62	D2D and DDCS receive data	105	Data set 12 data 2 value	0		0	65535	NoUnit
+62	D2D and DDCS receive data	106	Data set 12 data 3 value	0		0	65535	NoUnit
+62	D2D and DDCS receive data	107	Data set 14 data 1 value	0		0	65535	NoUnit
+62	D2D and DDCS receive data	108	Data set 14 data 2 value	0		0	65535	NoUnit
+62	D2D and DDCS receive data	109	Data set 14 data 3 value	0		0	65535	NoUnit
+62	D2D and DDCS receive data	110	Data set 16 data 1 value	0		0	65535	NoUnit
+62	D2D and DDCS receive data	111	Data set 16 data 2 value	0		0	65535	NoUnit
+62	D2D and DDCS receive data	112	Data set 16 data 3 value	0		0	65535	NoUnit
+62	D2D and DDCS receive data	113	Data set 18 data 1 value	0		0	65535	NoUnit
+62	D2D and DDCS receive data	114	Data set 18 data 2 value	0		0	65535	NoUnit
+62	D2D and DDCS receive data	115	Data set 18 data 3 value	0		0	65535	NoUnit
+62	D2D and DDCS receive data	116	Data set 20 data 1 value	0		0	65535	NoUnit
+62	D2D and DDCS receive data	117	Data set 20 data 2 value	0		0	65535	NoUnit
+62	D2D and DDCS receive data	118	Data set 20 data 3 value	0		0	65535	NoUnit
+62	D2D and DDCS receive data	119	Data set 22 data 1 value	0		0	65535	NoUnit
+62	D2D and DDCS receive data	120	Data set 22 data 2 value	0		0	65535	NoUnit
+62	D2D and DDCS receive data	121	Data set 22 data 3 value	0		0	65535	NoUnit
+62	D2D and DDCS receive data	122	Data set 24 data 1 value	0		0	65535	NoUnit
+62	D2D and DDCS receive data	123	Data set 24 data 2 value	0		0	65535	NoUnit
+62	D2D and DDCS receive data	124	Data set 24 data 3 value	0		0	65535	NoUnit
+90	Feedback selection	1	Motor speed for control	0		-32768	32767	rpm
+90	Feedback selection	2	Motor position	0.24895561		0	1	rev
+90	Feedback selection	3	Load speed	0		-32768	32767	rpm
+90	Feedback selection	4	Load position	0		-2147483648	2147483647	NoUnit
+90	Feedback selection	5	Load position scaled	0		-2147483.25	2147483.25	NoUnit
+90	Feedback selection	6	Motor position scaled	4176.782		-2147483.648	2147483.647	NoUnit
+90	Feedback selection	7	Load position scaled int	0		-2147483648	2147483647	NoUnit
+90	Feedback selection	10	Encoder 1 speed	0		-32768	32767	rpm
+90	Feedback selection	11	Encoder 1 position	0.24895561		0	1	rev
+90	Feedback selection	12	Encoder 1 multiturn revolutions	0		0	16777215	NoUnit
+90	Feedback selection	13	Encoder 1 revolution extension	74132		-2147483648	2147483647	NoUnit
+90	Feedback selection	14	Encoder 1 position raw	4176782		0	16777215	NoUnit
+90	Feedback selection	15	Encoder 1 revolutions raw	0		0	16777215	NoUnit
+90	Feedback selection	20	Encoder 2 speed	0		-32768	32767	rpm
+90	Feedback selection	21	Encoder 2 position	0		0	1	rev
+90	Feedback selection	22	Encoder 2 multiturn revolutions	0		0	16777215	NoUnit
+90	Feedback selection	23	Encoder 2 revolution extension	0		-2147483648	2147483647	NoUnit
+90	Feedback selection	24	Encoder 2 position raw	0		0	16777215	NoUnit
+90	Feedback selection	25	Encoder 2 revolutions raw	0		0	16777215	NoUnit
+90	Feedback selection	26	Motor revolution extension	74132		-2147483648	2147483647	NoUnit
+90	Feedback selection	27	Load revolution extension	0		-2147483648	2147483647	NoUnit
+90	Feedback selection	35	Pos counter status	0		0	65535	NoUnit
+90	Feedback selection	38	Pos counter decimals	3		0	9	NoUnit
+90	Feedback selection	41	Motor feedback selection	1	Encoder 1			NoUnit
+90	Feedback selection	42	Motor speed filter time	3		0	10000	ms
+90	Feedback selection	43	Motor gear numerator	1		-2147483648	2147483647	NoUnit
+90	Feedback selection	44	Motor gear denominator	1		-2147483648	2147483647	NoUnit
+90	Feedback selection	45	Motor feedback fault	0	Fault			NoUnit
+90	Feedback selection	46	Force open loop	0	No			NoUnit
+90	Feedback selection	48	Motor position axis mode	1	Rollover			NoUnit
+90	Feedback selection	49	Motor position resolution	24		0	31	NoUnit
+90	Feedback selection	51	Load feedback selection	0	None			NoUnit
+90	Feedback selection	52	Load speed filter time	4		0	10000	ms
+90	Feedback selection	53	Load gear numerator	1		-2147483648	2147483647	NoUnit
+90	Feedback selection	54	Load gear denominator	1		-2147483648	2147483647	NoUnit
+90	Feedback selection	55	Load feedback fault	0	Fault			NoUnit
+90	Feedback selection	56	Load position offset	0		-2147483648	2147483647	rev
+90	Feedback selection	57	Load position resolution	16		0	31	NoUnit
+90	Feedback selection	58	Pos counter init value int	0		-2147483648	2147483647	NoUnit
+90	Feedback selection	59	Pos counter init value int source	1	Pos counter init value int	0	4294967295	NoUnit
+90	Feedback selection	60	Pos counter error and boot action	0	Request re-initialization			NoUnit
+90	Feedback selection	61	Gear numerator	1		-2147483648	2147483647	NoUnit
+90	Feedback selection	62	Gear denominator	1		-2147483648	2147483647	NoUnit
+90	Feedback selection	63	Feed constant numerator	1		-2147483648	2147483647	NoUnit
+90	Feedback selection	64	Feed constant denominator	1		-2147483648	2147483647	NoUnit
+90	Feedback selection	65	Pos counter init value	0		-2147483.25	2147483.25	NoUnit
+90	Feedback selection	66	Pos counter init value source	1	Pos counter init value	0	4294967295	NoUnit
+90	Feedback selection	67	Pos counter init cmd source	0	Not selected	0	4294967295	NoUnit
+90	Feedback selection	68	Disable pos counter initialization	0	Not selected	0	4294967295	NoUnit
+90	Feedback selection	69	Reset pos counter init ready	0	Not selected	0	4294967295	NoUnit
+91	Encoder module settings	1	FEN DI status	0		0	65535	NoUnit
+91	Encoder module settings	2	Module 1 status	21	FEN-31			NoUnit
+91	Encoder module settings	3	Module 2 status	0	No option			NoUnit
+91	Encoder module settings	4	Module 1 temperature	0		0	1000	°C
+91	Encoder module settings	6	Module 2 temperature	0		0	1000	°C
+91	Encoder module settings	10	Encoder parameter refresh	0	Done			NoUnit
+91	Encoder module settings	11	Module 1 type	4	FEN-31			NoUnit
+91	Encoder module settings	12	Module 1 location	3	Slot 3	1	254	NoUnit
+91	Encoder module settings	13	Module 2 type	0	None			NoUnit
+91	Encoder module settings	14	Module 2 location	3	Slot 3	1	254	NoUnit
+91	Encoder module settings	21	Module 1 temp sensor type	0	None			NoUnit
+91	Encoder module settings	22	Module 1 temp filter time	1500		0	10000	ms
+91	Encoder module settings	24	Module 2 temp sensor type	0	None			NoUnit
+91	Encoder module settings	25	Module 2 temp filter time	1500		0	10000	ms
+91	Encoder module settings	31	Module 1 TTL output source	0	Not selected			NoUnit
+91	Encoder module settings	32	Module 1 emulation pulses/rev	2048		0	65535	NoUnit
+91	Encoder module settings	33	Module 1 emulated Z-pulse offset	0		0	1	rev
+91	Encoder module settings	41	Module 2 TTL output source	0	Not selected			NoUnit
+91	Encoder module settings	42	Module 2 emulation pulses/rev	0		0	65535	NoUnit
+91	Encoder module settings	43	Module 2 emulated Z-pulse offset	0		0	1	rev
+92	Encoder 1 configuration	1	Encoder 1 type	5	HTL			NoUnit
+92	Encoder 1 configuration	2	Encoder 1 source	0	Module 1			NoUnit
+92	Encoder 1 configuration	10	Pulses/revolution	360		0	65535	NoUnit
+92	Encoder 1 configuration	11	Pulse encoder type	0	Quadrature			NoUnit
+92	Encoder 1 configuration	12	Speed calculation mode	4	Auto rising			NoUnit
+92	Encoder 1 configuration	13	Position estimation enable	1	Enable			NoUnit
+92	Encoder 1 configuration	14	Speed estimation enable	0	Disable			NoUnit
+92	Encoder 1 configuration	15	Transient filter	0	4880Hz			NoUnit
+92	Encoder 1 configuration	21	Encoder cable fault mode	0	A, B			NoUnit
+92	Encoder 1 configuration	23	Maximum pulse waiting time	4		1	200	ms
+92	Encoder 1 configuration	24	Pulse edge filtering	0	No filtering			NoUnit
+93	Encoder 2 configuration	1	Encoder 2 type	0	None configured			NoUnit
+93	Encoder 2 configuration	2	Encoder 2 source	1	Module 2			NoUnit
+95	HW configuration	1	Supply voltage	3	440...480 V			NoUnit
+95	HW configuration	2	Adaptive voltage limits	0	Disable			NoUnit
+95	HW configuration	4	Control board supply	0	Internal 24V			NoUnit
+95	HW configuration	8	DC switch monitoring	0	Disable			NoUnit
+95	HW configuration	15	Special HW settings	0		0	65535	NoUnit
+95	HW configuration	20	HW options word 1	1		0	65535	NoUnit
+95	HW configuration	21	HW options word 2	0		0	65535	NoUnit
+95	HW configuration	40	Transformation ratio	0		0	100	NoUnit
+96	System	1	Language	1033	English			NoUnit
+96	System	2	Pass code	0		0	99999999	NoUnit
+96	System	3	Access levels active	1		0	65535	NoUnit
+96	System	4	Macro select	0	Done			NoUnit
+96	System	5	Macro active	1	Factory			NoUnit
+96	System	6	Parameter restore	0	Done			NoUnit
+96	System	7	Parameter save manually	0	Done			NoUnit
+96	System	8	Control board boot	0		0	1	NoUnit
+96	System	9	FSO reboot	0	False	0	4294967295	NoUnit
+96	System	10	User set status	0	n/a			NoUnit
+96	System	11	User set save/load	0	No action			NoUnit
+96	System	12	User set I/O mode in1	0	Not selected	0	4294967295	NoUnit
+96	System	13	User set I/O mode in2	0	Not selected	0	4294967295	NoUnit
+96	System	16	Unit selection	1		0	65535	NoUnit
+96	System	20	Time sync primary source	1	DDCS Controller			NoUnit
+96	System	23	M/F and D2D clock synchronization	0	Inactive			NoUnit
+96	System	24	Full days since 1st Jan 1980	12055		1	59999	days
+96	System	25	Time in minutes within 24 h	0		0	1439	min
+96	System	26	Time in ms within one minute	0		0	59999	ms
+96	System	29	Time sync source status	16384		0	65535	NoUnit
+96	System	31	Drive ID number	0		0	32767	NoUnit
+96	System	39	Power up event logging	1	Enable			NoUnit
+96	System	51	Clear fault and event logger	0		0	65535	NoUnit
+96	System	53	Actual checksum	0		0	4294967295	NoUnit
+96	System	54	Checksum action	0	No action			NoUnit
+96	System	55	Checksum control word	0		0	65535	NoUnit
+96	System	56	Approved checksum 1	0		0	4294967295	NoUnit
+96	System	57	Approved checksum 2	0		0	4294967295	NoUnit
+96	System	58	Approved checksum 3	0		0	4294967295	NoUnit
+96	System	59	Approved checksum 4	0		0	4294967295	NoUnit
+96	System	61	User data logger status word	0		0	65535	NoUnit
+96	System	63	User data logger trigger	0	Off	0	4294967295	NoUnit
+96	System	64	User data logger start	0	Off	0	4294967295	NoUnit
+96	System	65	Factory data logger time level	500	500us			NoUnit
+96	System	70	Disable adaptive program	0	No			NoUnit
+97	Motor control	1	Switching frequency reference	4.5		0	24	kHz
+97	Motor control	2	Minimum switching frequency	1.5		0	24	kHz
+97	Motor control	3	Slip gain	100		0	200	%
+97	Motor control	4	Voltage reserve	-2		-4	50	%
+97	Motor control	5	Flux braking	0	Disabled			NoUnit
+97	Motor control	6	Flux reference select	1	User flux reference	0	4294967295	NoUnit
+97	Motor control	7	User flux reference	100		0	200	%
+97	Motor control	8	Optimizer minimum torque	0		0	1600	%
+97	Motor control	9	Switching freq mode	0	Normal			NoUnit
+97	Motor control	10	Signal injection	0	Disabled			NoUnit
+97	Motor control	11	TR tuning	100		25	400	%
+97	Motor control	12	IR comp step-up frequency	0		0	50	Hz
+97	Motor control	13	IR compensation	0		0	50	%
+97	Motor control	15	Motor model temperature adaptation	0	Disabled			NoUnit
+97	Motor control	18	Hexagonal field weakening	0	Off			NoUnit
+97	Motor control	19	Hexagonal field weakening point	120		0	500	%
+97	Motor control	32	Motor torque unfiltered	0		-1600	1600	%
+97	Motor control	33	Speed estimate filter time	5		0	100	ms
+98	User motor parameters	1	User motor model mode	0	Not selected			NoUnit
+98	User motor parameters	2	Rs user	0.01957		0	0.5	p.u.
+98	User motor parameters	3	Rr user	0.01164		0	0.5	p.u.
+98	User motor parameters	4	Lm user	2.35037		0	10	p.u.
+98	User motor parameters	5	SigmaL user	0.19313		0	1	p.u.
+98	User motor parameters	6	Ld user	0		0	10	p.u.
+98	User motor parameters	7	Lq user	0		0	10	p.u.
+98	User motor parameters	8	PM flux user	0		0	2	p.u.
+98	User motor parameters	9	Rs user SI	0.21656		0	100	Ohm
+98	User motor parameters	10	Rr user SI	0.12881		0	100	Ohm
+98	User motor parameters	11	Lm user SI	68.99		0	100000.01	mH
+98	User motor parameters	12	SigmaL user SI	5.67		0	100000.01	mH
+98	User motor parameters	13	Ld user SI	0		0	100000.01	mH
+98	User motor parameters	14	Lq user SI	0		0	100000.01	mH
+98	User motor parameters	15	Position offset user	0		0	360	deg
+99	Motor data	3	Motor type	0	Asynchronous motor			NoUnit
+99	Motor data	4	Motor control mode	0	DTC			NoUnit
+99	Motor data	6	Motor nominal current	24		0	6400	A
+99	Motor data	7	Motor nominal voltage	460		0	800	V
+99	Motor data	8	Motor nominal frequency	60		0	1000	Hz
+99	Motor data	9	Motor nominal speed	1770		0	30000	rpm
+99	Motor data	10	Motor nominal power	20		0	13404.83	hp
+99	Motor data	11	Motor nominal cos φ	0		0	1	NoUnit
+99	Motor data	12	Motor nominal torque	0		0	4000000	NoUnit
+99	Motor data	13	ID run requested	0	None			NoUnit
+99	Motor data	14	Last ID run performed	1	Normal			NoUnit
+99	Motor data	15	Motor polepairs calculated	2		0	1000	NoUnit
+99	Motor data	16	Motor phase order	0	U V W			NoUnit
+99	Motor data	18	Sine filter inductance	1.2		0	100000	mH
+99	Motor data	19	Sine filter capacitance	15		0	100000	uF
+200	Safety	1	FSO speed ch1	0		-3.4028230607371E+38	3.4028230607371E+38	rpm
+200	Safety	2	FSO speed ch2	0		-3.4028230607371E+38	3.4028230607371E+38	rpm
+200	Safety	3	FSO DI status	0		0	65535	NoUnit
+200	Safety	4	FSO DO status	0		0	65535	NoUnit
+200	Safety	5	FSO control word 1	0		0	65535	NoUnit
+200	Safety	6	FSO control word 2	0		0	65535	NoUnit
+200	Safety	7	FSO status word 1	0		0	65535	NoUnit
+200	Safety	8	FSO status word 2	0		0	65535	NoUnit
+200	Safety	9	Drive status word 1	0		0	65535	NoUnit
+200	Safety	10	Drive status word 2	0		0	65535	NoUnit
+200	Safety	11	FSO module type	0	No option			NoUnit
+200	Safety	12	FSO hardware version	0		0	4294967295	NoUnit
+200	Safety	13	FSO firmware version	4294967294		0	4294967295	NoUnit
+200	Safety	254	CRC of the configuration	100		0	65535	NoUnit
