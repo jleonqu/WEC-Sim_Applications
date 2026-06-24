@@ -42,17 +42,17 @@ areaMaxValveLP = 0.25*6.02e-4; %[m^2] based on orifice equation
 %areaMaxValveLP = 8.516e-4; %[m^2] based on orifice equation
 
 %High pressure Hydraulic accumulator
-accVolHP = 50; %[liter]
+accVolHP = 50*0.5; %[liter]
 pPreLoadHP = 500; %[psi] preload pressure
 pMaxAccHP = 5000; %[psi]
 
 %Low pressure Hydraulic accumulator
-accVolLP = 50; %[liter]
+accVolLP = 50*0.5; %[liter]
 pPreLoadLP = 100; %[psi] preload pressure
 pMaxAccLP = 1000; %[psi]
 
 %Hydraulic Motor
-Dmax = 15; %[cc/rev] Max. displacement
+Dmax = 42; %[cc/rev] Max. displacement
 shaftSpeedNominal = 1000; %[rpm] Nom. shaft speed
 pressureNom = 4000; %[psi] Nominal pressure
 kinematicVisNom = 18; %[cst] Nominal Kinematic viscosity
