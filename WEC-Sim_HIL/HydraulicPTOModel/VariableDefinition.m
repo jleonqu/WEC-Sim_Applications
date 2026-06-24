@@ -1,5 +1,6 @@
 % Wave parameters
 %A = 2; %[m] wave amplitude
+%Testing commit
 T = 4; %[s] wave period
 
 %load('WaveBotAdmittanceModel\WaveBot3XBEM.mat'); %Load admittance model and excitation force function
