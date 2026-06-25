@@ -25,7 +25,8 @@ eCATFilePath = fullfile(currentDir,'ethercat',eCATFile);
 
 appName = 'windEmulatorStep4App.mlapp';
 %tgName = 'EGIBaseline2';
-tgName = 'speegoat_WECHIL';
+%tgName = 'BlueSpeedgoat';
+tgName = 'speedgoat_WECHIL';
 
 Ts = 1/250; % SLRT sample time
 movingAverageLength = 10/Ts;    % number of samples for moving average (e.g. 10s)
@@ -114,8 +115,8 @@ SpeedControl.PG = 0.7; %Proportional gain
 SpeedControl.IG = 0.3; %Integral gain - no integral gain at this point; the code holds the I term to zero via the reset currently; change this if introducing I gain here.
 
 %Dead band speed controller
-%deadBandController = boolean(false);
-deadBandController = boolean(true);
+deadBandController = boolean(false);
+%deadBandController = boolean(true);
 deadbandTorqueSlewRate = 300;           %slew rate limit on the deadband controller
 belowMinPGain = 1/200;                  %1/X means that we get full torque at X RPM below min shaft speed
 ShaftSpeedRef = 1100;                   %[rpm] Max. Shaft speed reference
