@@ -18,7 +18,8 @@ currentDir = pwd;
 if includeHBM
     eCATFile = 'WindTurbineEmulator-HBM-2022-12-08_4ms.xml';   % 2ms; with HBM
 else
-    eCATFile = 'WindTurbineEmulator-2022-12-06_4ms.xml';    % 4ms; no HBM 
+    %eCATFile = 'WindTurbineEmulator-2022-12-06_4ms.xml';    % 4ms; no HBM 
+    eCATFile = 'newDevice3File_windEmulator_noHBM-2026-06-26.xml';    % 4ms; no HBM 
 end
 
 eCATFilePath = fullfile(currentDir,'ethercat',eCATFile);

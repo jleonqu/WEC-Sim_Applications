@@ -3,8 +3,9 @@
 clearvars; close all; clc;
 
 %% === parameters =========================================================
-tgName = 'BlueSpeedgoat';
+%tgName = 'BlueSpeedgoat';
 %tgName = 'EGIBaseline2';
+tgName = 'speedgoat_WECHIL';
 
 mdlName = 'windEmulatorStep4';
 dataDir = fullfile('c:','simulink_raw');
@@ -37,7 +38,7 @@ if exist(newFolder, 'dir')
 end
 mkdir(newFolder);
 
-system(['pscp -r slrt@', ipAddress, ':/home/slrt/applications/', mdlName, '/* ' ,newFolder])
+system(['pscp -pw slrt -r slrt@', ipAddress, ':/home/slrt/applications/', mdlName, '/* ' ,newFolder])
 % =========================================================================  
 
 %% === Import Logged Data into MATLAB and view in Simulation Data Inspector
