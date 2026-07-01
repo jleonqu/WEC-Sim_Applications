@@ -3,6 +3,8 @@ ls% Step 4 is moving to a more complete model incl. file writing and UI
 clearvars; close all; clc;
 addpath('icons')
 
+% Comment from remote connection
+
 %% === general model parameters and settings ==============================
 includeHBM = boolean(false); % include or exclude the HBM power analyzer
 
