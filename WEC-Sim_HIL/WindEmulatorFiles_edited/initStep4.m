@@ -3,15 +3,13 @@ ls% Step 4 is moving to a more complete model incl. file writing and UI
 clearvars; close all; clc;
 addpath('icons')
 
-% Comment from remote connection
-
 %% === general model parameters and settings ==============================
 includeHBM = boolean(false); % include or exclude the HBM power analyzer
 
 hbmCtScale = 1/1.5; % this scale accounts for CT difference between SWEPT and DETL (1:1500 vs. 1:1000). Affects current and power.
 warning('HBM scale set above. Check this when changing CTs at DETL')
 
-mdlName = 'windEmulatorStep4';
+mdlName = 'windEmulatorStep4_WECSim';
 busDefs = 'windEmulatorBusDefs.mat';
 %buildDir = fullfile('c:','simulink_build');
 buildDir = pwd;
@@ -53,7 +51,11 @@ hp2W = 745.7; % hp to Watt
 
 cc2m3 = (1/100)^3;
 
-rev2rad = 2*pi; % revolutions to radians    
+rev2rad = 2*pi; % revolutions to radians   
+
+%Initialize WEC-Sim Simulation
+initializeWecSim
+
 % =========================================================================
 
 %% === Disable Simulink Data Inspector logging (slows down app) ===========

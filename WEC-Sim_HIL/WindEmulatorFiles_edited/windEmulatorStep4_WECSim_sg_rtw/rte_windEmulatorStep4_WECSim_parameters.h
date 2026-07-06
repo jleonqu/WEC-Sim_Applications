@@ -1,0 +1,155 @@
+#ifndef _RTE_WINDEMULATORSTEP__WECSIM_PARAMETERS_H
+#define _RTE_WINDEMULATORSTEP__WECSIM_PARAMETERS_H
+#include "rtwtypes.h"
+#include "SegmentInfo.hpp"
+#include "multiword_types.h"
+#include "zero_crossing_types.h"
+#include "windEmulatorStep4_WECSim_types.h"
+
+struct RTE_Param_Service_T {
+  invPowerBus invPowerStruct;
+  hptoSignalBus hptoSignalStruct;
+  acs800SignalBus acs800SignalStruct;
+  acs880SignalBus acs880SignalStruct;
+  shaftSignalBus shaftSignalStruct;
+  hptoCtrlBus hptoCtrlStruct;
+  expCtrlBus expCtrlStruct;
+  sidInfoBus sidInfoStruct;
+  acs800CtrlBus acs800CtrlStruct;
+  acs880CtrlBus acs880CtrlStruct;
+  struct_KY1U3Kyrwv5e6VnUIBWG5G PressureControl;
+  struct_KY1U3Kyrwv5e6VnUIBWG5G SpeedControl;
+  struct_KY1U3Kyrwv5e6VnUIBWG5G TorqueInputControl;
+  sidCtrlBus sidCtrlStruct;
+  real_T A;
+  real_T Dm_max;
+  real_T T;
+  real_T TorqueLoadMax;
+  real_T Ts;
+  real_T absEncoderCountsToRad;
+  real_T acs800DcBusVoltsScaling;
+  real_T acs800FreqScaling;
+  real_T acs800PowerScaling;
+  real_T acs800SpeedNomEng;
+  real_T acs800SpeedNomFb;
+  real_T acs800SpeedScaling;
+  real_T acs800TempScaling;
+  real_T acs800TorqueNomEng;
+  real_T acs800TorqueNomFb;
+  real_T acs800TorqueScaling;
+  real_T acs880FreqScaling;
+  real_T acs880MotorCurrentScaling;
+  real_T acs880MotorVoltsScaling;
+  real_T acs880PowerScaling;
+  real_T acs880RateLimFalling;
+  real_T acs880RateLimRising;
+  real_T acs880RatedTorque;
+  real_T acs880SetpointLimLower;
+  real_T acs880SetpointLimUpper;
+  real_T acs880SpeedPILimLo;
+  real_T acs880SpeedPILimUp;
+  real_T acs880SpeedScaling;
+  real_T acs880TorqueFieldbusScale;
+  real_T acs880TorqueScaling;
+  real_T acs880TorqueSetpointScaling;
+  real_T bar2pa;
+  real_T belowMinPGain;
+  real_T deadbandTorqueSlewRate;
+  real_T fromFileSpeedSlewRate;
+  real_T fromFileTorqueSlewRate;
+  real_T futekTorqueScale;
+  real_T genMaxTorque;
+  real_T genShaftSpeedRef;
+  real_T iGainGen;
+  real_T lpm2m3ps;
+  real_T m3persecond2lpm;
+  real_T minPressureRef_psi;
+  real_T minTorqueRef_Nm;
+  real_T pGainGen;
+  real_T pa2psi;
+  real_T psi2bar;
+  real_T radps2rpm;
+  real_T radsec2rpm;
+  real_T rampTime;
+  real_T rpm2radps;
+  real_T targetOmega;
+  boolean_T ctrlModeTorque;
+  boolean_T deadBandController;
+};
+
+extern RTE_Param_Service_T RTE_Param_Service;
+extern RTE_Param_Service_T *RTE_Param_Service_ptr;
+invPowerBus* get_invPowerStruct(void);
+hptoSignalBus* get_hptoSignalStruct(void);
+acs800SignalBus* get_acs800SignalStruct(void);
+acs880SignalBus* get_acs880SignalStruct(void);
+shaftSignalBus* get_shaftSignalStruct(void);
+hptoCtrlBus* get_hptoCtrlStruct(void);
+expCtrlBus* get_expCtrlStruct(void);
+sidInfoBus* get_sidInfoStruct(void);
+acs800CtrlBus* get_acs800CtrlStruct(void);
+acs880CtrlBus* get_acs880CtrlStruct(void);
+struct_KY1U3Kyrwv5e6VnUIBWG5G* get_PressureControl(void);
+struct_KY1U3Kyrwv5e6VnUIBWG5G* get_SpeedControl(void);
+struct_KY1U3Kyrwv5e6VnUIBWG5G* get_TorqueInputControl(void);
+sidCtrlBus* get_sidCtrlStruct(void);
+real_T* get_A(void);
+real_T* get_Dm_max(void);
+real_T* get_T(void);
+real_T* get_TorqueLoadMax(void);
+real_T* get_Ts(void);
+real_T* get_absEncoderCountsToRad(void);
+real_T* get_acs800DcBusVoltsScaling(void);
+real_T* get_acs800FreqScaling(void);
+real_T* get_acs800PowerScaling(void);
+real_T* get_acs800SpeedNomEng(void);
+real_T* get_acs800SpeedNomFb(void);
+real_T* get_acs800SpeedScaling(void);
+real_T* get_acs800TempScaling(void);
+real_T* get_acs800TorqueNomEng(void);
+real_T* get_acs800TorqueNomFb(void);
+real_T* get_acs800TorqueScaling(void);
+real_T* get_acs880FreqScaling(void);
+real_T* get_acs880MotorCurrentScaling(void);
+real_T* get_acs880MotorVoltsScaling(void);
+real_T* get_acs880PowerScaling(void);
+real_T* get_acs880RateLimFalling(void);
+real_T* get_acs880RateLimRising(void);
+real_T* get_acs880RatedTorque(void);
+real_T* get_acs880SetpointLimLower(void);
+real_T* get_acs880SetpointLimUpper(void);
+real_T* get_acs880SpeedPILimLo(void);
+real_T* get_acs880SpeedPILimUp(void);
+real_T* get_acs880SpeedScaling(void);
+real_T* get_acs880TorqueFieldbusScale(void);
+real_T* get_acs880TorqueScaling(void);
+real_T* get_acs880TorqueSetpointScaling(void);
+real_T* get_bar2pa(void);
+real_T* get_belowMinPGain(void);
+real_T* get_deadbandTorqueSlewRate(void);
+real_T* get_fromFileSpeedSlewRate(void);
+real_T* get_fromFileTorqueSlewRate(void);
+real_T* get_futekTorqueScale(void);
+real_T* get_genMaxTorque(void);
+real_T* get_genShaftSpeedRef(void);
+real_T* get_iGainGen(void);
+real_T* get_lpm2m3ps(void);
+real_T* get_m3persecond2lpm(void);
+real_T* get_minPressureRef_psi(void);
+real_T* get_minTorqueRef_Nm(void);
+real_T* get_pGainGen(void);
+real_T* get_pa2psi(void);
+real_T* get_psi2bar(void);
+real_T* get_radps2rpm(void);
+real_T* get_radsec2rpm(void);
+real_T* get_rampTime(void);
+real_T* get_rpm2radps(void);
+real_T* get_targetOmega(void);
+boolean_T* get_ctrlModeTorque(void);
+boolean_T* get_deadBandController(void);
+namespace slrealtime
+{
+  SegmentVector &getSegmentVector(void);
+}                                      // slrealtime
+
+#endif
