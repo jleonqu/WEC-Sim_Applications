@@ -1,5 +1,5 @@
 /* Simscape target specific file.
- * This file is generated for the Simscape network associated with the solver block 'windEmulatorStep4_WECSim/hptoSim/WECSimModel/Subsystem/Solver Configuration'.
+ * This file is generated for the Simscape network associated with the solver block 'windEmulatorStep4_WECSim/hptoSim/WECSimModel/PTO_WECSim/Solver Configuration'.
  */
 /* windEmulatorStep4_WECSim_5bdcd402_1_ds_mdxy_p.h - header for method windEmulatorStep4_WECSim_5bdcd402_1_ds_mdxy_p */
 #ifdef __cplusplus

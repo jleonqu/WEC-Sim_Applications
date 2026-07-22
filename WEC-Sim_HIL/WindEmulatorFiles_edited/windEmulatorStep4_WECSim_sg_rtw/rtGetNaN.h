@@ -3,9 +3,9 @@
  *
  * Code generation for model "windEmulatorStep4_WECSim".
  *
- * Model version              : 10.5
+ * Model version              : 10.8
  * Simulink Coder version : 25.2 (R2025b) 28-Jul-2025
- * C++ source code generated on : Mon Jul  6 11:39:01 2026
+ * C++ source code generated on : Wed Jul 22 11:34:26 2026
  *
  * Target selection: speedgoat.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping

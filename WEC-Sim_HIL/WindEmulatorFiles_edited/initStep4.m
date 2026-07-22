@@ -379,25 +379,25 @@ set_param(mdlName, 'RTWVerbose', 'off');
 fprintf('*** Build Simulink RT (Speedgoat) code  ...\n\n')
 slbuild(mdlName)
 
-% %% === test Speedgoat connection ==========================================
-% tg = slrealtime(tgName);
-% try 
-%    tg.connect
-% %   speedgoat.setTargetTime(now,'TargetName',tgName)
-% catch ME
-%    fprintf('\n*** Target %s not connected. Stopping program. Check connection.\n',tgName)
-%    fprintf('\n*** Matlab error \n %s \n\n',ME.getReport)   
-%    return  
-% end
-% 
-% if tg.isConnected 
-%    fprintf('\n*** Target %s is connected at IP address %s. \n\n',tg.TargetSettings.name,tg.TargetSettings.address)
-% end
-% % =========================================================================  
-% 
-% %% === run the UI app =====================================================
-% run(appName)
-% % =========================================================================
+%% === test Speedgoat connection ==========================================
+tg = slrealtime(tgName);
+try 
+   tg.connect
+%   speedgoat.setTargetTime(now,'TargetName',tgName)
+catch ME
+   fprintf('\n*** Target %s not connected. Stopping program. Check connection.\n',tgName)
+   fprintf('\n*** Matlab error \n %s \n\n',ME.getReport)   
+   return  
+end
+
+if tg.isConnected 
+   fprintf('\n*** Target %s is connected at IP address %s. \n\n',tg.TargetSettings.name,tg.TargetSettings.address)
+end
+% =========================================================================  
+
+%% === run the UI app =====================================================
+run(appName)
+% =========================================================================
 
 
 

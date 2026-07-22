@@ -3,9 +3,9 @@
  *
  * Code generation for model "windEmulatorStep4_WECSim".
  *
- * Model version              : 10.5
+ * Model version              : 10.8
  * Simulink Coder version : 25.2 (R2025b) 28-Jul-2025
- * C++ source code generated on : Mon Jul  6 11:39:01 2026
+ * C++ source code generated on : Wed Jul 22 11:34:26 2026
  *
  * Target selection: speedgoat.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -32,8 +32,8 @@ extern "C"
 #include "rte_windEmulatorStep4_WECSim_parameters.h"
 #include "abbState.h"
 #include "sidType.h"
-#include "expType.h"
 #include <stddef.h>
+#include "expType.h"
 #include "zero_crossing_types.h"
 #include "rt_defines.h"
 
@@ -371,7 +371,7 @@ void windEmulatorStep4_WECSim_projection(void)
   boolean_T tmp_4;
 
   /* Projection for SimscapeExecutionBlock: '<S216>/STATE_1' incorporates:
-   *  SimscapeExecutionBlock: '<S350>/STATE_1'
+   *  SimscapeExecutionBlock: '<S332>/STATE_1'
    */
   simulationData = static_cast<NeslSimulationData *>
     (windEmulatorStep4_WECSim_DW.STATE_1_SimData_h);
@@ -489,7 +489,7 @@ void windEmulatorStep4_WECSim_projection(void)
 
   /* End of Projection for SimscapeExecutionBlock: '<S216>/STATE_1' */
 
-  /* Projection for SimscapeExecutionBlock: '<S350>/STATE_1' */
+  /* Projection for SimscapeExecutionBlock: '<S332>/STATE_1' */
   simulationData = static_cast<NeslSimulationData *>
     (windEmulatorStep4_WECSim_DW.STATE_1_SimData_a);
   time_0 = time_tmp;
@@ -497,10 +497,10 @@ void windEmulatorStep4_WECSim_projection(void)
   simulationData->mData->mTime.mX = &time_0;
   simulationData->mData->mContStates.mN = 35;
   simulationData->mData->mContStates.mX =
-    &windEmulatorStep4_WECSim_X.windEmulatorStep4_WECSimhptoS_d[0];
+    &windEmulatorStep4_WECSim_X.windEmulatorStep4_WECSimhptoS_h[0];
   simulationData->mData->mDiscStates.mN = 6;
   simulationData->mData->mDiscStates.mX =
-    &windEmulatorStep4_WECSim_DW.STATE_1_Discrete_3239082943[0];
+    &windEmulatorStep4_WECSim_DW.STATE_1_Discrete_208214823[0];
   simulationData->mData->mModeVector.mN = 21;
   simulationData->mData->mModeVector.mX =
     &windEmulatorStep4_WECSim_DW.STATE_1_Modes_i[0];
@@ -653,7 +653,7 @@ void windEmulatorStep4_WECSim_forcingfunction(void)
   /* End of ForcingFunction for StateSpace: '<S542>/Internal' */
 
   /* ForcingFunction for SimscapeExecutionBlock: '<S216>/STATE_1' incorporates:
-   *  SimscapeExecutionBlock: '<S350>/STATE_1'
+   *  SimscapeExecutionBlock: '<S332>/STATE_1'
    */
   simulationData = static_cast<NeslSimulationData *>
     (windEmulatorStep4_WECSim_DW.STATE_1_SimData_h);
@@ -773,12 +773,12 @@ void windEmulatorStep4_WECSim_forcingfunction(void)
 
   /* End of ForcingFunction for SimscapeExecutionBlock: '<S216>/STATE_1' */
 
-  /* ForcingFunction for SimscapeInputBlock: '<S350>/INPUT_3_1_1' */
-  _rtXdot->windEmulatorStep4_WECSimhptoS_f =
+  /* ForcingFunction for SimscapeInputBlock: '<S332>/INPUT_3_1_1' */
+  _rtXdot->windEmulatorStep4_WECSimhptoS_n =
     (windEmulatorStep4_WECSim_B.velocity[4] -
-     windEmulatorStep4_WECSim_X.windEmulatorStep4_WECSimhptoS_f) * 1000.0;
+     windEmulatorStep4_WECSim_X.windEmulatorStep4_WECSimhptoS_n) * 1000.0;
 
-  /* ForcingFunction for SimscapeExecutionBlock: '<S350>/STATE_1' */
+  /* ForcingFunction for SimscapeExecutionBlock: '<S332>/STATE_1' */
   simulationData = static_cast<NeslSimulationData *>
     (windEmulatorStep4_WECSim_DW.STATE_1_SimData_a);
   time_0 = time_tmp;
@@ -786,10 +786,10 @@ void windEmulatorStep4_WECSim_forcingfunction(void)
   simulationData->mData->mTime.mX = &time_0;
   simulationData->mData->mContStates.mN = 35;
   simulationData->mData->mContStates.mX =
-    &windEmulatorStep4_WECSim_X.windEmulatorStep4_WECSimhptoS_d[0];
+    &windEmulatorStep4_WECSim_X.windEmulatorStep4_WECSimhptoS_h[0];
   simulationData->mData->mDiscStates.mN = 6;
   simulationData->mData->mDiscStates.mX =
-    &windEmulatorStep4_WECSim_DW.STATE_1_Discrete_3239082943[0];
+    &windEmulatorStep4_WECSim_DW.STATE_1_Discrete_208214823[0];
   simulationData->mData->mModeVector.mN = 21;
   simulationData->mData->mModeVector.mX =
     &windEmulatorStep4_WECSim_DW.STATE_1_Modes_i[0];
@@ -826,7 +826,7 @@ void windEmulatorStep4_WECSim_forcingfunction(void)
   simulationData->mData->mInputOffsets.mN = 4;
   simulationData->mData->mInputOffsets.mX = &tmp_5[0];
   simulationData->mData->mDx.mN = 35;
-  simulationData->mData->mDx.mX = &_rtXdot->windEmulatorStep4_WECSimhptoS_d[0];
+  simulationData->mData->mDx.mX = &_rtXdot->windEmulatorStep4_WECSimhptoS_h[0];
   simulator = static_cast<NeslSimulator *>
     (windEmulatorStep4_WECSim_DW.STATE_1_Simulator_i);
   diagnosticManager = static_cast<NeuDiagnosticManager *>
@@ -859,7 +859,7 @@ void windEmulatorStep4_WECSim_massmatrix(void)
   int_T tmp_1[4];
   boolean_T tmp;
 
-  /* MassMatrix for SimscapeExecutionBlock: '<S350>/STATE_1' */
+  /* MassMatrix for SimscapeExecutionBlock: '<S332>/STATE_1' */
   simulationData = static_cast<NeslSimulationData *>
     (windEmulatorStep4_WECSim_DW.STATE_1_SimData_a);
   time = windEmulatorStep4_WECSim_M->Timing.t[0];
@@ -867,10 +867,10 @@ void windEmulatorStep4_WECSim_massmatrix(void)
   simulationData->mData->mTime.mX = &time;
   simulationData->mData->mContStates.mN = 35;
   simulationData->mData->mContStates.mX =
-    &windEmulatorStep4_WECSim_X.windEmulatorStep4_WECSimhptoS_d[0];
+    &windEmulatorStep4_WECSim_X.windEmulatorStep4_WECSimhptoS_h[0];
   simulationData->mData->mDiscStates.mN = 6;
   simulationData->mData->mDiscStates.mX =
-    &windEmulatorStep4_WECSim_DW.STATE_1_Discrete_3239082943[0];
+    &windEmulatorStep4_WECSim_DW.STATE_1_Discrete_208214823[0];
   simulationData->mData->mModeVector.mN = 21;
   simulationData->mData->mModeVector.mX =
     &windEmulatorStep4_WECSim_DW.STATE_1_Modes_i[0];
@@ -928,7 +928,7 @@ void windEmulatorStep4_WECSim_massmatrix(void)
     }
   }
 
-  /* End of MassMatrix for SimscapeExecutionBlock: '<S350>/STATE_1' */
+  /* End of MassMatrix for SimscapeExecutionBlock: '<S332>/STATE_1' */
 }
 
 void local_evaluateMassMatrix(RTWSolverInfo *si, real_T *Mdest )
@@ -2620,7 +2620,7 @@ void windEmulatorStep4_WECSim_step(void)
     NeuDiagnosticManager *diag;
     NeuDiagnosticTree *diagTree;
     char *msg;
-    struct_KY1U3Kyrwv5e6VnUIBWG5G *tmp_o;
+    struct_KY1U3Kyrwv5e6VnUIBWG5G *tmp_m;
     struct_KY1U3Kyrwv5e6VnUIBWG5G *tmp_s;
     struct_KY1U3Kyrwv5e6VnUIBWG5G *tmp_t;
     real_T tmp_a[74];
@@ -2652,12 +2652,12 @@ void windEmulatorStep4_WECSim_step(void)
     real_T time_a;
     real_T time_b;
     real_T time_c;
-    real_T tmp_11;
+    real_T tmp_10;
     real_T tmp_j;
     real_T tmp_k;
     real_T tmp_l;
-    real_T tmp_m;
     real_T tmp_n;
+    real_T tmp_o;
     real_T tmp_p;
     real_T tmp_q;
     real_T tmp_r;
@@ -2682,25 +2682,25 @@ void windEmulatorStep4_WECSim_step(void)
     uint32_T q0;
     uint32_T qY;
     boolean_T f;
-    boolean_T tmp_10;
+    boolean_T tmp_11;
     boolean_T tmp_g;
     boolean_T tmp_h;
     boolean_T tmp_u;
 
-    /* Gain: '<S439>/Gain' */
-    tmp_11 = *get_TorqueLoadMax();
-
     /* Constant: '<S1>/ACS800CtrlMode' */
-    tmp_10 = *get_ctrlModeTorque();
+    tmp_11 = *get_ctrlModeTorque();
 
     /* Gain: '<S12>/rad//s->rpm' */
-    tmp_z = *get_radps2rpm();
+    tmp_10 = *get_radps2rpm();
 
-    /* Gain: '<S248>/Gain' */
-    tmp_y = *get_m3persecond2lpm();
+    /* Gain: '<S230>/Gain' */
+    tmp_z = *get_m3persecond2lpm();
 
-    /* Gain: '<S263>/Gain' */
-    tmp_x = *get_pa2psi();
+    /* Gain: '<S245>/Gain' */
+    tmp_y = *get_pa2psi();
+
+    /* Gain: '<S439>/Gain' */
+    tmp_x = *get_TorqueLoadMax();
 
     /* Switch: '<S598>/Switch' incorporates:
      *  Constant: '<S13>/Constant2'
@@ -2712,7 +2712,7 @@ void windEmulatorStep4_WECSim_step(void)
      */
     tmp_w = *get_acs880SpeedPILimUp();
 
-    /* Switch: '<S365>/Switch1' */
+    /* Switch generated from: '<S365>/Switch' */
     tmp_v = *get_minTorqueRef_Nm();
 
     /* Chart: '<S4>/FexcRamp' */
@@ -2745,31 +2745,31 @@ void windEmulatorStep4_WECSim_step(void)
      */
     tmp_p = *get_rpm2radps();
 
+    /* Gain: '<S365>/Gain' incorporates:
+     *  Switch: '<S365>/Switch2'
+     */
+    tmp_o = *get_Dm_max();
+
+    /* Gain: '<S1>/Nm -> %' */
+    tmp_n = *get_acs880RatedTorque();
+
     /* Product: '<S494>/Product' incorporates:
      *  Constant: '<S494>/Constant1'
      */
-    tmp_o = get_SpeedControl();
+    tmp_m = get_SpeedControl();
 
     /* Product: '<S495>/Product' incorporates:
      *  Constant: '<S495>/Constant1'
      */
-    tmp_n = *get_belowMinPGain();
+    tmp_l = *get_belowMinPGain();
 
     /* RateLimiter: '<S436>/Rate Limiter' */
-    tmp_m = *get_deadbandTorqueSlewRate();
+    tmp_k = *get_deadbandTorqueSlewRate();
 
     /* Switch: '<S483>/Switch' incorporates:
      *  Constant: '<S438>/Constant1'
      */
-    tmp_l = *get_genMaxTorque();
-
-    /* Gain: '<S365>/Gain' incorporates:
-     *  Switch: '<S365>/Switch2'
-     */
-    tmp_k = *get_Dm_max();
-
-    /* Gain: '<S1>/Nm -> %' */
-    tmp_j = *get_acs880RatedTorque();
+    tmp_j = *get_genMaxTorque();
 
     {
       /* user code (Output function Header) */
@@ -3782,7 +3782,7 @@ void windEmulatorStep4_WECSim_step(void)
            windEmulatorStep4_WECSim_B.Memory_i);
 
         /* Constant: '<S2>/ACS880CtrlMode' */
-        windEmulatorStep4_WECSim_B.ACS880CtrlMode = tmp_10;
+        windEmulatorStep4_WECSim_B.ACS880CtrlMode = tmp_11;
 
         /* Chart: '<S18>/ABB Fieldbus Control' */
         if (windEmulatorStep4_WECSim_DW.temporalCounter_i1_l < 31) {
@@ -4452,8 +4452,8 @@ void windEmulatorStep4_WECSim_step(void)
        *  SimscapeExecutionBlock: '<S216>/OUTPUT_1_0'
        *  SimscapeExecutionBlock: '<S216>/OUTPUT_1_1'
        *  SimscapeExecutionBlock: '<S216>/STATE_1'
-       *  SimscapeExecutionBlock: '<S350>/OUTPUT_1_0'
-       *  SimscapeExecutionBlock: '<S350>/STATE_1'
+       *  SimscapeExecutionBlock: '<S332>/OUTPUT_1_0'
+       *  SimscapeExecutionBlock: '<S332>/STATE_1'
        */
       tmp_h = rtsiIsModeUpdateTimeStep(&windEmulatorStep4_WECSim_M->solverInfo);
       if (tmp_h) {
@@ -4521,35 +4521,139 @@ void windEmulatorStep4_WECSim_step(void)
       windEmulatorStep4_WECSim_B.BusAssignment_f.acs880Torque_Nm =
         windEmulatorStep4_WECSim_B.Switch2_h;
       if (tmp_g) {
+        /* RateLimiter: '<S498>/Rate Limiter' incorporates:
+         *  Constant: '<S498>/Constant1'
+         */
+        riseValLimit = 2000.0 * tmp_p;
+        rateLimiterRate = riseValLimit - windEmulatorStep4_WECSim_DW.PrevY_k;
+        if (rateLimiterRate >
+            windEmulatorStep4_WECSim_cal->RateLimiter_RisingLim *
+            windEmulatorStep4_WECSim_period) {
+          /* RateLimiter: '<S498>/Rate Limiter' */
+          windEmulatorStep4_WECSim_B.RateLimiter =
+            windEmulatorStep4_WECSim_cal->RateLimiter_RisingLim *
+            windEmulatorStep4_WECSim_period +
+            windEmulatorStep4_WECSim_DW.PrevY_k;
+        } else if (rateLimiterRate <
+                   windEmulatorStep4_WECSim_cal->RateLimiter_FallingLim *
+                   windEmulatorStep4_WECSim_period) {
+          /* RateLimiter: '<S498>/Rate Limiter' */
+          windEmulatorStep4_WECSim_B.RateLimiter =
+            windEmulatorStep4_WECSim_cal->RateLimiter_FallingLim *
+            windEmulatorStep4_WECSim_period +
+            windEmulatorStep4_WECSim_DW.PrevY_k;
+        } else {
+          /* RateLimiter: '<S498>/Rate Limiter' */
+          windEmulatorStep4_WECSim_B.RateLimiter = 2000.0 * tmp_p;
+        }
+
+        windEmulatorStep4_WECSim_DW.PrevY_k =
+          windEmulatorStep4_WECSim_B.RateLimiter;
+
+        /* SimscapeInputBlock: '<S541>/INPUT_1_1_1' */
+        windEmulatorStep4_WECSim_B.INPUT_1_1_1[0] =
+          windEmulatorStep4_WECSim_B.RateLimiter;
+        windEmulatorStep4_WECSim_B.INPUT_1_1_1[1] = 0.0;
+        windEmulatorStep4_WECSim_B.INPUT_1_1_1[2] = 0.0;
+        windEmulatorStep4_WECSim_DW.INPUT_1_1_1_Discrete_142920204[0] =
+          !(windEmulatorStep4_WECSim_B.INPUT_1_1_1[0] ==
+            windEmulatorStep4_WECSim_DW.INPUT_1_1_1_Discrete_142920204[1]);
+        windEmulatorStep4_WECSim_DW.INPUT_1_1_1_Discrete_142920204[1] =
+          windEmulatorStep4_WECSim_B.INPUT_1_1_1[0];
+        windEmulatorStep4_WECSim_B.INPUT_1_1_1[0] =
+          windEmulatorStep4_WECSim_DW.INPUT_1_1_1_Discrete_142920204[1];
+        windEmulatorStep4_WECSim_B.INPUT_1_1_1[3] =
+          windEmulatorStep4_WECSim_DW.INPUT_1_1_1_Discrete_142920204[0];
+      }
+
+      /* StateSpace: '<S531>/Internal' */
+      windEmulatorStep4_WECSim_B.Internal = 0.0;
+
+      /* StateSpace: '<S531>/Internal' */
+      for (q0 = windEmulatorStep4_WECSim_cal->Internal_C_jc[0U]; q0 <
+           windEmulatorStep4_WECSim_cal->Internal_C_jc[1U]; q0++) {
+        /* StateSpace: '<S531>/Internal' */
+        windEmulatorStep4_WECSim_B.Internal +=
+          windEmulatorStep4_WECSim_cal->Internal_C_pr *
+          windEmulatorStep4_WECSim_X.Internal_CSTATE[0U];
+      }
+
+      for (q0 = windEmulatorStep4_WECSim_cal->Internal_C_jc[1U]; q0 <
+           windEmulatorStep4_WECSim_cal->Internal_C_jc[2U]; q0++) {
+        /* StateSpace: '<S531>/Internal' */
+        windEmulatorStep4_WECSim_B.Internal +=
+          windEmulatorStep4_WECSim_cal->Internal_C_pr *
+          windEmulatorStep4_WECSim_X.Internal_CSTATE[1U];
+      }
+
+      for (q0 = windEmulatorStep4_WECSim_cal->Internal_C_jc[2U]; q0 <
+           windEmulatorStep4_WECSim_cal->Internal_C_jc[3U]; q0++) {
+        /* StateSpace: '<S531>/Internal' */
+        windEmulatorStep4_WECSim_B.Internal +=
+          windEmulatorStep4_WECSim_cal->Internal_C_pr *
+          windEmulatorStep4_WECSim_X.Internal_CSTATE[2U];
+      }
+
+      /* SimscapeInputBlock: '<S541>/INPUT_2_1_1' */
+      windEmulatorStep4_WECSim_B.INPUT_2_1_1[0] =
+        windEmulatorStep4_WECSim_B.Internal;
+      windEmulatorStep4_WECSim_B.INPUT_2_1_1[1] = 0.0;
+      windEmulatorStep4_WECSim_B.INPUT_2_1_1[2] = 0.0;
+      windEmulatorStep4_WECSim_B.INPUT_2_1_1[3] = 0.0;
+
+      /* StateSpace: '<S545>/Internal' */
+      windEmulatorStep4_WECSim_B.Internal_j = 0.0;
+
+      /* StateSpace: '<S545>/Internal' */
+      for (q0 = windEmulatorStep4_WECSim_cal->Internal_C_jc_k[0U]; q0 <
+           windEmulatorStep4_WECSim_cal->Internal_C_jc_k[1U]; q0++) {
+        /* StateSpace: '<S545>/Internal' */
+        windEmulatorStep4_WECSim_B.Internal_j +=
+          windEmulatorStep4_WECSim_cal->Internal_C_pr_a *
+          windEmulatorStep4_WECSim_X.Internal_CSTATE_j;
+      }
+
+      /* Gain: '<S510>/Gain' */
+      windEmulatorStep4_WECSim_B.Gain_l =
+        windEmulatorStep4_WECSim_cal->Gain_Gain *
+        windEmulatorStep4_WECSim_B.Internal_j;
+
+      /* SimscapeInputBlock: '<S541>/INPUT_4_1_1' */
+      windEmulatorStep4_WECSim_B.INPUT_4_1_1[0] =
+        windEmulatorStep4_WECSim_B.Gain_l;
+      windEmulatorStep4_WECSim_B.INPUT_4_1_1[1] = 0.0;
+      windEmulatorStep4_WECSim_B.INPUT_4_1_1[2] = 0.0;
+      windEmulatorStep4_WECSim_B.INPUT_4_1_1[3] = 0.0;
+      if (tmp_g) {
         /* RateLimiter: '<S7>/Rate Limiter' incorporates:
          *  Constant: '<S7>/speedReference'
          */
         rateLimiterRate = windEmulatorStep4_WECSim_cal->speedReference_Value -
           windEmulatorStep4_WECSim_DW.PrevY_f;
         if (rateLimiterRate >
-            windEmulatorStep4_WECSim_cal->RateLimiter_RisingLim *
+            windEmulatorStep4_WECSim_cal->RateLimiter_RisingLim_c *
             windEmulatorStep4_WECSim_period) {
           /* RateLimiter: '<S7>/Rate Limiter' */
-          windEmulatorStep4_WECSim_B.RateLimiter =
-            windEmulatorStep4_WECSim_cal->RateLimiter_RisingLim *
+          windEmulatorStep4_WECSim_B.RateLimiter_j =
+            windEmulatorStep4_WECSim_cal->RateLimiter_RisingLim_c *
             windEmulatorStep4_WECSim_period +
             windEmulatorStep4_WECSim_DW.PrevY_f;
         } else if (rateLimiterRate <
-                   windEmulatorStep4_WECSim_cal->RateLimiter_FallingLim *
+                   windEmulatorStep4_WECSim_cal->RateLimiter_FallingLim_e *
                    windEmulatorStep4_WECSim_period) {
           /* RateLimiter: '<S7>/Rate Limiter' */
-          windEmulatorStep4_WECSim_B.RateLimiter =
-            windEmulatorStep4_WECSim_cal->RateLimiter_FallingLim *
+          windEmulatorStep4_WECSim_B.RateLimiter_j =
+            windEmulatorStep4_WECSim_cal->RateLimiter_FallingLim_e *
             windEmulatorStep4_WECSim_period +
             windEmulatorStep4_WECSim_DW.PrevY_f;
         } else {
           /* RateLimiter: '<S7>/Rate Limiter' */
-          windEmulatorStep4_WECSim_B.RateLimiter =
+          windEmulatorStep4_WECSim_B.RateLimiter_j =
             windEmulatorStep4_WECSim_cal->speedReference_Value;
         }
 
         windEmulatorStep4_WECSim_DW.PrevY_f =
-          windEmulatorStep4_WECSim_B.RateLimiter;
+          windEmulatorStep4_WECSim_B.RateLimiter_j;
 
         /* End of RateLimiter: '<S7>/Rate Limiter' */
 
@@ -5358,7 +5462,7 @@ void windEmulatorStep4_WECSim_step(void)
 
         /* BusAssignment: '<S7>/Bus Assignment' */
         windEmulatorStep4_WECSim_B.BusAssignment_c.speedRef_rpm =
-          windEmulatorStep4_WECSim_B.RateLimiter;
+          windEmulatorStep4_WECSim_B.RateLimiter_j;
         windEmulatorStep4_WECSim_B.BusAssignment_c.excForce_N =
           windEmulatorStep4_WECSim_B.Product_m;
         windEmulatorStep4_WECSim_B.BusAssignment_c.genSpeedActual =
@@ -5366,541 +5470,6 @@ void windEmulatorStep4_WECSim_step(void)
         windEmulatorStep4_WECSim_B.BusAssignment_c.speedCtrlReset =
           windEmulatorStep4_WECSim_B.BusAssignment_b.resetHilIntegrator;
 
-        /* Memory: '<S433>/Memory' */
-        windEmulatorStep4_WECSim_B.Memory_f =
-          windEmulatorStep4_WECSim_DW.Memory_PreviousInput_kk;
-
-        /* RateLimiter: '<S373>/Rate Limiter1' incorporates:
-         *  Constant: '<S373>/shaftSpeedRefMin'
-         */
-        rateLimiterRate = windEmulatorStep4_WECSim_cal->shaftSpeedRefMin_Value -
-          windEmulatorStep4_WECSim_DW.PrevY_m;
-        if (rateLimiterRate >
-            windEmulatorStep4_WECSim_cal->RateLimiter1_RisingLim *
-            windEmulatorStep4_WECSim_period) {
-          /* RateLimiter: '<S373>/Rate Limiter1' */
-          windEmulatorStep4_WECSim_B.RateLimiter1 =
-            windEmulatorStep4_WECSim_cal->RateLimiter1_RisingLim *
-            windEmulatorStep4_WECSim_period +
-            windEmulatorStep4_WECSim_DW.PrevY_m;
-        } else if (rateLimiterRate <
-                   windEmulatorStep4_WECSim_cal->RateLimiter1_FallingLim *
-                   windEmulatorStep4_WECSim_period) {
-          /* RateLimiter: '<S373>/Rate Limiter1' */
-          windEmulatorStep4_WECSim_B.RateLimiter1 =
-            windEmulatorStep4_WECSim_cal->RateLimiter1_FallingLim *
-            windEmulatorStep4_WECSim_period +
-            windEmulatorStep4_WECSim_DW.PrevY_m;
-        } else {
-          /* RateLimiter: '<S373>/Rate Limiter1' */
-          windEmulatorStep4_WECSim_B.RateLimiter1 =
-            windEmulatorStep4_WECSim_cal->shaftSpeedRefMin_Value;
-        }
-
-        windEmulatorStep4_WECSim_DW.PrevY_m =
-          windEmulatorStep4_WECSim_B.RateLimiter1;
-
-        /* End of RateLimiter: '<S373>/Rate Limiter1' */
-
-        /* Memory: '<S434>/Memory' */
-        windEmulatorStep4_WECSim_B.Memory_in =
-          windEmulatorStep4_WECSim_DW.Memory_PreviousInput_h;
-      }
-
-      /* Sum: '<S376>/Add' */
-      windEmulatorStep4_WECSim_B.Add =
-        windEmulatorStep4_WECSim_B.BusAssignment_c.genSpeedActual -
-        windEmulatorStep4_WECSim_B.BusAssignment_c.speedRef_rpm;
-
-      /* Product: '<S431>/Product' incorporates:
-       *  Constant: '<S431>/Constant1'
-       */
-      riseValLimit = -tmp_o->PG;
-
-      /* Product: '<S431>/Product' */
-      windEmulatorStep4_WECSim_B.ControlSignal31 = riseValLimit *
-        windEmulatorStep4_WECSim_B.Add;
-
-      /* RelationalOperator: '<S431>/Relational Operator' */
-      windEmulatorStep4_WECSim_B.RelationalOperator =
-        (windEmulatorStep4_WECSim_B.BusAssignment_c.speedRef_rpm <=
-         windEmulatorStep4_WECSim_B.BusAssignment_c.genSpeedActual);
-
-      /* CombinatorialLogic: '<S433>/Logic' incorporates:
-       *  Constant: '<S431>/Constant'
-       */
-      f = windEmulatorStep4_WECSim_B.RelationalOperator;
-      q0 = f;
-      f = windEmulatorStep4_WECSim_cal->Constant_Value_bl;
-      q0 = (q0 << 1) + f;
-      f = windEmulatorStep4_WECSim_B.Memory_f;
-      q0 = (q0 << 1) + f;
-      windEmulatorStep4_WECSim_B.Logic[0U] =
-        windEmulatorStep4_WECSim_cal->Logic_table[q0];
-      windEmulatorStep4_WECSim_B.Logic[1U] =
-        windEmulatorStep4_WECSim_cal->Logic_table[q0 + 8U];
-
-      /* Sum: '<S376>/Add1' */
-      windEmulatorStep4_WECSim_B.Add1 =
-        windEmulatorStep4_WECSim_B.BusAssignment_c.genSpeedActual -
-        windEmulatorStep4_WECSim_B.RateLimiter1;
-
-      /* Product: '<S432>/Product' incorporates:
-       *  Constant: '<S432>/Constant1'
-       */
-      riseValLimit = -tmp_n;
-
-      /* Product: '<S432>/Product' */
-      windEmulatorStep4_WECSim_B.ControlSignal31_o = riseValLimit *
-        windEmulatorStep4_WECSim_B.Add1;
-
-      /* RelationalOperator: '<S432>/Relational Operator' */
-      windEmulatorStep4_WECSim_B.RelationalOperator_k =
-        (windEmulatorStep4_WECSim_B.RateLimiter1 >=
-         windEmulatorStep4_WECSim_B.BusAssignment_c.genSpeedActual);
-
-      /* CombinatorialLogic: '<S434>/Logic' incorporates:
-       *  Constant: '<S432>/Constant'
-       */
-      f = windEmulatorStep4_WECSim_B.RelationalOperator_k;
-      q0 = f;
-      f = windEmulatorStep4_WECSim_cal->Constant_Value_k;
-      q0 = (q0 << 1) + f;
-      f = windEmulatorStep4_WECSim_B.Memory_in;
-      q0 = (q0 << 1) + f;
-      windEmulatorStep4_WECSim_B.Logic_g[0U] =
-        windEmulatorStep4_WECSim_cal->Logic_table_o[q0];
-      windEmulatorStep4_WECSim_B.Logic_g[1U] =
-        windEmulatorStep4_WECSim_cal->Logic_table_o[q0 + 8U];
-
-      /* Switch: '<S376>/Switch' incorporates:
-       *  Switch: '<S376>/Switch1'
-       *  Switch: '<S432>/Switch'
-       */
-      if (windEmulatorStep4_WECSim_B.Add >
-          windEmulatorStep4_WECSim_cal->Switch_Threshold_j) {
-        /* Switch: '<S431>/Switch' */
-        if (windEmulatorStep4_WECSim_B.Logic[0]) {
-          /* Saturate: '<S431>/Saturation' */
-          riseValLimit = windEmulatorStep4_WECSim_B.ControlSignal31;
-          u1 = windEmulatorStep4_WECSim_cal->Saturation_LowerSat;
-          rateLimiterRate = windEmulatorStep4_WECSim_cal->Saturation_UpperSat;
-          if (riseValLimit > rateLimiterRate) {
-            /* Saturate: '<S431>/Saturation' */
-            windEmulatorStep4_WECSim_B.Saturation_a3 = rateLimiterRate;
-          } else if (riseValLimit < u1) {
-            /* Saturate: '<S431>/Saturation' */
-            windEmulatorStep4_WECSim_B.Saturation_a3 = u1;
-          } else {
-            /* Saturate: '<S431>/Saturation' */
-            windEmulatorStep4_WECSim_B.Saturation_a3 = riseValLimit;
-          }
-
-          /* End of Saturate: '<S431>/Saturation' */
-
-          /* Switch: '<S431>/Switch' */
-          windEmulatorStep4_WECSim_B.ControlSignal3_f =
-            windEmulatorStep4_WECSim_B.Saturation_a3;
-        } else {
-          /* Switch: '<S431>/Switch' */
-          windEmulatorStep4_WECSim_B.ControlSignal3_f =
-            windEmulatorStep4_WECSim_B.ControlSignal31;
-        }
-
-        /* End of Switch: '<S431>/Switch' */
-
-        /* Switch: '<S376>/Switch' */
-        windEmulatorStep4_WECSim_B.Switch_g =
-          windEmulatorStep4_WECSim_B.ControlSignal3_f;
-      } else {
-        if (windEmulatorStep4_WECSim_B.Add1 >
-            windEmulatorStep4_WECSim_cal->Switch1_Threshold) {
-          /* Switch: '<S376>/Switch1' incorporates:
-           *  Constant: '<S376>/Constant1'
-           */
-          windEmulatorStep4_WECSim_B.Switch1_o =
-            windEmulatorStep4_WECSim_cal->Constant1_Value_c;
-        } else {
-          if (windEmulatorStep4_WECSim_B.Logic_g[0]) {
-            /* Saturate: '<S432>/Saturation' incorporates:
-             *  Switch: '<S376>/Switch1'
-             *  Switch: '<S432>/Switch'
-             */
-            riseValLimit = windEmulatorStep4_WECSim_B.ControlSignal31_o;
-            u1 = windEmulatorStep4_WECSim_cal->Saturation_LowerSat_n;
-            rateLimiterRate =
-              windEmulatorStep4_WECSim_cal->Saturation_UpperSat_g;
-            if (riseValLimit > rateLimiterRate) {
-              /* Saturate: '<S432>/Saturation' */
-              windEmulatorStep4_WECSim_B.Saturation_k = rateLimiterRate;
-            } else if (riseValLimit < u1) {
-              /* Saturate: '<S432>/Saturation' */
-              windEmulatorStep4_WECSim_B.Saturation_k = u1;
-            } else {
-              /* Saturate: '<S432>/Saturation' */
-              windEmulatorStep4_WECSim_B.Saturation_k = riseValLimit;
-            }
-
-            /* End of Saturate: '<S432>/Saturation' */
-
-            /* Switch: '<S432>/Switch' incorporates:
-             *  Switch: '<S376>/Switch1'
-             */
-            windEmulatorStep4_WECSim_B.ControlSignal3_e =
-              windEmulatorStep4_WECSim_B.Saturation_k;
-          } else {
-            /* Switch: '<S432>/Switch' incorporates:
-             *  Switch: '<S376>/Switch1'
-             */
-            windEmulatorStep4_WECSim_B.ControlSignal3_e =
-              windEmulatorStep4_WECSim_B.ControlSignal31_o;
-          }
-
-          /* Switch: '<S376>/Switch1' */
-          windEmulatorStep4_WECSim_B.Switch1_o =
-            windEmulatorStep4_WECSim_B.ControlSignal3_e;
-        }
-
-        /* Switch: '<S376>/Switch' incorporates:
-         *  Switch: '<S376>/Switch1'
-         *  Switch: '<S432>/Switch'
-         */
-        windEmulatorStep4_WECSim_B.Switch_g =
-          windEmulatorStep4_WECSim_B.Switch1_o;
-      }
-
-      /* End of Switch: '<S376>/Switch' */
-
-      /* Gain: '<S376>/Gain' */
-      windEmulatorStep4_WECSim_B.Gain_l = tmp_11 *
-        windEmulatorStep4_WECSim_B.Switch_g;
-
-      /* RateLimiter: '<S373>/Rate Limiter' */
-      if (windEmulatorStep4_WECSim_DW.LastMajorTime_d == (rtInf)) {
-        /* RateLimiter: '<S373>/Rate Limiter' */
-        windEmulatorStep4_WECSim_B.RateLimiter_b =
-          windEmulatorStep4_WECSim_B.Gain_l;
-      } else {
-        deltaT_tmp = windEmulatorStep4_WECSim_M->Timing.t[0];
-        u1 = deltaT_tmp - windEmulatorStep4_WECSim_DW.LastMajorTime_d;
-        if (windEmulatorStep4_WECSim_DW.LastMajorTime_d == deltaT_tmp) {
-          if (windEmulatorStep4_WECSim_DW.PrevLimited_g) {
-            /* RateLimiter: '<S373>/Rate Limiter' */
-            windEmulatorStep4_WECSim_B.RateLimiter_b =
-              windEmulatorStep4_WECSim_DW.PrevY_l;
-          } else {
-            /* RateLimiter: '<S373>/Rate Limiter' */
-            windEmulatorStep4_WECSim_B.RateLimiter_b =
-              windEmulatorStep4_WECSim_B.Gain_l;
-          }
-        } else {
-          riseValLimit = u1 * tmp_m;
-          rateLimiterRate = windEmulatorStep4_WECSim_B.Gain_l -
-            windEmulatorStep4_WECSim_DW.PrevY_l;
-          if (rateLimiterRate > riseValLimit) {
-            /* RateLimiter: '<S373>/Rate Limiter' */
-            windEmulatorStep4_WECSim_B.RateLimiter_b =
-              windEmulatorStep4_WECSim_DW.PrevY_l + riseValLimit;
-            f = true;
-          } else {
-            riseValLimit = -tmp_m;
-            u1 *= riseValLimit;
-            if (rateLimiterRate < u1) {
-              /* RateLimiter: '<S373>/Rate Limiter' */
-              windEmulatorStep4_WECSim_B.RateLimiter_b =
-                windEmulatorStep4_WECSim_DW.PrevY_l + u1;
-              f = true;
-            } else {
-              /* RateLimiter: '<S373>/Rate Limiter' */
-              windEmulatorStep4_WECSim_B.RateLimiter_b =
-                windEmulatorStep4_WECSim_B.Gain_l;
-              f = false;
-            }
-          }
-
-          if (tmp_h) {
-            windEmulatorStep4_WECSim_DW.PrevLimited_g = f;
-          }
-        }
-      }
-
-      /* Sum: '<S375>/Sum' */
-      windEmulatorStep4_WECSim_B.wError =
-        windEmulatorStep4_WECSim_B.BusAssignment_c.genSpeedActual -
-        windEmulatorStep4_WECSim_B.BusAssignment_c.speedRef_rpm;
-      if (tmp_g) {
-        /* Gain: '<S417>/Proportional Gain' */
-        windEmulatorStep4_WECSim_B.ProportionalGain = tmp_o->PG *
-          windEmulatorStep4_WECSim_B.wError;
-
-        /* DiscreteIntegrator: '<S412>/Integrator' */
-        if (windEmulatorStep4_WECSim_B.BusAssignment_c.speedCtrlReset ||
-            (windEmulatorStep4_WECSim_DW.Integrator_PrevResetState != 0)) {
-          windEmulatorStep4_WECSim_DW.Integrator_DSTATE =
-            windEmulatorStep4_WECSim_cal->PIDController_InitialConditio_a;
-        }
-
-        /* DiscreteIntegrator: '<S412>/Integrator' */
-        windEmulatorStep4_WECSim_B.Integrator_b =
-          windEmulatorStep4_WECSim_DW.Integrator_DSTATE;
-
-        /* Gain: '<S405>/Derivative Gain' */
-        windEmulatorStep4_WECSim_B.DerivativeGain =
-          windEmulatorStep4_WECSim_cal->PIDController_D *
-          windEmulatorStep4_WECSim_B.wError;
-
-        /* DiscreteIntegrator: '<S407>/Filter' */
-        if (windEmulatorStep4_WECSim_B.BusAssignment_c.speedCtrlReset ||
-            (windEmulatorStep4_WECSim_DW.Filter_PrevResetState != 0)) {
-          windEmulatorStep4_WECSim_DW.Filter_DSTATE =
-            windEmulatorStep4_WECSim_cal->PIDController_InitialConditionF;
-        }
-
-        /* DiscreteIntegrator: '<S407>/Filter' */
-        windEmulatorStep4_WECSim_B.Filter =
-          windEmulatorStep4_WECSim_DW.Filter_DSTATE;
-
-        /* Sum: '<S407>/SumD' */
-        windEmulatorStep4_WECSim_B.SumD =
-          windEmulatorStep4_WECSim_B.DerivativeGain -
-          windEmulatorStep4_WECSim_B.Filter;
-
-        /* Gain: '<S415>/Filter Coefficient' */
-        windEmulatorStep4_WECSim_B.FilterCoefficient =
-          windEmulatorStep4_WECSim_cal->PIDController_N *
-          windEmulatorStep4_WECSim_B.SumD;
-
-        /* Sum: '<S422>/Sum' */
-        windEmulatorStep4_WECSim_B.Sum_c =
-          (windEmulatorStep4_WECSim_B.ProportionalGain +
-           windEmulatorStep4_WECSim_B.Integrator_b) +
-          windEmulatorStep4_WECSim_B.FilterCoefficient;
-
-        /* RelationalOperator: '<S420>/LowerRelop1' incorporates:
-         *  Constant: '<S375>/Constant'
-         */
-        windEmulatorStep4_WECSim_B.LowerRelop1_g =
-          (windEmulatorStep4_WECSim_B.Sum_c > tmp_l);
-
-        /* RelationalOperator: '<S420>/UpperRelop' incorporates:
-         *  Constant: '<S375>/Constant1'
-         */
-        riseValLimit = -tmp_l;
-
-        /* RelationalOperator: '<S420>/UpperRelop' */
-        windEmulatorStep4_WECSim_B.UpperRelop_g =
-          (windEmulatorStep4_WECSim_B.Sum_c < riseValLimit);
-
-        /* Switch: '<S420>/Switch' */
-        if (windEmulatorStep4_WECSim_B.UpperRelop_g) {
-          /* Switch: '<S420>/Switch' incorporates:
-           *  Constant: '<S375>/Constant1'
-           */
-          windEmulatorStep4_WECSim_B.Switch_i = -tmp_l;
-        } else {
-          /* Switch: '<S420>/Switch' */
-          windEmulatorStep4_WECSim_B.Switch_i = windEmulatorStep4_WECSim_B.Sum_c;
-        }
-
-        /* End of Switch: '<S420>/Switch' */
-
-        /* Switch: '<S420>/Switch2' */
-        if (windEmulatorStep4_WECSim_B.LowerRelop1_g) {
-          /* Switch: '<S420>/Switch2' incorporates:
-           *  Constant: '<S375>/Constant'
-           */
-          windEmulatorStep4_WECSim_B.Switch2_k = tmp_l;
-        } else {
-          /* Switch: '<S420>/Switch2' */
-          windEmulatorStep4_WECSim_B.Switch2_k =
-            windEmulatorStep4_WECSim_B.Switch_i;
-        }
-
-        /* End of Switch: '<S420>/Switch2' */
-
-        /* Gain: '<S375>/Gain2' */
-        windEmulatorStep4_WECSim_B.ContolTorque =
-          windEmulatorStep4_WECSim_cal->Gain2_Gain_o *
-          windEmulatorStep4_WECSim_B.Switch2_k;
-      }
-
-      /* Step: '<S370>/Step' incorporates:
-       *  RateLimiter: '<S2>/acs880RateLim'
-       *  RateLimiter: '<S436>/Rate Limiter'
-       *  SimscapeExecutionBlock: '<S216>/OUTPUT_1_0'
-       *  SimscapeExecutionBlock: '<S216>/OUTPUT_1_1'
-       *  SimscapeExecutionBlock: '<S216>/STATE_1'
-       *  SimscapeExecutionBlock: '<S350>/OUTPUT_1_0'
-       *  SimscapeExecutionBlock: '<S350>/STATE_1'
-       *  Step: '<S59>/Step'
-       */
-      deltaT_tmp = windEmulatorStep4_WECSim_M->Timing.t[0];
-      if (deltaT_tmp < windEmulatorStep4_WECSim_cal->Ramp_start) {
-        /* Step: '<S370>/Step' */
-        windEmulatorStep4_WECSim_B.Step = windEmulatorStep4_WECSim_cal->Step_Y0;
-      } else {
-        /* Step: '<S370>/Step' */
-        windEmulatorStep4_WECSim_B.Step =
-          windEmulatorStep4_WECSim_cal->Ramp_slope;
-      }
-
-      /* End of Step: '<S370>/Step' */
-
-      /* Clock: '<S370>/Clock' incorporates:
-       *  Clock: '<S57>/Clock'
-       *  SimscapeExecutionBlock: '<S216>/STATE_1'
-       *  SimscapeExecutionBlock: '<S541>/STATE_1'
-       *  SimscapeRtp: '<S508>/RTP_1'
-       */
-      Clock_tmp = windEmulatorStep4_WECSim_M->Timing.t[0];
-
-      /* Clock: '<S370>/Clock' */
-      windEmulatorStep4_WECSim_B.Clock = Clock_tmp;
-
-      /* Sum: '<S370>/Sum' incorporates:
-       *  Constant: '<S370>/Constant'
-       */
-      windEmulatorStep4_WECSim_B.Sum_m = windEmulatorStep4_WECSim_B.Clock -
-        windEmulatorStep4_WECSim_cal->Ramp_start;
-
-      /* Product: '<S370>/Product' */
-      windEmulatorStep4_WECSim_B.Product_a = windEmulatorStep4_WECSim_B.Step *
-        windEmulatorStep4_WECSim_B.Sum_m;
-
-      /* Sum: '<S370>/Output' incorporates:
-       *  Constant: '<S370>/Constant1'
-       */
-      windEmulatorStep4_WECSim_B.Output = windEmulatorStep4_WECSim_B.Product_a +
-        windEmulatorStep4_WECSim_cal->Ramp_InitialOutput;
-
-      /* Saturate: '<S365>/Saturation' */
-      riseValLimit = windEmulatorStep4_WECSim_B.Output;
-      u1 = windEmulatorStep4_WECSim_cal->Saturation_LowerSat_em;
-      rateLimiterRate = windEmulatorStep4_WECSim_cal->Saturation_UpperSat_da;
-      if (riseValLimit > rateLimiterRate) {
-        /* Saturate: '<S365>/Saturation' */
-        windEmulatorStep4_WECSim_B.Saturation = rateLimiterRate;
-      } else if (riseValLimit < u1) {
-        /* Saturate: '<S365>/Saturation' */
-        windEmulatorStep4_WECSim_B.Saturation = u1;
-      } else {
-        /* Saturate: '<S365>/Saturation' */
-        windEmulatorStep4_WECSim_B.Saturation = riseValLimit;
-      }
-
-      /* End of Saturate: '<S365>/Saturation' */
-      if (tmp_g) {
-        /* Gain: '<S371>/kDampingNow' incorporates:
-         *  Constant: '<S371>/kDamping'
-         */
-        windEmulatorStep4_WECSim_B.kDampingNow =
-          windEmulatorStep4_WECSim_cal->kDampingNow_Gain *
-          windEmulatorStep4_WECSim_cal->kDamping_Value;
-
-        /* RateLimiter: '<S498>/Rate Limiter' incorporates:
-         *  Constant: '<S498>/Constant1'
-         */
-        riseValLimit = 2000.0 * tmp_p;
-        rateLimiterRate = riseValLimit - windEmulatorStep4_WECSim_DW.PrevY_k;
-        if (rateLimiterRate >
-            windEmulatorStep4_WECSim_cal->RateLimiter_RisingLim_j *
-            windEmulatorStep4_WECSim_period) {
-          /* RateLimiter: '<S498>/Rate Limiter' */
-          windEmulatorStep4_WECSim_B.RateLimiter_a =
-            windEmulatorStep4_WECSim_cal->RateLimiter_RisingLim_j *
-            windEmulatorStep4_WECSim_period +
-            windEmulatorStep4_WECSim_DW.PrevY_k;
-        } else if (rateLimiterRate <
-                   windEmulatorStep4_WECSim_cal->RateLimiter_FallingLim_e *
-                   windEmulatorStep4_WECSim_period) {
-          /* RateLimiter: '<S498>/Rate Limiter' */
-          windEmulatorStep4_WECSim_B.RateLimiter_a =
-            windEmulatorStep4_WECSim_cal->RateLimiter_FallingLim_e *
-            windEmulatorStep4_WECSim_period +
-            windEmulatorStep4_WECSim_DW.PrevY_k;
-        } else {
-          /* RateLimiter: '<S498>/Rate Limiter' */
-          windEmulatorStep4_WECSim_B.RateLimiter_a = 2000.0 * tmp_p;
-        }
-
-        windEmulatorStep4_WECSim_DW.PrevY_k =
-          windEmulatorStep4_WECSim_B.RateLimiter_a;
-
-        /* SimscapeInputBlock: '<S541>/INPUT_1_1_1' */
-        windEmulatorStep4_WECSim_B.INPUT_1_1_1[0] =
-          windEmulatorStep4_WECSim_B.RateLimiter_a;
-        windEmulatorStep4_WECSim_B.INPUT_1_1_1[1] = 0.0;
-        windEmulatorStep4_WECSim_B.INPUT_1_1_1[2] = 0.0;
-        windEmulatorStep4_WECSim_DW.INPUT_1_1_1_Discrete_142920204[0] =
-          !(windEmulatorStep4_WECSim_B.INPUT_1_1_1[0] ==
-            windEmulatorStep4_WECSim_DW.INPUT_1_1_1_Discrete_142920204[1]);
-        windEmulatorStep4_WECSim_DW.INPUT_1_1_1_Discrete_142920204[1] =
-          windEmulatorStep4_WECSim_B.INPUT_1_1_1[0];
-        windEmulatorStep4_WECSim_B.INPUT_1_1_1[0] =
-          windEmulatorStep4_WECSim_DW.INPUT_1_1_1_Discrete_142920204[1];
-        windEmulatorStep4_WECSim_B.INPUT_1_1_1[3] =
-          windEmulatorStep4_WECSim_DW.INPUT_1_1_1_Discrete_142920204[0];
-      }
-
-      /* StateSpace: '<S531>/Internal' */
-      windEmulatorStep4_WECSim_B.Internal = 0.0;
-
-      /* StateSpace: '<S531>/Internal' */
-      for (q0 = windEmulatorStep4_WECSim_cal->Internal_C_jc[0U]; q0 <
-           windEmulatorStep4_WECSim_cal->Internal_C_jc[1U]; q0++) {
-        /* StateSpace: '<S531>/Internal' */
-        windEmulatorStep4_WECSim_B.Internal +=
-          windEmulatorStep4_WECSim_cal->Internal_C_pr *
-          windEmulatorStep4_WECSim_X.Internal_CSTATE[0U];
-      }
-
-      for (q0 = windEmulatorStep4_WECSim_cal->Internal_C_jc[1U]; q0 <
-           windEmulatorStep4_WECSim_cal->Internal_C_jc[2U]; q0++) {
-        /* StateSpace: '<S531>/Internal' */
-        windEmulatorStep4_WECSim_B.Internal +=
-          windEmulatorStep4_WECSim_cal->Internal_C_pr *
-          windEmulatorStep4_WECSim_X.Internal_CSTATE[1U];
-      }
-
-      for (q0 = windEmulatorStep4_WECSim_cal->Internal_C_jc[2U]; q0 <
-           windEmulatorStep4_WECSim_cal->Internal_C_jc[3U]; q0++) {
-        /* StateSpace: '<S531>/Internal' */
-        windEmulatorStep4_WECSim_B.Internal +=
-          windEmulatorStep4_WECSim_cal->Internal_C_pr *
-          windEmulatorStep4_WECSim_X.Internal_CSTATE[2U];
-      }
-
-      /* SimscapeInputBlock: '<S541>/INPUT_2_1_1' */
-      windEmulatorStep4_WECSim_B.INPUT_2_1_1[0] =
-        windEmulatorStep4_WECSim_B.Internal;
-      windEmulatorStep4_WECSim_B.INPUT_2_1_1[1] = 0.0;
-      windEmulatorStep4_WECSim_B.INPUT_2_1_1[2] = 0.0;
-      windEmulatorStep4_WECSim_B.INPUT_2_1_1[3] = 0.0;
-
-      /* StateSpace: '<S545>/Internal' */
-      windEmulatorStep4_WECSim_B.Internal_j = 0.0;
-
-      /* StateSpace: '<S545>/Internal' */
-      for (q0 = windEmulatorStep4_WECSim_cal->Internal_C_jc_k[0U]; q0 <
-           windEmulatorStep4_WECSim_cal->Internal_C_jc_k[1U]; q0++) {
-        /* StateSpace: '<S545>/Internal' */
-        windEmulatorStep4_WECSim_B.Internal_j +=
-          windEmulatorStep4_WECSim_cal->Internal_C_pr_a *
-          windEmulatorStep4_WECSim_X.Internal_CSTATE_j;
-      }
-
-      /* Gain: '<S510>/Gain' */
-      windEmulatorStep4_WECSim_B.Gain_lp =
-        windEmulatorStep4_WECSim_cal->Gain_Gain *
-        windEmulatorStep4_WECSim_B.Internal_j;
-
-      /* SimscapeInputBlock: '<S541>/INPUT_4_1_1' */
-      windEmulatorStep4_WECSim_B.INPUT_4_1_1[0] =
-        windEmulatorStep4_WECSim_B.Gain_lp;
-      windEmulatorStep4_WECSim_B.INPUT_4_1_1[1] = 0.0;
-      windEmulatorStep4_WECSim_B.INPUT_4_1_1[2] = 0.0;
-      windEmulatorStep4_WECSim_B.INPUT_4_1_1[3] = 0.0;
-      if (tmp_g) {
         /* Gain: '<S366>/Gain' */
         windEmulatorStep4_WECSim_B.Gain_d = tmp_p *
           windEmulatorStep4_WECSim_B.BusAssignment_c.genSpeedActual;
@@ -5967,7 +5536,8 @@ void windEmulatorStep4_WECSim_step(void)
           expl_temp.mIntegerParameters.mX = NULL;
           expl_temp.mIndexParameters.mN = 0;
           expl_temp.mIndexParameters.mX = NULL;
-          f = nesl_rtp_manager_set_rtps(rtpManager, Clock_tmp, expl_temp, diag);
+          f = nesl_rtp_manager_set_rtps(rtpManager,
+            windEmulatorStep4_WECSim_M->Timing.t[0], expl_temp, diag);
           if (!f) {
             f = error_buffer_is_empty(rtmGetErrorStatus
               (windEmulatorStep4_WECSim_M));
@@ -5980,12 +5550,14 @@ void windEmulatorStep4_WECSim_step(void)
 
         windEmulatorStep4_WECSim_DW.RTP_1_SetParametersNeeded = false;
 
+        /* End of SimscapeRtp: '<S508>/RTP_1' */
+
         /* SimscapeExecutionBlock: '<S541>/STATE_1' incorporates:
          *  SimscapeExecutionBlock: '<S541>/OUTPUT_1_0'
          */
         simulationData = static_cast<NeslSimulationData *>
           (windEmulatorStep4_WECSim_DW.STATE_1_SimData);
-        u1 = Clock_tmp;
+        u1 = windEmulatorStep4_WECSim_M->Timing.t[0];
         time = u1;
         simulationData->mData->mTime.mN = 1;
         simulationData->mData->mTime.mX = &time;
@@ -6045,8 +5617,8 @@ void windEmulatorStep4_WECSim_step(void)
         simulationData->mData->mTolerances.mX = NULL;
         simulationData->mData->mCstateHasChanged = false;
         simulationData->mData->mDstateHasChanged = false;
-        rateLimiterRate = windEmulatorStep4_WECSim_M->Timing.t[1];
-        time_0 = rateLimiterRate;
+        deltaT_tmp = windEmulatorStep4_WECSim_M->Timing.t[1];
+        time_0 = deltaT_tmp;
         simulationData->mData->mTime.mN = 1;
         simulationData->mData->mTime.mX = &time_0;
         isHit = 0;
@@ -6068,6 +5640,8 @@ void windEmulatorStep4_WECSim_step(void)
             rtmSetErrorStatus(windEmulatorStep4_WECSim_M, msg);
           }
         }
+
+        /* End of SimscapeExecutionBlock: '<S541>/STATE_1' */
 
         /* SimscapeExecutionBlock: '<S541>/OUTPUT_1_0' */
         simulationData = static_cast<NeslSimulationData *>
@@ -6134,7 +5708,7 @@ void windEmulatorStep4_WECSim_step(void)
         simulationData->mData->mTolerances.mX = NULL;
         simulationData->mData->mCstateHasChanged = false;
         simulationData->mData->mDstateHasChanged = false;
-        time_2 = rateLimiterRate;
+        time_2 = deltaT_tmp;
         simulationData->mData->mTime.mN = 1;
         simulationData->mData->mTime.mX = &time_2;
         isHit_0 = 0;
@@ -6156,6 +5730,92 @@ void windEmulatorStep4_WECSim_step(void)
             rtmSetErrorStatus(windEmulatorStep4_WECSim_M, msg);
           }
         }
+
+        /* Gain: '<S504>/Gain' */
+        windEmulatorStep4_WECSim_B.Pressure =
+          windEmulatorStep4_WECSim_cal->Gain_Gain_c *
+          windEmulatorStep4_WECSim_B.OUTPUT_1_0[8];
+
+        /* Gain: '<S6>/psi -> bar' */
+        windEmulatorStep4_WECSim_B.psibar = *get_psi2bar() *
+          windEmulatorStep4_WECSim_B.Pressure;
+
+        /* Gain: '<S511>/Gain' */
+        windEmulatorStep4_WECSim_B.ShaftSpeedPump = tmp_10 *
+          windEmulatorStep4_WECSim_B.OUTPUT_1_0[9];
+      }
+
+      /* Step: '<S370>/Step' incorporates:
+       *  RateLimiter: '<S2>/acs880RateLim'
+       *  RateLimiter: '<S373>/Rate Limiter'
+       *  RateLimiter: '<S436>/Rate Limiter'
+       *  SimscapeExecutionBlock: '<S216>/OUTPUT_1_0'
+       *  SimscapeExecutionBlock: '<S216>/OUTPUT_1_1'
+       *  SimscapeExecutionBlock: '<S216>/STATE_1'
+       *  SimscapeExecutionBlock: '<S332>/OUTPUT_1_0'
+       *  SimscapeExecutionBlock: '<S332>/STATE_1'
+       *  Step: '<S58>/Step'
+       */
+      deltaT_tmp = windEmulatorStep4_WECSim_M->Timing.t[0];
+      if (deltaT_tmp < windEmulatorStep4_WECSim_cal->Ramp_start) {
+        /* Step: '<S370>/Step' */
+        windEmulatorStep4_WECSim_B.Step = windEmulatorStep4_WECSim_cal->Step_Y0;
+      } else {
+        /* Step: '<S370>/Step' */
+        windEmulatorStep4_WECSim_B.Step =
+          windEmulatorStep4_WECSim_cal->Ramp_slope;
+      }
+
+      /* End of Step: '<S370>/Step' */
+
+      /* Clock: '<S370>/Clock' incorporates:
+       *  Clock: '<S57>/Clock'
+       *  SimscapeExecutionBlock: '<S216>/STATE_1'
+       */
+      Clock_tmp = windEmulatorStep4_WECSim_M->Timing.t[0];
+
+      /* Clock: '<S370>/Clock' */
+      windEmulatorStep4_WECSim_B.Clock = Clock_tmp;
+
+      /* Sum: '<S370>/Sum' incorporates:
+       *  Constant: '<S370>/Constant'
+       */
+      windEmulatorStep4_WECSim_B.Sum_m = windEmulatorStep4_WECSim_B.Clock -
+        windEmulatorStep4_WECSim_cal->Ramp_start;
+
+      /* Product: '<S370>/Product' */
+      windEmulatorStep4_WECSim_B.Product_a = windEmulatorStep4_WECSim_B.Step *
+        windEmulatorStep4_WECSim_B.Sum_m;
+
+      /* Sum: '<S370>/Output' incorporates:
+       *  Constant: '<S370>/Constant1'
+       */
+      windEmulatorStep4_WECSim_B.Output = windEmulatorStep4_WECSim_B.Product_a +
+        windEmulatorStep4_WECSim_cal->Ramp_InitialOutput;
+
+      /* Saturate: '<S365>/Saturation' */
+      riseValLimit = windEmulatorStep4_WECSim_B.Output;
+      u1 = windEmulatorStep4_WECSim_cal->Saturation_LowerSat_em;
+      rateLimiterRate = windEmulatorStep4_WECSim_cal->Saturation_UpperSat_da;
+      if (riseValLimit > rateLimiterRate) {
+        /* Saturate: '<S365>/Saturation' */
+        windEmulatorStep4_WECSim_B.Saturation = rateLimiterRate;
+      } else if (riseValLimit < u1) {
+        /* Saturate: '<S365>/Saturation' */
+        windEmulatorStep4_WECSim_B.Saturation = u1;
+      } else {
+        /* Saturate: '<S365>/Saturation' */
+        windEmulatorStep4_WECSim_B.Saturation = riseValLimit;
+      }
+
+      /* End of Saturate: '<S365>/Saturation' */
+      if (tmp_g) {
+        /* Gain: '<S371>/kDampingNow' incorporates:
+         *  Constant: '<S371>/kDamping'
+         */
+        windEmulatorStep4_WECSim_B.kDampingNow =
+          windEmulatorStep4_WECSim_cal->kDampingNow_Gain *
+          windEmulatorStep4_WECSim_cal->kDamping_Value;
 
         /* Product: '<S371>/Product' */
         windEmulatorStep4_WECSim_B.Product_mo =
@@ -6191,48 +5851,8 @@ void windEmulatorStep4_WECSim_step(void)
 
         /* Gain: '<S367>/Gain' */
         windEmulatorStep4_WECSim_B.Gain_n =
-          windEmulatorStep4_WECSim_cal->Gain_Gain_c *
+          windEmulatorStep4_WECSim_cal->Gain_Gain_cc *
           windEmulatorStep4_WECSim_B.Product2;
-
-        /* Memory: '<S496>/Memory' */
-        windEmulatorStep4_WECSim_B.Memory_o =
-          windEmulatorStep4_WECSim_DW.Memory_PreviousInput_g;
-
-        /* RateLimiter: '<S436>/Rate Limiter1' incorporates:
-         *  Constant: '<S436>/shaftSpeedRefMin'
-         */
-        rateLimiterRate = windEmulatorStep4_WECSim_cal->shaftSpeedRefMin_Value_k
-          - windEmulatorStep4_WECSim_DW.PrevY_fq;
-        if (rateLimiterRate >
-            windEmulatorStep4_WECSim_cal->RateLimiter1_RisingLim_o *
-            windEmulatorStep4_WECSim_period) {
-          /* RateLimiter: '<S436>/Rate Limiter1' */
-          windEmulatorStep4_WECSim_B.RateLimiter1_m =
-            windEmulatorStep4_WECSim_cal->RateLimiter1_RisingLim_o *
-            windEmulatorStep4_WECSim_period +
-            windEmulatorStep4_WECSim_DW.PrevY_fq;
-        } else if (rateLimiterRate <
-                   windEmulatorStep4_WECSim_cal->RateLimiter1_FallingLim_e *
-                   windEmulatorStep4_WECSim_period) {
-          /* RateLimiter: '<S436>/Rate Limiter1' */
-          windEmulatorStep4_WECSim_B.RateLimiter1_m =
-            windEmulatorStep4_WECSim_cal->RateLimiter1_FallingLim_e *
-            windEmulatorStep4_WECSim_period +
-            windEmulatorStep4_WECSim_DW.PrevY_fq;
-        } else {
-          /* RateLimiter: '<S436>/Rate Limiter1' */
-          windEmulatorStep4_WECSim_B.RateLimiter1_m =
-            windEmulatorStep4_WECSim_cal->shaftSpeedRefMin_Value_k;
-        }
-
-        windEmulatorStep4_WECSim_DW.PrevY_fq =
-          windEmulatorStep4_WECSim_B.RateLimiter1_m;
-
-        /* End of RateLimiter: '<S436>/Rate Limiter1' */
-
-        /* Memory: '<S497>/Memory' */
-        windEmulatorStep4_WECSim_B.Memory_a =
-          windEmulatorStep4_WECSim_DW.Memory_PreviousInput_n;
       }
 
       /* Product: '<S365>/Product' */
@@ -6243,372 +5863,6 @@ void windEmulatorStep4_WECSim_step(void)
       /* Abs: '<S365>/Abs' */
       windEmulatorStep4_WECSim_B.Abs = std::abs
         (windEmulatorStep4_WECSim_B.TorqueInputRef);
-
-      /* Sum: '<S439>/Add' */
-      windEmulatorStep4_WECSim_B.Add_m =
-        windEmulatorStep4_WECSim_B.BusAssignment_c.genSpeedActual -
-        windEmulatorStep4_WECSim_B.BusAssignment_c.speedRef_rpm;
-
-      /* Product: '<S494>/Product' incorporates:
-       *  Constant: '<S494>/Constant1'
-       */
-      riseValLimit = -tmp_o->PG;
-
-      /* Product: '<S494>/Product' */
-      windEmulatorStep4_WECSim_B.ControlSignal31_d = riseValLimit *
-        windEmulatorStep4_WECSim_B.Add_m;
-
-      /* RelationalOperator: '<S494>/Relational Operator' */
-      windEmulatorStep4_WECSim_B.RelationalOperator_e =
-        (windEmulatorStep4_WECSim_B.BusAssignment_c.speedRef_rpm <=
-         windEmulatorStep4_WECSim_B.BusAssignment_c.genSpeedActual);
-
-      /* CombinatorialLogic: '<S496>/Logic' incorporates:
-       *  Constant: '<S494>/Constant'
-       */
-      f = windEmulatorStep4_WECSim_B.RelationalOperator_e;
-      q0 = f;
-      f = windEmulatorStep4_WECSim_cal->Constant_Value_cl;
-      q0 = (q0 << 1) + f;
-      f = windEmulatorStep4_WECSim_B.Memory_o;
-      q0 = (q0 << 1) + f;
-      windEmulatorStep4_WECSim_B.Logic_c[0U] =
-        windEmulatorStep4_WECSim_cal->Logic_table_h[q0];
-      windEmulatorStep4_WECSim_B.Logic_c[1U] =
-        windEmulatorStep4_WECSim_cal->Logic_table_h[q0 + 8U];
-
-      /* Sum: '<S439>/Add1' */
-      windEmulatorStep4_WECSim_B.Add1_f =
-        windEmulatorStep4_WECSim_B.BusAssignment_c.genSpeedActual -
-        windEmulatorStep4_WECSim_B.RateLimiter1_m;
-
-      /* Product: '<S495>/Product' incorporates:
-       *  Constant: '<S495>/Constant1'
-       */
-      riseValLimit = -tmp_n;
-
-      /* Product: '<S495>/Product' */
-      windEmulatorStep4_WECSim_B.ControlSignal31_m = riseValLimit *
-        windEmulatorStep4_WECSim_B.Add1_f;
-
-      /* RelationalOperator: '<S495>/Relational Operator' */
-      windEmulatorStep4_WECSim_B.RelationalOperator_g =
-        (windEmulatorStep4_WECSim_B.RateLimiter1_m >=
-         windEmulatorStep4_WECSim_B.BusAssignment_c.genSpeedActual);
-
-      /* CombinatorialLogic: '<S497>/Logic' incorporates:
-       *  Constant: '<S495>/Constant'
-       */
-      f = windEmulatorStep4_WECSim_B.RelationalOperator_g;
-      q0 = f;
-      f = windEmulatorStep4_WECSim_cal->Constant_Value_ks;
-      q0 = (q0 << 1) + f;
-      f = windEmulatorStep4_WECSim_B.Memory_a;
-      q0 = (q0 << 1) + f;
-      windEmulatorStep4_WECSim_B.Logic_p[0U] =
-        windEmulatorStep4_WECSim_cal->Logic_table_n[q0];
-      windEmulatorStep4_WECSim_B.Logic_p[1U] =
-        windEmulatorStep4_WECSim_cal->Logic_table_n[q0 + 8U];
-
-      /* Switch: '<S439>/Switch' incorporates:
-       *  Switch: '<S439>/Switch1'
-       *  Switch: '<S495>/Switch'
-       */
-      if (windEmulatorStep4_WECSim_B.Add_m >
-          windEmulatorStep4_WECSim_cal->Switch_Threshold_k) {
-        /* Switch: '<S494>/Switch' */
-        if (windEmulatorStep4_WECSim_B.Logic_c[0]) {
-          /* Saturate: '<S494>/Saturation' */
-          riseValLimit = windEmulatorStep4_WECSim_B.ControlSignal31_d;
-          u1 = windEmulatorStep4_WECSim_cal->Saturation_LowerSat_f;
-          rateLimiterRate = windEmulatorStep4_WECSim_cal->Saturation_UpperSat_f;
-          if (riseValLimit > rateLimiterRate) {
-            /* Saturate: '<S494>/Saturation' */
-            windEmulatorStep4_WECSim_B.Saturation_af = rateLimiterRate;
-          } else if (riseValLimit < u1) {
-            /* Saturate: '<S494>/Saturation' */
-            windEmulatorStep4_WECSim_B.Saturation_af = u1;
-          } else {
-            /* Saturate: '<S494>/Saturation' */
-            windEmulatorStep4_WECSim_B.Saturation_af = riseValLimit;
-          }
-
-          /* End of Saturate: '<S494>/Saturation' */
-
-          /* Switch: '<S494>/Switch' */
-          windEmulatorStep4_WECSim_B.ControlSignal3_h =
-            windEmulatorStep4_WECSim_B.Saturation_af;
-        } else {
-          /* Switch: '<S494>/Switch' */
-          windEmulatorStep4_WECSim_B.ControlSignal3_h =
-            windEmulatorStep4_WECSim_B.ControlSignal31_d;
-        }
-
-        /* End of Switch: '<S494>/Switch' */
-
-        /* Switch: '<S439>/Switch' */
-        windEmulatorStep4_WECSim_B.Switch_n =
-          windEmulatorStep4_WECSim_B.ControlSignal3_h;
-      } else {
-        if (windEmulatorStep4_WECSim_B.Add1_f >
-            windEmulatorStep4_WECSim_cal->Switch1_Threshold_k) {
-          /* Switch: '<S439>/Switch1' incorporates:
-           *  Constant: '<S439>/Constant1'
-           */
-          windEmulatorStep4_WECSim_B.Switch1_g =
-            windEmulatorStep4_WECSim_cal->Constant1_Value_j;
-        } else {
-          if (windEmulatorStep4_WECSim_B.Logic_p[0]) {
-            /* Saturate: '<S495>/Saturation' incorporates:
-             *  Switch: '<S439>/Switch1'
-             *  Switch: '<S495>/Switch'
-             */
-            riseValLimit = windEmulatorStep4_WECSim_B.ControlSignal31_m;
-            u1 = windEmulatorStep4_WECSim_cal->Saturation_LowerSat_h;
-            rateLimiterRate =
-              windEmulatorStep4_WECSim_cal->Saturation_UpperSat_m;
-            if (riseValLimit > rateLimiterRate) {
-              /* Saturate: '<S495>/Saturation' */
-              windEmulatorStep4_WECSim_B.Saturation_p = rateLimiterRate;
-            } else if (riseValLimit < u1) {
-              /* Saturate: '<S495>/Saturation' */
-              windEmulatorStep4_WECSim_B.Saturation_p = u1;
-            } else {
-              /* Saturate: '<S495>/Saturation' */
-              windEmulatorStep4_WECSim_B.Saturation_p = riseValLimit;
-            }
-
-            /* End of Saturate: '<S495>/Saturation' */
-
-            /* Switch: '<S495>/Switch' incorporates:
-             *  Switch: '<S439>/Switch1'
-             */
-            windEmulatorStep4_WECSim_B.ControlSignal3 =
-              windEmulatorStep4_WECSim_B.Saturation_p;
-          } else {
-            /* Switch: '<S495>/Switch' incorporates:
-             *  Switch: '<S439>/Switch1'
-             */
-            windEmulatorStep4_WECSim_B.ControlSignal3 =
-              windEmulatorStep4_WECSim_B.ControlSignal31_m;
-          }
-
-          /* Switch: '<S439>/Switch1' */
-          windEmulatorStep4_WECSim_B.Switch1_g =
-            windEmulatorStep4_WECSim_B.ControlSignal3;
-        }
-
-        /* Switch: '<S439>/Switch' incorporates:
-         *  Switch: '<S439>/Switch1'
-         *  Switch: '<S495>/Switch'
-         */
-        windEmulatorStep4_WECSim_B.Switch_n =
-          windEmulatorStep4_WECSim_B.Switch1_g;
-      }
-
-      /* End of Switch: '<S439>/Switch' */
-
-      /* Gain: '<S439>/Gain' */
-      windEmulatorStep4_WECSim_B.Gain_f = tmp_11 *
-        windEmulatorStep4_WECSim_B.Switch_n;
-
-      /* RateLimiter: '<S436>/Rate Limiter' */
-      if (windEmulatorStep4_WECSim_DW.LastMajorTime_k == (rtInf)) {
-        /* RateLimiter: '<S436>/Rate Limiter' */
-        windEmulatorStep4_WECSim_B.RateLimiter_aw =
-          windEmulatorStep4_WECSim_B.Gain_f;
-      } else {
-        u1 = deltaT_tmp - windEmulatorStep4_WECSim_DW.LastMajorTime_k;
-        if (windEmulatorStep4_WECSim_DW.LastMajorTime_k == deltaT_tmp) {
-          if (windEmulatorStep4_WECSim_DW.PrevLimited_dz) {
-            /* RateLimiter: '<S436>/Rate Limiter' */
-            windEmulatorStep4_WECSim_B.RateLimiter_aw =
-              windEmulatorStep4_WECSim_DW.PrevY_e;
-          } else {
-            /* RateLimiter: '<S436>/Rate Limiter' */
-            windEmulatorStep4_WECSim_B.RateLimiter_aw =
-              windEmulatorStep4_WECSim_B.Gain_f;
-          }
-        } else {
-          riseValLimit = u1 * tmp_m;
-          rateLimiterRate = windEmulatorStep4_WECSim_B.Gain_f -
-            windEmulatorStep4_WECSim_DW.PrevY_e;
-          if (rateLimiterRate > riseValLimit) {
-            /* RateLimiter: '<S436>/Rate Limiter' */
-            windEmulatorStep4_WECSim_B.RateLimiter_aw =
-              windEmulatorStep4_WECSim_DW.PrevY_e + riseValLimit;
-            f = true;
-          } else {
-            riseValLimit = -tmp_m;
-            u1 *= riseValLimit;
-            if (rateLimiterRate < u1) {
-              /* RateLimiter: '<S436>/Rate Limiter' */
-              windEmulatorStep4_WECSim_B.RateLimiter_aw =
-                windEmulatorStep4_WECSim_DW.PrevY_e + u1;
-              f = true;
-            } else {
-              /* RateLimiter: '<S436>/Rate Limiter' */
-              windEmulatorStep4_WECSim_B.RateLimiter_aw =
-                windEmulatorStep4_WECSim_B.Gain_f;
-              f = false;
-            }
-          }
-
-          if (tmp_h) {
-            windEmulatorStep4_WECSim_DW.PrevLimited_dz = f;
-          }
-        }
-      }
-
-      /* Sum: '<S438>/Sum' */
-      windEmulatorStep4_WECSim_B.wError_c =
-        windEmulatorStep4_WECSim_B.BusAssignment_c.genSpeedActual -
-        windEmulatorStep4_WECSim_B.BusAssignment_c.speedRef_rpm;
-      if (tmp_g) {
-        /* Gain: '<S480>/Proportional Gain' */
-        windEmulatorStep4_WECSim_B.ProportionalGain_h = tmp_o->PG *
-          windEmulatorStep4_WECSim_B.wError_c;
-
-        /* DiscreteIntegrator: '<S475>/Integrator' */
-        if (windEmulatorStep4_WECSim_B.BusAssignment_c.speedCtrlReset ||
-            (windEmulatorStep4_WECSim_DW.Integrator_PrevResetState_g != 0)) {
-          windEmulatorStep4_WECSim_DW.Integrator_DSTATE_e =
-            windEmulatorStep4_WECSim_cal->PIDController_InitialConditio_c;
-        }
-
-        /* DiscreteIntegrator: '<S475>/Integrator' */
-        windEmulatorStep4_WECSim_B.Integrator_l =
-          windEmulatorStep4_WECSim_DW.Integrator_DSTATE_e;
-
-        /* Gain: '<S468>/Derivative Gain' */
-        windEmulatorStep4_WECSim_B.DerivativeGain_g =
-          windEmulatorStep4_WECSim_cal->PIDController_D_d *
-          windEmulatorStep4_WECSim_B.wError_c;
-
-        /* DiscreteIntegrator: '<S470>/Filter' */
-        if (windEmulatorStep4_WECSim_B.BusAssignment_c.speedCtrlReset ||
-            (windEmulatorStep4_WECSim_DW.Filter_PrevResetState_g != 0)) {
-          windEmulatorStep4_WECSim_DW.Filter_DSTATE_b =
-            windEmulatorStep4_WECSim_cal->PIDController_InitialConditio_k;
-        }
-
-        /* DiscreteIntegrator: '<S470>/Filter' */
-        windEmulatorStep4_WECSim_B.Filter_j =
-          windEmulatorStep4_WECSim_DW.Filter_DSTATE_b;
-
-        /* Sum: '<S470>/SumD' */
-        windEmulatorStep4_WECSim_B.SumD_c =
-          windEmulatorStep4_WECSim_B.DerivativeGain_g -
-          windEmulatorStep4_WECSim_B.Filter_j;
-
-        /* Gain: '<S478>/Filter Coefficient' */
-        windEmulatorStep4_WECSim_B.FilterCoefficient_g =
-          windEmulatorStep4_WECSim_cal->PIDController_N_p *
-          windEmulatorStep4_WECSim_B.SumD_c;
-
-        /* Sum: '<S485>/Sum' */
-        windEmulatorStep4_WECSim_B.Sum_n =
-          (windEmulatorStep4_WECSim_B.ProportionalGain_h +
-           windEmulatorStep4_WECSim_B.Integrator_l) +
-          windEmulatorStep4_WECSim_B.FilterCoefficient_g;
-
-        /* RelationalOperator: '<S483>/LowerRelop1' incorporates:
-         *  Constant: '<S438>/Constant'
-         */
-        windEmulatorStep4_WECSim_B.LowerRelop1_h =
-          (windEmulatorStep4_WECSim_B.Sum_n > tmp_l);
-
-        /* RelationalOperator: '<S483>/UpperRelop' incorporates:
-         *  Constant: '<S438>/Constant1'
-         */
-        riseValLimit = -tmp_l;
-
-        /* RelationalOperator: '<S483>/UpperRelop' */
-        windEmulatorStep4_WECSim_B.UpperRelop_m =
-          (windEmulatorStep4_WECSim_B.Sum_n < riseValLimit);
-
-        /* Switch: '<S483>/Switch' */
-        if (windEmulatorStep4_WECSim_B.UpperRelop_m) {
-          /* Switch: '<S483>/Switch' incorporates:
-           *  Constant: '<S438>/Constant1'
-           */
-          windEmulatorStep4_WECSim_B.Switch_c = -tmp_l;
-        } else {
-          /* Switch: '<S483>/Switch' */
-          windEmulatorStep4_WECSim_B.Switch_c = windEmulatorStep4_WECSim_B.Sum_n;
-        }
-
-        /* Switch: '<S483>/Switch2' */
-        if (windEmulatorStep4_WECSim_B.LowerRelop1_h) {
-          /* Switch: '<S483>/Switch2' incorporates:
-           *  Constant: '<S438>/Constant'
-           */
-          windEmulatorStep4_WECSim_B.Switch2_m = tmp_l;
-        } else {
-          /* Switch: '<S483>/Switch2' */
-          windEmulatorStep4_WECSim_B.Switch2_m =
-            windEmulatorStep4_WECSim_B.Switch_c;
-        }
-
-        /* End of Switch: '<S483>/Switch2' */
-
-        /* Gain: '<S438>/Gain2' */
-        windEmulatorStep4_WECSim_B.ContolTorque_f =
-          windEmulatorStep4_WECSim_cal->Gain2_Gain_e *
-          windEmulatorStep4_WECSim_B.Switch2_m;
-      }
-
-      /* Switch generated from: '<S365>/Switch' incorporates:
-       *  Constant: '<S436>/DeadBandController'
-       *  Switch: '<S436>/Switch'
-       */
-      if (windEmulatorStep4_WECSim_B.Abs >= tmp_v) {
-        /* Switch: '<S373>/Switch' incorporates:
-         *  Constant: '<S373>/DeadBandController'
-         */
-        if (tmp_u) {
-          /* Switch: '<S373>/Switch' */
-          windEmulatorStep4_WECSim_B.Switch_cn =
-            windEmulatorStep4_WECSim_B.RateLimiter_b;
-        } else {
-          /* Switch: '<S373>/Switch' */
-          windEmulatorStep4_WECSim_B.Switch_cn =
-            windEmulatorStep4_WECSim_B.ContolTorque;
-        }
-
-        /* Switch generated from: '<S365>/Switch' */
-        windEmulatorStep4_WECSim_B.ControlTorqueLoad =
-          windEmulatorStep4_WECSim_B.Switch_cn;
-      } else {
-        if (tmp_u) {
-          /* Switch: '<S436>/Switch' */
-          windEmulatorStep4_WECSim_B.Switch_f =
-            windEmulatorStep4_WECSim_B.RateLimiter_aw;
-        } else {
-          /* Switch: '<S436>/Switch' */
-          windEmulatorStep4_WECSim_B.Switch_f =
-            windEmulatorStep4_WECSim_B.ContolTorque_f;
-        }
-
-        /* Switch generated from: '<S365>/Switch' */
-        windEmulatorStep4_WECSim_B.ControlTorqueLoad =
-          windEmulatorStep4_WECSim_B.Switch_f;
-      }
-
-      if (tmp_g) {
-        /* Gain: '<S504>/Gain' */
-        windEmulatorStep4_WECSim_B.Pressure =
-          windEmulatorStep4_WECSim_cal->Gain_Gain_cc *
-          windEmulatorStep4_WECSim_B.OUTPUT_1_0[8];
-
-        /* Gain: '<S6>/psi -> bar' */
-        windEmulatorStep4_WECSim_B.psibar = *get_psi2bar() *
-          windEmulatorStep4_WECSim_B.Pressure;
-
-        /* Gain: '<S511>/Gain' */
-        windEmulatorStep4_WECSim_B.ShaftSpeedPump = tmp_z *
-          windEmulatorStep4_WECSim_B.OUTPUT_1_0[9];
-      }
 
       /* Sum: '<S437>/Sum' */
       windEmulatorStep4_WECSim_B.Sum_f = windEmulatorStep4_WECSim_B.OUTPUT_1_0
@@ -6659,7 +5913,7 @@ void windEmulatorStep4_WECSim_step(void)
         /* Product: '<S437>/Product' incorporates:
          *  Constant: '<S437>/UnitsConversion'
          */
-        riseValLimit = 6.283185307179586E+6 / (tmp_k * 6894.75);
+        riseValLimit = 6.283185307179586E+6 / (tmp_o * 6894.75);
 
         /* Product: '<S437>/Product' */
         windEmulatorStep4_WECSim_B.Product_aq =
@@ -6706,7 +5960,7 @@ void windEmulatorStep4_WECSim_step(void)
       /* Switch: '<S365>/Switch2' */
       if (windEmulatorStep4_WECSim_B.Abs2 >= tmp_v) {
         /* Gain: '<S365>/Gain' */
-        riseValLimit = 1.0 / (tmp_k * 1.0E-6 * 0.15915494309189535) / 6894.75;
+        riseValLimit = 1.0 / (tmp_o * 1.0E-6 * 0.15915494309189535) / 6894.75;
 
         /* Gain: '<S365>/Gain' */
         windEmulatorStep4_WECSim_B.Gain_k = riseValLimit *
@@ -6820,12 +6074,10 @@ void windEmulatorStep4_WECSim_step(void)
       }
 
       /* BusAssignment: '<S6>/Bus Assignment' */
-      windEmulatorStep4_WECSim_B.BusAssignment_n.genTorqueCmd_Nm =
-        windEmulatorStep4_WECSim_B.ControlTorqueLoad;
+      windEmulatorStep4_WECSim_B.BusAssignment_n.genTorqueCmd_Nm = 0.0;
       windEmulatorStep4_WECSim_B.BusAssignment_n.pressure_bar =
         windEmulatorStep4_WECSim_B.psibar;
-      windEmulatorStep4_WECSim_B.BusAssignment_n.hmOutputShafTorque_Nm =
-        windEmulatorStep4_WECSim_B.OUTPUT_1_0[3];
+      windEmulatorStep4_WECSim_B.BusAssignment_n.hmOutputShafTorque_Nm = 0.0;
       windEmulatorStep4_WECSim_B.BusAssignment_n.genShaftSpeed_rpm =
         windEmulatorStep4_WECSim_B.BusAssignment_c.genSpeedActual;
       windEmulatorStep4_WECSim_B.BusAssignment_n.excShaftSpeed_rpm =
@@ -6939,7 +6191,7 @@ void windEmulatorStep4_WECSim_step(void)
       /* End of Saturate: '<S2>/Saturation' */
 
       /* Gain: '<S2>/Nm -> %' */
-      riseValLimit = 1.0 / tmp_j * 100.0;
+      riseValLimit = 1.0 / tmp_n * 100.0;
 
       /* Gain: '<S2>/Nm -> %' */
       windEmulatorStep4_WECSim_B.Nm = riseValLimit *
@@ -7293,7 +6545,7 @@ void windEmulatorStep4_WECSim_step(void)
           windEmulatorStep4_WECSim_B.NotEqual2_h;
 
         /* Constant: '<S1>/ACS800CtrlMode' */
-        windEmulatorStep4_WECSim_B.ACS800CtrlMode = tmp_10;
+        windEmulatorStep4_WECSim_B.ACS800CtrlMode = tmp_11;
 
         /* Chart: '<S16>/ABB Fieldbus Control' */
         if (windEmulatorStep4_WECSim_DW.temporalCounter_i1_g < 31) {
@@ -7451,7 +6703,7 @@ void windEmulatorStep4_WECSim_step(void)
       /* End of MultiPortSwitch: '<S3>/Multiport Switch1' */
 
       /* Gain: '<S1>/Nm -> %' */
-      riseValLimit = 1.0 / tmp_j * 100.0;
+      riseValLimit = 1.0 / tmp_n * 100.0;
 
       /* Gain: '<S1>/Nm -> %' */
       windEmulatorStep4_WECSim_B.Nm_j = riseValLimit *
@@ -7734,14 +6986,14 @@ void windEmulatorStep4_WECSim_step(void)
          *  Constant: '<S31>/Constant'
          */
         windEmulatorStep4_WECSim_B.resetHilIntegrator =
-          (windEmulatorStep4_WECSim_cal->Constant_Value_kp &&
+          (windEmulatorStep4_WECSim_cal->Constant_Value_k &&
            windEmulatorStep4_WECSim_B.BusAssignment_b.resetHilIntegrator);
 
         /* Logic: '<S31>/resetSidIntegrator' incorporates:
          *  Constant: '<S31>/Constant'
          */
         windEmulatorStep4_WECSim_B.resetSidIntegrator =
-          (windEmulatorStep4_WECSim_cal->Constant_Value_kp &&
+          (windEmulatorStep4_WECSim_cal->Constant_Value_k &&
            windEmulatorStep4_WECSim_B.BusAssignment_b.resetSidIntegrator);
 
         /* Bias: '<S31>/runCounter' */
@@ -7753,14 +7005,14 @@ void windEmulatorStep4_WECSim_step(void)
          *  Constant: '<S31>/Constant'
          */
         windEmulatorStep4_WECSim_B.runHil =
-          (windEmulatorStep4_WECSim_cal->Constant_Value_kp &&
+          (windEmulatorStep4_WECSim_cal->Constant_Value_k &&
            windEmulatorStep4_WECSim_B.BusAssignment_b.runHil);
 
         /* Logic: '<S31>/runSid' incorporates:
          *  Constant: '<S31>/Constant'
          */
         windEmulatorStep4_WECSim_B.runSid =
-          (windEmulatorStep4_WECSim_cal->Constant_Value_kp &&
+          (windEmulatorStep4_WECSim_cal->Constant_Value_k &&
            windEmulatorStep4_WECSim_B.BusAssignment_b.runSid);
 
         /* Bias: '<S31>/stepCounter' */
@@ -8007,12 +7259,12 @@ void windEmulatorStep4_WECSim_step(void)
         /* RelationalOperator: '<S552>/Relational Operator' incorporates:
          *  Constant: '<S552>/Constant'
          */
-        windEmulatorStep4_WECSim_B.RelationalOperator_l =
+        windEmulatorStep4_WECSim_B.RelationalOperator =
           (windEmulatorStep4_WECSim_B.Abs_a >=
            windEmulatorStep4_WECSim_cal->Constant_Value_pf);
 
         /* Switch: '<S552>/Switch' */
-        if (windEmulatorStep4_WECSim_B.RelationalOperator_l) {
+        if (windEmulatorStep4_WECSim_B.RelationalOperator) {
           /* Signum: '<S552>/Sign' */
           i = windEmulatorStep4_WECSim_B.Add_d;
           if (i < 0) {
@@ -8042,8 +7294,9 @@ void windEmulatorStep4_WECSim_step(void)
           windEmulatorStep4_WECSim_DW.lastTurn_PreviousInput;
 
         /* Sum: '<S552>/Add1' */
-        windEmulatorStep4_WECSim_B.Add1_p = windEmulatorStep4_WECSim_B.Switch_g0
-          + windEmulatorStep4_WECSim_B.lastTurn;
+        windEmulatorStep4_WECSim_B.Add1_p2 =
+          windEmulatorStep4_WECSim_B.Switch_g0 +
+          windEmulatorStep4_WECSim_B.lastTurn;
 
         /* DataTypeConversion: '<S552>/Cast To Double3' */
         windEmulatorStep4_WECSim_B.CastToDouble3_b =
@@ -8056,7 +7309,7 @@ void windEmulatorStep4_WECSim_step(void)
 
         /* DataTypeConversion: '<S552>/Cast To Double1' */
         windEmulatorStep4_WECSim_B.CastToDouble1_m =
-          windEmulatorStep4_WECSim_B.Add1_p;
+          windEmulatorStep4_WECSim_B.Add1_p2;
 
         /* Gain: '<S552>/Gain' */
         windEmulatorStep4_WECSim_B.Gain_b =
@@ -8084,7 +7337,7 @@ void windEmulatorStep4_WECSim_step(void)
           windEmulatorStep4_WECSim_B.Uk1;
 
         /* Gain: '<S12>/rad//s->rpm' */
-        windEmulatorStep4_WECSim_B.radsrpm = tmp_z *
+        windEmulatorStep4_WECSim_B.radsrpm = tmp_10 *
           windEmulatorStep4_WECSim_B.Diff;
 
         /* S-Function (slecatpdorx): '<S12>/EtherCAT PDO Receive7' */
@@ -8198,7 +7451,7 @@ void windEmulatorStep4_WECSim_step(void)
         windEmulatorStep4_WECSim_B.BusAssignment_g.absEncoderCounts =
           windEmulatorStep4_WECSim_B.readEncoderCounter;
         windEmulatorStep4_WECSim_B.BusAssignment_g.absEncoderTurns =
-          windEmulatorStep4_WECSim_B.Add1_p;
+          windEmulatorStep4_WECSim_B.Add1_p2;
         windEmulatorStep4_WECSim_B.BusAssignment_g.absEncoderPosition_rad =
           windEmulatorStep4_WECSim_B.Add2;
         windEmulatorStep4_WECSim_B.BusAssignment_g.absEncoderSpeed_rpm =
@@ -15416,58 +14669,14 @@ void windEmulatorStep4_WECSim_step(void)
             bitOffset += 16;
           }
         }
-
-        /* Gain: '<S409>/Integral Gain' */
-        windEmulatorStep4_WECSim_B.IntegralGain = tmp_o->IG *
-          windEmulatorStep4_WECSim_B.wError;
-
-        /* Gain: '<S472>/Integral Gain' */
-        windEmulatorStep4_WECSim_B.IntegralGain_h = tmp_o->IG *
-          windEmulatorStep4_WECSim_B.wError_c;
-      }
-
-      /* Switch: '<S365>/Switch1' */
-      if (windEmulatorStep4_WECSim_B.Abs >= tmp_v) {
-        /* Switch: '<S365>/Switch1' incorporates:
-         *  Constant: '<S365>/Constant'
-         */
-        windEmulatorStep4_WECSim_B.SwitchLogic =
-          windEmulatorStep4_WECSim_cal->Constant_Value_i;
-      } else {
-        /* Switch: '<S365>/Switch1' incorporates:
-         *  Constant: '<S365>/Constant1'
-         */
-        windEmulatorStep4_WECSim_B.SwitchLogic =
-          windEmulatorStep4_WECSim_cal->Constant1_Value_p;
-      }
-
-      if (tmp_g) {
-        /* Gain: '<S499>/m3toL' */
-        windEmulatorStep4_WECSim_B.FlowPump1 =
-          windEmulatorStep4_WECSim_cal->m3toL_Gain *
-          windEmulatorStep4_WECSim_B.OUTPUT_1_0[0];
-
-        /* Sum: '<S522>/Sum' */
-        windEmulatorStep4_WECSim_B.Sum_a =
-          windEmulatorStep4_WECSim_B.BusAssignment_c.excForce_N +
-          windEmulatorStep4_WECSim_B.OUTPUT_1_0[4];
-
-        /* Gain: '<S500>/Gain' */
-        windEmulatorStep4_WECSim_B.FlowAccumulator =
-          windEmulatorStep4_WECSim_cal->Gain_Gain_p *
-          windEmulatorStep4_WECSim_B.OUTPUT_1_0[1];
-
-        /* Constant: '<S6>/Constant1' */
-        windEmulatorStep4_WECSim_B.Constant1 =
-          windEmulatorStep4_WECSim_cal->Constant1_Value_a;
       }
 
       /* SimscapeExecutionBlock: '<S216>/STATE_1' incorporates:
        *  SimscapeExecutionBlock: '<S216>/OUTPUT_1_0'
        *  SimscapeExecutionBlock: '<S216>/OUTPUT_1_1'
-       *  SimscapeExecutionBlock: '<S350>/OUTPUT_1_0'
-       *  SimscapeExecutionBlock: '<S350>/STATE_1'
-       *  SimscapeInputBlock: '<S350>/INPUT_1_1_1'
+       *  SimscapeExecutionBlock: '<S332>/OUTPUT_1_0'
+       *  SimscapeExecutionBlock: '<S332>/STATE_1'
+       *  SimscapeInputBlock: '<S332>/INPUT_1_1_1'
        */
       simulationData = static_cast<NeslSimulationData *>
         (windEmulatorStep4_WECSim_DW.STATE_1_SimData_h);
@@ -15489,12 +14698,12 @@ void windEmulatorStep4_WECSim_step(void)
       simulationData->mData->mHadEvents = false;
       f = rtmIsMajorTimeStep(windEmulatorStep4_WECSim_M);
       simulationData->mData->mIsMajorTimeStep = f;
-      tmp_10 = false;
-      simulationData->mData->mIsSolverAssertCheck = tmp_10;
+      tmp_11 = false;
+      simulationData->mData->mIsSolverAssertCheck = tmp_11;
       simulationData->mData->mIsSolverCheckingCIC = false;
-      tmp_10 = rtsiIsSolverComputingJacobian
+      tmp_11 = rtsiIsSolverComputingJacobian
         (&windEmulatorStep4_WECSim_M->solverInfo);
-      simulationData->mData->mIsComputingJacobian = tmp_10;
+      simulationData->mData->mIsComputingJacobian = tmp_11;
       simulationData->mData->mIsEvaluatingF0 = false;
       simulationData->mData->mIsSolverRequestingReset = false;
       simulationData->mData->mIsModeUpdateTimeStep = tmp_h;
@@ -15589,9 +14798,9 @@ void windEmulatorStep4_WECSim_step(void)
       diagTree = neu_diagnostic_manager_get_initial_tree(diag);
       i = ne_simulator_method(simulator, NESL_SIM_OUTPUTS, simulationData, diag);
       if (i != 0) {
-        tmp_10 = error_buffer_is_empty(rtmGetErrorStatus
+        tmp_11 = error_buffer_is_empty(rtmGetErrorStatus
           (windEmulatorStep4_WECSim_M));
-        if (tmp_10) {
+        if (tmp_11) {
           msg = rtw_diagnostics_msg(diagTree);
           rtmSetErrorStatus(windEmulatorStep4_WECSim_M, msg);
         }
@@ -15611,12 +14820,12 @@ void windEmulatorStep4_WECSim_step(void)
       simulationData->mData->mModeVector.mN = 0;
       simulationData->mData->mModeVector.mX =
         &windEmulatorStep4_WECSim_DW.OUTPUT_1_1_Modes;
-      tmp_10 = false;
-      simulationData->mData->mFoundZcEvents = tmp_10;
+      tmp_11 = false;
+      simulationData->mData->mFoundZcEvents = tmp_11;
       simulationData->mData->mHadEvents = false;
       simulationData->mData->mIsMajorTimeStep = f;
-      tmp_10 = false;
-      simulationData->mData->mIsSolverAssertCheck = tmp_10;
+      tmp_11 = false;
+      simulationData->mData->mIsSolverAssertCheck = tmp_11;
       simulationData->mData->mIsSolverCheckingCIC = false;
       simulationData->mData->mIsComputingJacobian = false;
       simulationData->mData->mIsEvaluatingF0 = false;
@@ -15716,154 +14925,146 @@ void windEmulatorStep4_WECSim_step(void)
       diagTree = neu_diagnostic_manager_get_initial_tree(diag);
       i = ne_simulator_method(simulator, NESL_SIM_OUTPUTS, simulationData, diag);
       if (i != 0) {
-        tmp_10 = error_buffer_is_empty(rtmGetErrorStatus
+        tmp_11 = error_buffer_is_empty(rtmGetErrorStatus
           (windEmulatorStep4_WECSim_M));
-        if (tmp_10) {
+        if (tmp_11) {
           msg = rtw_diagnostics_msg(diagTree);
           rtmSetErrorStatus(windEmulatorStep4_WECSim_M, msg);
         }
       }
 
       for (i = 0; i < 6; i++) {
-        /* Assignment: '<S58>/Assignment ' incorporates:
-         *  Constant: '<S58>/Constant'
-         */
-        windEmulatorStep4_WECSim_B.position[i] =
-          windEmulatorStep4_WECSim_cal->Constant_Value_c[i];
-
-        /* Assignment: '<S58>/Assignment1' incorporates:
-         *  Constant: '<S58>/Constant1'
+        /* Assignment: '<S59>/Assignment1' incorporates:
+         *  Constant: '<S59>/Constant1'
          */
         windEmulatorStep4_WECSim_B.velocity[i] =
           windEmulatorStep4_WECSim_cal->Constant1_Value_b2[i];
       }
 
-      /* Assignment: '<S58>/Assignment ' */
-      windEmulatorStep4_WECSim_B.position[4] =
-        windEmulatorStep4_WECSim_B.OUTPUT_1_1[0];
-
-      /* Assignment: '<S58>/Assignment1' */
+      /* Assignment: '<S59>/Assignment1' */
       windEmulatorStep4_WECSim_B.velocity[4] =
         windEmulatorStep4_WECSim_B.OUTPUT_1_1[1];
+      if (tmp_g) {
+      }
 
-      /* Switch: '<S59>/Switch' */
+      /* Switch: '<S58>/Switch' */
       if (windEmulatorStep4_WECSim_B.velocity[4] >
           windEmulatorStep4_WECSim_cal->Switch_Threshold_l) {
-        /* Switch: '<S59>/Switch' incorporates:
-         *  Constant: '<S59>/Constant3'
+        /* Switch: '<S58>/Switch' incorporates:
+         *  Constant: '<S58>/Constant3'
          */
         windEmulatorStep4_WECSim_B.Switch_l =
           windEmulatorStep4_WECSim_cal->Constant3_Value_h;
       } else {
-        /* Switch: '<S59>/Switch' incorporates:
-         *  Constant: '<S59>/Constant4'
+        /* Switch: '<S58>/Switch' incorporates:
+         *  Constant: '<S58>/Constant4'
          */
         windEmulatorStep4_WECSim_B.Switch_l =
           windEmulatorStep4_WECSim_cal->Constant4_Value;
       }
 
-      /* End of Switch: '<S59>/Switch' */
+      /* End of Switch: '<S58>/Switch' */
 
-      /* Step: '<S59>/Step' */
+      /* Step: '<S58>/Step' */
       if (deltaT_tmp < windEmulatorStep4_WECSim_cal->Step_Time) {
-        /* Step: '<S59>/Step' */
+        /* Step: '<S58>/Step' */
         windEmulatorStep4_WECSim_B.Step_g =
           windEmulatorStep4_WECSim_cal->Step_Y0_c;
       } else {
-        /* Step: '<S59>/Step' */
+        /* Step: '<S58>/Step' */
         windEmulatorStep4_WECSim_B.Step_g =
           windEmulatorStep4_WECSim_cal->Step_YFinal;
       }
 
-      /* SimscapeInputBlock: '<S350>/INPUT_2_1_1' */
+      /* SimscapeInputBlock: '<S332>/INPUT_2_1_1' */
       windEmulatorStep4_WECSim_B.INPUT_2_1_1_c[0] =
         windEmulatorStep4_WECSim_B.Step_g;
       windEmulatorStep4_WECSim_B.INPUT_2_1_1_c[1] = 0.0;
       windEmulatorStep4_WECSim_B.INPUT_2_1_1_c[2] = 0.0;
       windEmulatorStep4_WECSim_B.INPUT_2_1_1_c[3] = 0.0;
 
-      /* SimscapeInputBlock: '<S350>/INPUT_3_1_1' */
-      if (windEmulatorStep4_WECSim_DW.INPUT_3_1_1_FirstOutput_3515086 == 0.0) {
-        windEmulatorStep4_WECSim_DW.INPUT_3_1_1_FirstOutput_3515086 = 1.0;
-        windEmulatorStep4_WECSim_X.windEmulatorStep4_WECSimhptoS_f =
+      /* SimscapeInputBlock: '<S332>/INPUT_3_1_1' */
+      if (windEmulatorStep4_WECSim_DW.INPUT_3_1_1_FirstOutput_4203252 == 0.0) {
+        windEmulatorStep4_WECSim_DW.INPUT_3_1_1_FirstOutput_4203252 = 1.0;
+        windEmulatorStep4_WECSim_X.windEmulatorStep4_WECSimhptoS_n =
           windEmulatorStep4_WECSim_B.velocity[4];
       }
 
       windEmulatorStep4_WECSim_B.INPUT_3_1_1_d[0] =
-        windEmulatorStep4_WECSim_X.windEmulatorStep4_WECSimhptoS_f;
+        windEmulatorStep4_WECSim_X.windEmulatorStep4_WECSimhptoS_n;
       windEmulatorStep4_WECSim_B.INPUT_3_1_1_d[1] =
         (windEmulatorStep4_WECSim_B.velocity[4] -
-         windEmulatorStep4_WECSim_X.windEmulatorStep4_WECSimhptoS_f) * 1000.0;
+         windEmulatorStep4_WECSim_X.windEmulatorStep4_WECSimhptoS_n) * 1000.0;
       windEmulatorStep4_WECSim_B.INPUT_3_1_1_d[2] = 0.0;
       windEmulatorStep4_WECSim_B.INPUT_3_1_1_d[3] = 0.0;
 
-      /* End of SimscapeInputBlock: '<S350>/INPUT_3_1_1' */
+      /* End of SimscapeInputBlock: '<S332>/INPUT_3_1_1' */
       if (tmp_g) {
-        /* Delay: '<S59>/Delay One Step' */
+        /* Delay: '<S58>/Delay One Step' */
         windEmulatorStep4_WECSim_B.DelayOneStep =
           windEmulatorStep4_WECSim_DW.DelayOneStep_DSTATE;
 
-        /* Sum: '<S59>/Sum1' incorporates:
-         *  Constant: '<S59>/Constant'
+        /* Sum: '<S58>/Sum1' incorporates:
+         *  Constant: '<S58>/Constant'
          */
         windEmulatorStep4_WECSim_B.Sum1 = *get_genShaftSpeedRef() -
           windEmulatorStep4_WECSim_B.DelayOneStep;
 
-        /* Gain: '<S305>/Proportional Gain' */
-        windEmulatorStep4_WECSim_B.ProportionalGain_k = *get_pGainGen() *
+        /* Gain: '<S287>/Proportional Gain' */
+        windEmulatorStep4_WECSim_B.ProportionalGain = *get_pGainGen() *
           windEmulatorStep4_WECSim_B.Sum1;
 
-        /* DiscreteIntegrator: '<S300>/Integrator' */
+        /* DiscreteIntegrator: '<S282>/Integrator' */
         windEmulatorStep4_WECSim_B.Integrator_f =
-          windEmulatorStep4_WECSim_DW.Integrator_DSTATE_l;
+          windEmulatorStep4_WECSim_DW.Integrator_DSTATE;
 
-        /* Gain: '<S291>/Derivative Gain' */
-        windEmulatorStep4_WECSim_B.DerivativeGain_f =
+        /* Gain: '<S273>/Derivative Gain' */
+        windEmulatorStep4_WECSim_B.DerivativeGain =
           windEmulatorStep4_WECSim_cal->DiscretePIDController_D *
           windEmulatorStep4_WECSim_B.Sum1;
 
-        /* SampleTimeMath: '<S295>/Tsamp'
+        /* SampleTimeMath: '<S277>/Tsamp'
          *
-         * About '<S295>/Tsamp':
+         * About '<S277>/Tsamp':
          *  y = u * K where K = 1 / ( w * Ts )
          *   */
         windEmulatorStep4_WECSim_B.Tsamp =
-          windEmulatorStep4_WECSim_B.DerivativeGain_f *
+          windEmulatorStep4_WECSim_B.DerivativeGain *
           windEmulatorStep4_WECSim_cal->Tsamp_WtEt;
 
-        /* Delay: '<S293>/UD' */
+        /* Delay: '<S275>/UD' */
         windEmulatorStep4_WECSim_B.UD = windEmulatorStep4_WECSim_DW.UD_DSTATE_j;
 
-        /* Sum: '<S293>/Diff' */
+        /* Sum: '<S275>/Diff' */
         windEmulatorStep4_WECSim_B.Diff_o = windEmulatorStep4_WECSim_B.Tsamp -
           windEmulatorStep4_WECSim_B.UD;
 
-        /* Sum: '<S309>/Sum' */
+        /* Sum: '<S291>/Sum' */
         windEmulatorStep4_WECSim_B.Sum_g =
-          (windEmulatorStep4_WECSim_B.ProportionalGain_k +
+          (windEmulatorStep4_WECSim_B.ProportionalGain +
            windEmulatorStep4_WECSim_B.Integrator_f) +
           windEmulatorStep4_WECSim_B.Diff_o;
       }
 
-      /* SimscapeInputBlock: '<S350>/INPUT_1_1_1' */
+      /* SimscapeInputBlock: '<S332>/INPUT_1_1_1' */
       windEmulatorStep4_WECSim_B.INPUT_1_1_1_n[0] =
         windEmulatorStep4_WECSim_B.Sum_g;
       windEmulatorStep4_WECSim_B.INPUT_1_1_1_n[1] = 0.0;
       windEmulatorStep4_WECSim_B.INPUT_1_1_1_n[2] = 0.0;
       if (f) {
-        windEmulatorStep4_WECSim_DW.INPUT_1_1_1_Discrete_2873336896[0] =
+        windEmulatorStep4_WECSim_DW.INPUT_1_1_1_Discrete_2152258201[0] =
           !(windEmulatorStep4_WECSim_B.INPUT_1_1_1_n[0] ==
-            windEmulatorStep4_WECSim_DW.INPUT_1_1_1_Discrete_2873336896[1]);
-        windEmulatorStep4_WECSim_DW.INPUT_1_1_1_Discrete_2873336896[1] =
+            windEmulatorStep4_WECSim_DW.INPUT_1_1_1_Discrete_2152258201[1]);
+        windEmulatorStep4_WECSim_DW.INPUT_1_1_1_Discrete_2152258201[1] =
           windEmulatorStep4_WECSim_B.INPUT_1_1_1_n[0];
       }
 
       windEmulatorStep4_WECSim_B.INPUT_1_1_1_n[0] =
-        windEmulatorStep4_WECSim_DW.INPUT_1_1_1_Discrete_2873336896[1];
+        windEmulatorStep4_WECSim_DW.INPUT_1_1_1_Discrete_2152258201[1];
       windEmulatorStep4_WECSim_B.INPUT_1_1_1_n[3] =
-        windEmulatorStep4_WECSim_DW.INPUT_1_1_1_Discrete_2873336896[0];
+        windEmulatorStep4_WECSim_DW.INPUT_1_1_1_Discrete_2152258201[0];
 
-      /* SimscapeExecutionBlock: '<S350>/STATE_1' */
+      /* SimscapeExecutionBlock: '<S332>/STATE_1' */
       simulationData = static_cast<NeslSimulationData *>
         (windEmulatorStep4_WECSim_DW.STATE_1_SimData_a);
       time_7 = u1;
@@ -15871,23 +15072,23 @@ void windEmulatorStep4_WECSim_step(void)
       simulationData->mData->mTime.mX = &time_7;
       simulationData->mData->mContStates.mN = 35;
       simulationData->mData->mContStates.mX =
-        &windEmulatorStep4_WECSim_X.windEmulatorStep4_WECSimhptoS_d[0];
+        &windEmulatorStep4_WECSim_X.windEmulatorStep4_WECSimhptoS_h[0];
       simulationData->mData->mDiscStates.mN = 6;
       simulationData->mData->mDiscStates.mX =
-        &windEmulatorStep4_WECSim_DW.STATE_1_Discrete_3239082943[0];
+        &windEmulatorStep4_WECSim_DW.STATE_1_Discrete_208214823[0];
       simulationData->mData->mModeVector.mN = 21;
       simulationData->mData->mModeVector.mX =
         &windEmulatorStep4_WECSim_DW.STATE_1_Modes_i[0];
-      tmp_10 = false;
-      simulationData->mData->mFoundZcEvents = tmp_10;
+      tmp_11 = false;
+      simulationData->mData->mFoundZcEvents = tmp_11;
       simulationData->mData->mHadEvents = false;
       simulationData->mData->mIsMajorTimeStep = f;
-      tmp_10 = false;
-      simulationData->mData->mIsSolverAssertCheck = tmp_10;
+      tmp_11 = false;
+      simulationData->mData->mIsSolverAssertCheck = tmp_11;
       simulationData->mData->mIsSolverCheckingCIC = false;
-      tmp_10 = rtsiIsSolverComputingJacobian
+      tmp_11 = rtsiIsSolverComputingJacobian
         (&windEmulatorStep4_WECSim_M->solverInfo);
-      simulationData->mData->mIsComputingJacobian = tmp_10;
+      simulationData->mData->mIsComputingJacobian = tmp_11;
       simulationData->mData->mIsEvaluatingF0 = false;
       simulationData->mData->mIsSolverRequestingReset = false;
       simulationData->mData->mIsModeUpdateTimeStep = tmp_h;
@@ -15932,15 +15133,15 @@ void windEmulatorStep4_WECSim_step(void)
       diagTree = neu_diagnostic_manager_get_initial_tree(diag);
       i = ne_simulator_method(simulator, NESL_SIM_OUTPUTS, simulationData, diag);
       if (i != 0) {
-        tmp_10 = error_buffer_is_empty(rtmGetErrorStatus
+        tmp_11 = error_buffer_is_empty(rtmGetErrorStatus
           (windEmulatorStep4_WECSim_M));
-        if (tmp_10) {
+        if (tmp_11) {
           msg = rtw_diagnostics_msg(diagTree);
           rtmSetErrorStatus(windEmulatorStep4_WECSim_M, msg);
         }
       }
 
-      /* SimscapeExecutionBlock: '<S350>/OUTPUT_1_0' */
+      /* SimscapeExecutionBlock: '<S332>/OUTPUT_1_0' */
       simulationData = static_cast<NeslSimulationData *>
         (windEmulatorStep4_WECSim_DW.OUTPUT_1_0_SimData_l);
       time_9 = u1;
@@ -15954,12 +15155,12 @@ void windEmulatorStep4_WECSim_step(void)
       simulationData->mData->mModeVector.mN = 0;
       simulationData->mData->mModeVector.mX =
         &windEmulatorStep4_WECSim_DW.OUTPUT_1_0_Modes_b;
-      tmp_10 = false;
-      simulationData->mData->mFoundZcEvents = tmp_10;
+      tmp_11 = false;
+      simulationData->mData->mFoundZcEvents = tmp_11;
       simulationData->mData->mHadEvents = false;
       simulationData->mData->mIsMajorTimeStep = f;
-      tmp_10 = false;
-      simulationData->mData->mIsSolverAssertCheck = tmp_10;
+      tmp_11 = false;
+      simulationData->mData->mIsSolverAssertCheck = tmp_11;
       simulationData->mData->mIsSolverCheckingCIC = false;
       simulationData->mData->mIsComputingJacobian = false;
       simulationData->mData->mIsEvaluatingF0 = false;
@@ -16009,26 +15210,201 @@ void windEmulatorStep4_WECSim_step(void)
       diagTree = neu_diagnostic_manager_get_initial_tree(diag);
       i = ne_simulator_method(simulator, NESL_SIM_OUTPUTS, simulationData, diag);
       if (i != 0) {
-        tmp_10 = error_buffer_is_empty(rtmGetErrorStatus
+        tmp_11 = error_buffer_is_empty(rtmGetErrorStatus
           (windEmulatorStep4_WECSim_M));
-        if (tmp_10) {
+        if (tmp_11) {
           msg = rtw_diagnostics_msg(diagTree);
           rtmSetErrorStatus(windEmulatorStep4_WECSim_M, msg);
         }
       }
 
-      /* Abs: '<S59>/Abs' */
+      /* Abs: '<S58>/Abs' */
       windEmulatorStep4_WECSim_B.Abs_p = std::abs
         (windEmulatorStep4_WECSim_B.OUTPUT_1_0_m[15]);
 
-      /* Gain: '<S59>/Gain' */
-      windEmulatorStep4_WECSim_B.Gain_fl =
+      /* Gain: '<S58>/Gain' */
+      windEmulatorStep4_WECSim_B.Gain_f =
         windEmulatorStep4_WECSim_cal->Gain_Gain_b *
         windEmulatorStep4_WECSim_B.Abs_p;
 
-      /* Product: '<S59>/Product5' */
+      /* Product: '<S58>/Product5' */
       windEmulatorStep4_WECSim_B.ptoTorqueHydraulic =
-        windEmulatorStep4_WECSim_B.Switch_l * windEmulatorStep4_WECSim_B.Gain_fl;
+        windEmulatorStep4_WECSim_B.Switch_l * windEmulatorStep4_WECSim_B.Gain_f;
+      if (tmp_g) {
+      }
+
+      /* Product: '<S58>/Product4' */
+      windEmulatorStep4_WECSim_B.ptoPowerMech =
+        windEmulatorStep4_WECSim_B.velocity[4] *
+        windEmulatorStep4_WECSim_B.ptoTorqueHydraulic;
+      if (tmp_g) {
+      }
+
+      /* Switch: '<S58>/Switch1' */
+      if (windEmulatorStep4_WECSim_B.OUTPUT_1_0_m[18] >
+          windEmulatorStep4_WECSim_cal->Switch1_Threshold_i) {
+        /* Switch: '<S58>/Switch1' incorporates:
+         *  Constant: '<S58>/Constant2'
+         */
+        windEmulatorStep4_WECSim_B.Switch1_k =
+          windEmulatorStep4_WECSim_cal->Constant2_Value_i;
+      } else {
+        /* Switch: '<S58>/Switch1' incorporates:
+         *  Constant: '<S58>/Constant5'
+         */
+        windEmulatorStep4_WECSim_B.Switch1_k =
+          windEmulatorStep4_WECSim_cal->Constant5_Value;
+      }
+
+      /* End of Switch: '<S58>/Switch1' */
+
+      /* Abs: '<S58>/Abs1' */
+      windEmulatorStep4_WECSim_B.Abs1 = std::abs
+        (windEmulatorStep4_WECSim_B.OUTPUT_1_0_m[12]);
+
+      /* Product: '<S58>/Product1' */
+      windEmulatorStep4_WECSim_B.pistonPowerMech =
+        windEmulatorStep4_WECSim_B.Switch1_k * windEmulatorStep4_WECSim_B.Abs1;
+      if (tmp_g) {
+      }
+
+      /* Product: '<S58>/Product' incorporates:
+       *  Constant: '<S58>/Constant1'
+       */
+      windEmulatorStep4_WECSim_B.shaftSpeed =
+        windEmulatorStep4_WECSim_B.OUTPUT_1_0_m[14] * *get_radsec2rpm();
+      if (tmp_g) {
+      }
+
+      /* Product: '<S58>/Product2' */
+      windEmulatorStep4_WECSim_B.shaftPower = windEmulatorStep4_WECSim_B.Sum_g *
+        windEmulatorStep4_WECSim_B.OUTPUT_1_0_m[14];
+      if (tmp_g) {
+      }
+
+      /* Product: '<S58>/Product3' */
+      windEmulatorStep4_WECSim_B.powerHM =
+        windEmulatorStep4_WECSim_B.OUTPUT_1_0_m[14] *
+        windEmulatorStep4_WECSim_B.OUTPUT_1_0_m[16];
+      if (tmp_g) {
+        /* Gain: '<S279>/Integral Gain' */
+        windEmulatorStep4_WECSim_B.IntegralGain = *get_iGainGen() *
+          windEmulatorStep4_WECSim_B.Sum1;
+      }
+
+      /* Gain: '<S219>/Gain' */
+      windEmulatorStep4_WECSim_B.flowRateHCB = tmp_z *
+        windEmulatorStep4_WECSim_B.OUTPUT_1_0_m[0];
+      if (tmp_g) {
+      }
+
+      /* Gain: '<S220>/Gain' */
+      windEmulatorStep4_WECSim_B.flowRateCV4 = tmp_z *
+        windEmulatorStep4_WECSim_B.OUTPUT_1_0_m[1];
+      if (tmp_g) {
+      }
+
+      /* Gain: '<S221>/Gain' */
+      windEmulatorStep4_WECSim_B.flowRateCV1 = tmp_z *
+        windEmulatorStep4_WECSim_B.OUTPUT_1_0_m[2];
+      if (tmp_g) {
+      }
+
+      /* Gain: '<S222>/Gain' */
+      windEmulatorStep4_WECSim_B.flowRateCV3 = tmp_z *
+        windEmulatorStep4_WECSim_B.OUTPUT_1_0_m[3];
+      if (tmp_g) {
+      }
+
+      /* Gain: '<S223>/Gain' */
+      windEmulatorStep4_WECSim_B.flowRateHCA = tmp_z *
+        windEmulatorStep4_WECSim_B.OUTPUT_1_0_m[4];
+      if (tmp_g) {
+      }
+
+      /* Gain: '<S224>/Gain' */
+      windEmulatorStep4_WECSim_B.flowRateC = tmp_z *
+        windEmulatorStep4_WECSim_B.OUTPUT_1_0_m[5];
+      if (tmp_g) {
+      }
+
+      /* Gain: '<S225>/Gain' */
+      windEmulatorStep4_WECSim_B.flowRateAccHP = tmp_z *
+        windEmulatorStep4_WECSim_B.OUTPUT_1_0_m[6];
+      if (tmp_g) {
+      }
+
+      /* Gain: '<S226>/Gain' */
+      windEmulatorStep4_WECSim_B.flowRateHMin = tmp_z *
+        windEmulatorStep4_WECSim_B.OUTPUT_1_0_m[7];
+      if (tmp_g) {
+      }
+
+      /* Gain: '<S227>/Gain' */
+      windEmulatorStep4_WECSim_B.flowRateHMout = tmp_z *
+        windEmulatorStep4_WECSim_B.OUTPUT_1_0_m[8];
+      if (tmp_g) {
+      }
+
+      /* Gain: '<S228>/Gain' */
+      windEmulatorStep4_WECSim_B.flowRateAccLP = tmp_z *
+        windEmulatorStep4_WECSim_B.OUTPUT_1_0_m[9];
+      if (tmp_g) {
+      }
+
+      /* Gain: '<S229>/Gain' */
+      windEmulatorStep4_WECSim_B.flowRateD = tmp_z *
+        windEmulatorStep4_WECSim_B.OUTPUT_1_0_m[10];
+      if (tmp_g) {
+      }
+
+      /* Gain: '<S230>/Gain' */
+      windEmulatorStep4_WECSim_B.flowRateCV2 = tmp_z *
+        windEmulatorStep4_WECSim_B.OUTPUT_1_0_m[11];
+      if (tmp_g) {
+      }
+
+      /* Gain: '<S241>/Gain' */
+      windEmulatorStep4_WECSim_B.pressureA = tmp_y *
+        windEmulatorStep4_WECSim_B.OUTPUT_1_0_m[19];
+      if (tmp_g) {
+      }
+
+      /* Gain: '<S242>/Gain' */
+      windEmulatorStep4_WECSim_B.pressureB = tmp_y *
+        windEmulatorStep4_WECSim_B.OUTPUT_1_0_m[20];
+      if (tmp_g) {
+      }
+
+      /* Gain: '<S243>/Gain' */
+      windEmulatorStep4_WECSim_B.pressureC = tmp_y *
+        windEmulatorStep4_WECSim_B.OUTPUT_1_0_m[21];
+      if (tmp_g) {
+      }
+
+      /* Gain: '<S244>/Gain' */
+      windEmulatorStep4_WECSim_B.pressureHM = tmp_y *
+        windEmulatorStep4_WECSim_B.OUTPUT_1_0_m[22];
+      if (tmp_g) {
+      }
+
+      /* Gain: '<S245>/Gain' */
+      windEmulatorStep4_WECSim_B.pressureD = tmp_y *
+        windEmulatorStep4_WECSim_B.OUTPUT_1_0_m[23];
+      if (tmp_g) {
+      }
+
+      for (i = 0; i < 6; i++) {
+        /* Assignment: '<S59>/Assignment ' incorporates:
+         *  Constant: '<S59>/Constant'
+         */
+        windEmulatorStep4_WECSim_B.position[i] =
+          windEmulatorStep4_WECSim_cal->Constant_Value_c[i];
+      }
+
+      /* Assignment: '<S59>/Assignment ' */
+      windEmulatorStep4_WECSim_B.position[4] =
+        windEmulatorStep4_WECSim_B.OUTPUT_1_1[0];
 
       /* SimscapeInputBlock: '<S216>/INPUT_5_1_1' */
       windEmulatorStep4_WECSim_B.INPUT_5_1_1_c[0] =
@@ -16261,14 +15637,14 @@ void windEmulatorStep4_WECSim_step(void)
       /* Sum: '<S126>/Add' incorporates:
        *  Constant: '<S126>/Constant'
        */
-      windEmulatorStep4_WECSim_B.Add_o = (windEmulatorStep4_WECSim_B.Product_p +
+      windEmulatorStep4_WECSim_B.Add = (windEmulatorStep4_WECSim_B.Product_p +
         windEmulatorStep4_WECSim_cal->Constant_Value_n) +
         windEmulatorStep4_WECSim_B.sf_MATLABFunction1.dispPhase;
 
       /* Sin: '<S126>/Sine Wave Function1' */
       windEmulatorStep4_WECSim_B.coswt = std::sin
         (windEmulatorStep4_WECSim_cal->SineWaveFunction1_Freq *
-         windEmulatorStep4_WECSim_B.Add_o +
+         windEmulatorStep4_WECSim_B.Add +
          windEmulatorStep4_WECSim_cal->SineWaveFunction1_Phase) *
         windEmulatorStep4_WECSim_cal->SineWaveFunction1_Amp +
         windEmulatorStep4_WECSim_cal->SineWaveFunction1_Bias;
@@ -16310,7 +15686,7 @@ void windEmulatorStep4_WECSim_step(void)
          */
         Clock_tmp = (windEmulatorStep4_WECSim_B.Product3[i] + Clock_tmp) -
           riseValLimit;
-        windEmulatorStep4_WECSim_B.Add1_i[i] = Clock_tmp;
+        windEmulatorStep4_WECSim_B.Add1[i] = Clock_tmp;
 
         /* Sum: '<S68>/Add' incorporates:
          *  Constant: '<S128>/Constant'
@@ -16461,19 +15837,19 @@ void windEmulatorStep4_WECSim_step(void)
         windEmulatorStep4_WECSim_cal->Constant_Value_l.hf1.centerGravity[0];
       windEmulatorStep4_WECSim_B.x_cg_b[3] =
         windEmulatorStep4_WECSim_B.sf_YawKinematicTransforms.dispLoc[3] -
-        windEmulatorStep4_WECSim_cal->Constant_Value_iz[0];
+        windEmulatorStep4_WECSim_cal->Constant_Value_i[0];
       windEmulatorStep4_WECSim_B.x_cg_b[1] =
         windEmulatorStep4_WECSim_B.sf_YawKinematicTransforms.dispLoc[1] -
         windEmulatorStep4_WECSim_cal->Constant_Value_l.hf1.centerGravity[1];
       windEmulatorStep4_WECSim_B.x_cg_b[4] =
         windEmulatorStep4_WECSim_B.sf_YawKinematicTransforms.dispLoc[4] -
-        windEmulatorStep4_WECSim_cal->Constant_Value_iz[1];
+        windEmulatorStep4_WECSim_cal->Constant_Value_i[1];
       windEmulatorStep4_WECSim_B.x_cg_b[2] =
         windEmulatorStep4_WECSim_B.sf_YawKinematicTransforms.dispLoc[2] -
         windEmulatorStep4_WECSim_cal->Constant_Value_l.hf1.centerGravity[2];
       windEmulatorStep4_WECSim_B.x_cg_b[5] =
         windEmulatorStep4_WECSim_B.sf_YawKinematicTransforms.dispLoc[5] -
-        windEmulatorStep4_WECSim_cal->Constant_Value_iz[2];
+        windEmulatorStep4_WECSim_cal->Constant_Value_i[2];
 
       /* Product: '<S74>/Product2' incorporates:
        *  Constant: '<S67>/Constant'
@@ -16538,7 +15914,7 @@ void windEmulatorStep4_WECSim_step(void)
       for (i = 0; i < 6; i++) {
         /* Abs: '<S64>/Abs1' */
         Clock_tmp = std::abs(windEmulatorStep4_WECSim_B.v[i]);
-        windEmulatorStep4_WECSim_B.Abs1[i] = Clock_tmp;
+        windEmulatorStep4_WECSim_B.Abs1_e[i] = Clock_tmp;
 
         /* Product: '<S64>/Product' */
         windEmulatorStep4_WECSim_B.vv[i] = windEmulatorStep4_WECSim_B.v[i] *
@@ -16891,14 +16267,14 @@ void windEmulatorStep4_WECSim_step(void)
       /* Sum: '<S205>/Add' incorporates:
        *  Constant: '<S205>/Constant'
        */
-      windEmulatorStep4_WECSim_B.Add_ma = (windEmulatorStep4_WECSim_B.Product_oc
+      windEmulatorStep4_WECSim_B.Add_m = (windEmulatorStep4_WECSim_B.Product_oc
         + windEmulatorStep4_WECSim_cal->Constant_Value_hr) +
         windEmulatorStep4_WECSim_B.sf_MATLABFunction1_e.dispPhase;
 
       /* Sin: '<S205>/Sine Wave Function1' */
       windEmulatorStep4_WECSim_B.coswt_k = std::sin
         (windEmulatorStep4_WECSim_cal->SineWaveFunction1_Freq_i *
-         windEmulatorStep4_WECSim_B.Add_ma +
+         windEmulatorStep4_WECSim_B.Add_m +
          windEmulatorStep4_WECSim_cal->SineWaveFunction1_Phase_h) *
         windEmulatorStep4_WECSim_cal->SineWaveFunction1_Amp_a +
         windEmulatorStep4_WECSim_cal->SineWaveFunction1_Bias_d;
@@ -17053,13 +16429,13 @@ void windEmulatorStep4_WECSim_step(void)
            *  Constant: '<S154>/Constant1'
            */
           windEmulatorStep4_WECSim_B.VerticalBuoyancyForce_g[i] =
-            windEmulatorStep4_WECSim_cal->Constant1_Value_aq[i];
+            windEmulatorStep4_WECSim_cal->Constant1_Value_a[i];
 
           /* Assignment: '<S154>/Assignment (Add Net Bouyancy Force  to Z-Direction)2' incorporates:
            *  Constant: '<S154>/Constant1'
            */
           windEmulatorStep4_WECSim_B.Rotationalbuoyancyforce_l[i] =
-            windEmulatorStep4_WECSim_cal->Constant1_Value_aq[i];
+            windEmulatorStep4_WECSim_cal->Constant1_Value_a[i];
         }
 
         /* Assignment: '<S154>/Assignment (Add Net Bouyancy Force  to Z-Direction)' */
@@ -17314,8 +16690,8 @@ void windEmulatorStep4_WECSim_step(void)
       simulationData->mData->mModeVector.mN = 0;
       simulationData->mData->mModeVector.mX =
         &windEmulatorStep4_WECSim_DW.OUTPUT_1_0_Modes_j;
-      tmp_10 = false;
-      simulationData->mData->mFoundZcEvents = tmp_10;
+      tmp_11 = false;
+      simulationData->mData->mFoundZcEvents = tmp_11;
       simulationData->mData->mHadEvents = false;
       simulationData->mData->mIsMajorTimeStep = f;
       f = false;
@@ -17419,15 +16795,14 @@ void windEmulatorStep4_WECSim_step(void)
       diagTree = neu_diagnostic_manager_get_initial_tree(diag);
       i = ne_simulator_method(simulator, NESL_SIM_OUTPUTS, simulationData, diag);
       if (i != 0) {
-        tmp_h = error_buffer_is_empty(rtmGetErrorStatus
-          (windEmulatorStep4_WECSim_M));
-        if (tmp_h) {
+        f = error_buffer_is_empty(rtmGetErrorStatus(windEmulatorStep4_WECSim_M));
+        if (f) {
           msg = rtw_diagnostics_msg(diagTree);
           rtmSetErrorStatus(windEmulatorStep4_WECSim_M, msg);
         }
       }
 
-      /* SignalConversion generated from: '<S58>/Assignment6' */
+      /* SignalConversion generated from: '<S59>/Assignment6' */
       windEmulatorStep4_WECSim_B.TmpSignalConversionAtAssignment[0] =
         windEmulatorStep4_WECSim_B.OUTPUT_1_0_k[14];
       windEmulatorStep4_WECSim_B.TmpSignalConversionAtAssignment[1] =
@@ -17435,12 +16810,12 @@ void windEmulatorStep4_WECSim_step(void)
       windEmulatorStep4_WECSim_B.TmpSignalConversionAtAssignment[2] =
         windEmulatorStep4_WECSim_B.OUTPUT_1_0_k[15];
 
-      /* Gain: '<S58>/Gain6' */
+      /* Gain: '<S59>/Gain6' */
       windEmulatorStep4_WECSim_B.Gain6 =
         windEmulatorStep4_WECSim_cal->Gain6_Gain *
         windEmulatorStep4_WECSim_B.OUTPUT_1_0_k[15];
 
-      /* SignalConversion generated from: '<S58>/Assignment7' */
+      /* SignalConversion generated from: '<S59>/Assignment7' */
       windEmulatorStep4_WECSim_B.TmpSignalConversionAtAssignme_e[0] =
         windEmulatorStep4_WECSim_B.OUTPUT_1_0_k[17];
       windEmulatorStep4_WECSim_B.TmpSignalConversionAtAssignme_e[1] =
@@ -17448,57 +16823,57 @@ void windEmulatorStep4_WECSim_step(void)
       windEmulatorStep4_WECSim_B.TmpSignalConversionAtAssignme_e[2] =
         windEmulatorStep4_WECSim_B.OUTPUT_1_0_k[18];
 
-      /* Gain: '<S58>/Gain7' */
+      /* Gain: '<S59>/Gain7' */
       windEmulatorStep4_WECSim_B.Gain7 =
         windEmulatorStep4_WECSim_cal->Gain7_Gain *
         windEmulatorStep4_WECSim_B.OUTPUT_1_0_k[18];
 
-      /* Assignment: '<S58>/Assignment6' */
+      /* Assignment: '<S59>/Assignment6' */
       windEmulatorStep4_WECSim_B.Assignment6[0] =
         windEmulatorStep4_WECSim_B.TmpSignalConversionAtAssignment[0];
 
-      /* Assignment: '<S58>/Assignment7' */
+      /* Assignment: '<S59>/Assignment7' */
       windEmulatorStep4_WECSim_B.Assignment7[0] =
         windEmulatorStep4_WECSim_B.TmpSignalConversionAtAssignme_e[0];
 
-      /* Assignment: '<S58>/Assignment6' */
+      /* Assignment: '<S59>/Assignment6' */
       windEmulatorStep4_WECSim_B.Assignment6[1] =
         windEmulatorStep4_WECSim_B.TmpSignalConversionAtAssignment[1];
 
-      /* Assignment: '<S58>/Assignment7' */
+      /* Assignment: '<S59>/Assignment7' */
       windEmulatorStep4_WECSim_B.Assignment7[1] =
         windEmulatorStep4_WECSim_B.TmpSignalConversionAtAssignme_e[1];
 
-      /* Assignment: '<S58>/Assignment6' */
+      /* Assignment: '<S59>/Assignment6' */
       windEmulatorStep4_WECSim_B.Assignment6[2] =
         windEmulatorStep4_WECSim_B.Gain6;
 
-      /* Assignment: '<S58>/Assignment7' */
+      /* Assignment: '<S59>/Assignment7' */
       windEmulatorStep4_WECSim_B.Assignment7[2] =
         windEmulatorStep4_WECSim_B.Gain7;
       for (i = 0; i < 6; i++) {
-        /* Assignment: '<S58>/Assignment2' incorporates:
-         *  Constant: '<S58>/Constant2'
+        /* Assignment: '<S59>/Assignment2' incorporates:
+         *  Constant: '<S59>/Constant2'
          */
         windEmulatorStep4_WECSim_B.acceleration[i] =
           windEmulatorStep4_WECSim_cal->Constant2_Value_m[i];
 
-        /* Assignment: '<S58>/Assignment3' incorporates:
-         *  Constant: '<S58>/Constant3'
+        /* Assignment: '<S59>/Assignment3' incorporates:
+         *  Constant: '<S59>/Constant3'
          */
         windEmulatorStep4_WECSim_B.forceActuation[i] =
           windEmulatorStep4_WECSim_cal->Constant3_Value_m[i];
       }
 
-      /* Assignment: '<S58>/Assignment2' */
+      /* Assignment: '<S59>/Assignment2' */
       windEmulatorStep4_WECSim_B.acceleration[4] =
         windEmulatorStep4_WECSim_B.OUTPUT_1_0_k[6];
 
-      /* Assignment: '<S58>/Assignment3' */
+      /* Assignment: '<S59>/Assignment3' */
       windEmulatorStep4_WECSim_B.forceActuation[4] =
         windEmulatorStep4_WECSim_B.OUTPUT_1_0_k[7];
 
-      /* SignalConversion generated from: '<S58>/Assignment4' */
+      /* SignalConversion generated from: '<S59>/Assignment4' */
       windEmulatorStep4_WECSim_B.TmpSignalConversionAtAssignme_p[0] =
         windEmulatorStep4_WECSim_B.OUTPUT_1_0_k[8];
       windEmulatorStep4_WECSim_B.TmpSignalConversionAtAssignme_p[1] =
@@ -17506,12 +16881,12 @@ void windEmulatorStep4_WECSim_step(void)
       windEmulatorStep4_WECSim_B.TmpSignalConversionAtAssignme_p[2] =
         windEmulatorStep4_WECSim_B.OUTPUT_1_0_k[9];
 
-      /* Gain: '<S58>/Gain4' */
+      /* Gain: '<S59>/Gain4' */
       windEmulatorStep4_WECSim_B.Gain4_j =
         windEmulatorStep4_WECSim_cal->Gain4_Gain *
         windEmulatorStep4_WECSim_B.OUTPUT_1_0_k[9];
 
-      /* SignalConversion generated from: '<S58>/Assignment5' */
+      /* SignalConversion generated from: '<S59>/Assignment5' */
       windEmulatorStep4_WECSim_B.TmpSignalConversionAtAssignme_f[0] =
         windEmulatorStep4_WECSim_B.OUTPUT_1_0_k[11];
       windEmulatorStep4_WECSim_B.TmpSignalConversionAtAssignme_f[1] =
@@ -17519,36 +16894,36 @@ void windEmulatorStep4_WECSim_step(void)
       windEmulatorStep4_WECSim_B.TmpSignalConversionAtAssignme_f[2] =
         windEmulatorStep4_WECSim_B.OUTPUT_1_0_k[12];
 
-      /* Gain: '<S58>/Gain5' */
+      /* Gain: '<S59>/Gain5' */
       windEmulatorStep4_WECSim_B.Gain5_j =
         windEmulatorStep4_WECSim_cal->Gain5_Gain *
         windEmulatorStep4_WECSim_B.OUTPUT_1_0_k[12];
 
-      /* Assignment: '<S58>/Assignment4' */
+      /* Assignment: '<S59>/Assignment4' */
       windEmulatorStep4_WECSim_B.Assignment4[0] =
         windEmulatorStep4_WECSim_B.TmpSignalConversionAtAssignme_p[0];
 
-      /* Assignment: '<S58>/Assignment5' */
+      /* Assignment: '<S59>/Assignment5' */
       windEmulatorStep4_WECSim_B.Assignment5[0] =
         windEmulatorStep4_WECSim_B.TmpSignalConversionAtAssignme_f[0];
 
-      /* Assignment: '<S58>/Assignment4' */
+      /* Assignment: '<S59>/Assignment4' */
       windEmulatorStep4_WECSim_B.Assignment4[1] =
         windEmulatorStep4_WECSim_B.TmpSignalConversionAtAssignme_p[1];
 
-      /* Assignment: '<S58>/Assignment5' */
+      /* Assignment: '<S59>/Assignment5' */
       windEmulatorStep4_WECSim_B.Assignment5[1] =
         windEmulatorStep4_WECSim_B.TmpSignalConversionAtAssignme_f[1];
 
-      /* Assignment: '<S58>/Assignment4' */
+      /* Assignment: '<S59>/Assignment4' */
       windEmulatorStep4_WECSim_B.Assignment4[2] =
         windEmulatorStep4_WECSim_B.Gain4_j;
 
-      /* Assignment: '<S58>/Assignment5' */
+      /* Assignment: '<S59>/Assignment5' */
       windEmulatorStep4_WECSim_B.Assignment5[2] =
         windEmulatorStep4_WECSim_B.Gain5_j;
 
-      /* Sum: '<S58>/Add' */
+      /* Sum: '<S59>/Add' */
       windEmulatorStep4_WECSim_B.forceInternalMechanics[0] =
         (windEmulatorStep4_WECSim_B.Assignment6[0] -
          windEmulatorStep4_WECSim_B.forceActuation[0]) -
@@ -17574,14 +16949,14 @@ void windEmulatorStep4_WECSim_step(void)
          windEmulatorStep4_WECSim_B.forceActuation[5]) -
         windEmulatorStep4_WECSim_B.Assignment5[2];
       for (i = 0; i < 6; i++) {
-        /* Product: '<S58>/Product' */
+        /* Product: '<S59>/Product' */
         windEmulatorStep4_WECSim_B.powerInternalMechanics[i] =
           windEmulatorStep4_WECSim_B.forceInternalMechanics[i] *
           windEmulatorStep4_WECSim_B.velocity[i];
       }
 
       if (tmp_g) {
-        /* SignalConversion generated from: '<S58>/To Workspace' */
+        /* SignalConversion generated from: '<S59>/To Workspace' */
         windEmulatorStep4_WECSim_B.TmpSignalConversionAtToWorkspac[18] =
           windEmulatorStep4_WECSim_B.Assignment6[0];
         windEmulatorStep4_WECSim_B.TmpSignalConversionAtToWorkspac[21] =
@@ -17621,168 +16996,7 @@ void windEmulatorStep4_WECSim_step(void)
             windEmulatorStep4_WECSim_B.powerInternalMechanics[i];
         }
 
-        /* End of SignalConversion generated from: '<S58>/To Workspace' */
-      }
-
-      /* Product: '<S59>/Product4' */
-      windEmulatorStep4_WECSim_B.ptoPowerMech =
-        windEmulatorStep4_WECSim_B.velocity[4] *
-        windEmulatorStep4_WECSim_B.ptoTorqueHydraulic;
-      if (tmp_g) {
-      }
-
-      /* Switch: '<S59>/Switch1' */
-      if (windEmulatorStep4_WECSim_B.OUTPUT_1_0_m[18] >
-          windEmulatorStep4_WECSim_cal->Switch1_Threshold_i) {
-        /* Switch: '<S59>/Switch1' incorporates:
-         *  Constant: '<S59>/Constant2'
-         */
-        windEmulatorStep4_WECSim_B.Switch1_k =
-          windEmulatorStep4_WECSim_cal->Constant2_Value_i;
-      } else {
-        /* Switch: '<S59>/Switch1' incorporates:
-         *  Constant: '<S59>/Constant5'
-         */
-        windEmulatorStep4_WECSim_B.Switch1_k =
-          windEmulatorStep4_WECSim_cal->Constant5_Value;
-      }
-
-      /* End of Switch: '<S59>/Switch1' */
-
-      /* Abs: '<S59>/Abs1' */
-      windEmulatorStep4_WECSim_B.Abs1_n = std::abs
-        (windEmulatorStep4_WECSim_B.OUTPUT_1_0_m[12]);
-
-      /* Product: '<S59>/Product1' */
-      windEmulatorStep4_WECSim_B.pistonPowerMech =
-        windEmulatorStep4_WECSim_B.Switch1_k * windEmulatorStep4_WECSim_B.Abs1_n;
-      if (tmp_g) {
-      }
-
-      /* Product: '<S59>/Product' incorporates:
-       *  Constant: '<S59>/Constant1'
-       */
-      windEmulatorStep4_WECSim_B.shaftSpeed =
-        windEmulatorStep4_WECSim_B.OUTPUT_1_0_m[14] * *get_radsec2rpm();
-      if (tmp_g) {
-      }
-
-      /* Product: '<S59>/Product2' */
-      windEmulatorStep4_WECSim_B.shaftPower = windEmulatorStep4_WECSim_B.Sum_g *
-        windEmulatorStep4_WECSim_B.OUTPUT_1_0_m[14];
-      if (tmp_g) {
-      }
-
-      /* Product: '<S59>/Product3' */
-      windEmulatorStep4_WECSim_B.powerHM =
-        windEmulatorStep4_WECSim_B.OUTPUT_1_0_m[14] *
-        windEmulatorStep4_WECSim_B.OUTPUT_1_0_m[16];
-      if (tmp_g) {
-        /* Gain: '<S297>/Integral Gain' */
-        windEmulatorStep4_WECSim_B.IntegralGain_hm = *get_iGainGen() *
-          windEmulatorStep4_WECSim_B.Sum1;
-      }
-
-      /* Gain: '<S237>/Gain' */
-      windEmulatorStep4_WECSim_B.flowRateHCB = tmp_y *
-        windEmulatorStep4_WECSim_B.OUTPUT_1_0_m[0];
-      if (tmp_g) {
-      }
-
-      /* Gain: '<S238>/Gain' */
-      windEmulatorStep4_WECSim_B.flowRateCV4 = tmp_y *
-        windEmulatorStep4_WECSim_B.OUTPUT_1_0_m[1];
-      if (tmp_g) {
-      }
-
-      /* Gain: '<S239>/Gain' */
-      windEmulatorStep4_WECSim_B.flowRateCV1 = tmp_y *
-        windEmulatorStep4_WECSim_B.OUTPUT_1_0_m[2];
-      if (tmp_g) {
-      }
-
-      /* Gain: '<S240>/Gain' */
-      windEmulatorStep4_WECSim_B.flowRateCV3 = tmp_y *
-        windEmulatorStep4_WECSim_B.OUTPUT_1_0_m[3];
-      if (tmp_g) {
-      }
-
-      /* Gain: '<S241>/Gain' */
-      windEmulatorStep4_WECSim_B.flowRateHCA = tmp_y *
-        windEmulatorStep4_WECSim_B.OUTPUT_1_0_m[4];
-      if (tmp_g) {
-      }
-
-      /* Gain: '<S242>/Gain' */
-      windEmulatorStep4_WECSim_B.flowRateC = tmp_y *
-        windEmulatorStep4_WECSim_B.OUTPUT_1_0_m[5];
-      if (tmp_g) {
-      }
-
-      /* Gain: '<S243>/Gain' */
-      windEmulatorStep4_WECSim_B.flowRateAccHP = tmp_y *
-        windEmulatorStep4_WECSim_B.OUTPUT_1_0_m[6];
-      if (tmp_g) {
-      }
-
-      /* Gain: '<S244>/Gain' */
-      windEmulatorStep4_WECSim_B.flowRateHMin = tmp_y *
-        windEmulatorStep4_WECSim_B.OUTPUT_1_0_m[7];
-      if (tmp_g) {
-      }
-
-      /* Gain: '<S245>/Gain' */
-      windEmulatorStep4_WECSim_B.flowRateHMout = tmp_y *
-        windEmulatorStep4_WECSim_B.OUTPUT_1_0_m[8];
-      if (tmp_g) {
-      }
-
-      /* Gain: '<S246>/Gain' */
-      windEmulatorStep4_WECSim_B.flowRateAccLP = tmp_y *
-        windEmulatorStep4_WECSim_B.OUTPUT_1_0_m[9];
-      if (tmp_g) {
-      }
-
-      /* Gain: '<S247>/Gain' */
-      windEmulatorStep4_WECSim_B.flowRateD = tmp_y *
-        windEmulatorStep4_WECSim_B.OUTPUT_1_0_m[10];
-      if (tmp_g) {
-      }
-
-      /* Gain: '<S248>/Gain' */
-      windEmulatorStep4_WECSim_B.flowRateCV2 = tmp_y *
-        windEmulatorStep4_WECSim_B.OUTPUT_1_0_m[11];
-      if (tmp_g) {
-      }
-
-      /* Gain: '<S259>/Gain' */
-      windEmulatorStep4_WECSim_B.pressureA = tmp_x *
-        windEmulatorStep4_WECSim_B.OUTPUT_1_0_m[19];
-      if (tmp_g) {
-      }
-
-      /* Gain: '<S260>/Gain' */
-      windEmulatorStep4_WECSim_B.pressureB = tmp_x *
-        windEmulatorStep4_WECSim_B.OUTPUT_1_0_m[20];
-      if (tmp_g) {
-      }
-
-      /* Gain: '<S261>/Gain' */
-      windEmulatorStep4_WECSim_B.pressureC = tmp_x *
-        windEmulatorStep4_WECSim_B.OUTPUT_1_0_m[21];
-      if (tmp_g) {
-      }
-
-      /* Gain: '<S262>/Gain' */
-      windEmulatorStep4_WECSim_B.pressureHM = tmp_x *
-        windEmulatorStep4_WECSim_B.OUTPUT_1_0_m[22];
-      if (tmp_g) {
-      }
-
-      /* Gain: '<S263>/Gain' */
-      windEmulatorStep4_WECSim_B.pressureD = tmp_x *
-        windEmulatorStep4_WECSim_B.OUTPUT_1_0_m[23];
-      if (tmp_g) {
+        /* End of SignalConversion generated from: '<S59>/To Workspace' */
         /* SignalConversion generated from: '<S60>/To Workspace' */
         windEmulatorStep4_WECSim_B.TmpSignalConversionAtToWorksp_c[0] =
           windEmulatorStep4_WECSim_B.OUTPUT_1_1[9];
@@ -17872,23 +17086,23 @@ void windEmulatorStep4_WECSim_step(void)
         /* End of Outputs for SubSystem: '<S60>/Nonlinear Wave Elevation' */
         for (i = 0; i < 6; i++) {
           /* Constant: '<S55>/Constant' */
-          deltaT_tmp = windEmulatorStep4_WECSim_cal->Constant_Value_gg[i];
-          windEmulatorStep4_WECSim_B.position_d[i] = deltaT_tmp;
+          u1 = windEmulatorStep4_WECSim_cal->Constant_Value_gg[i];
+          windEmulatorStep4_WECSim_B.position_d[i] = u1;
 
           /* Constant: '<S55>/Constant1' */
-          u1 = windEmulatorStep4_WECSim_cal->Constant1_Value_h[i];
-          windEmulatorStep4_WECSim_B.velocity_g[i] = u1;
+          Clock_tmp = windEmulatorStep4_WECSim_cal->Constant1_Value_h[i];
+          windEmulatorStep4_WECSim_B.velocity_g[i] = Clock_tmp;
 
           /* Constant: '<S55>/Constant2' */
-          Clock_tmp = windEmulatorStep4_WECSim_cal->Constant2_Value_n[i];
-          windEmulatorStep4_WECSim_B.acceleration_b[i] = Clock_tmp;
+          riseValLimit = windEmulatorStep4_WECSim_cal->Constant2_Value_n[i];
+          windEmulatorStep4_WECSim_B.acceleration_b[i] = riseValLimit;
 
           /* SignalConversion generated from: '<S55>/To Workspace' */
-          windEmulatorStep4_WECSim_B.TmpSignalConversionAtToWorksp_m[i] =
-            deltaT_tmp;
-          windEmulatorStep4_WECSim_B.TmpSignalConversionAtToWorksp_m[i + 6] = u1;
-          windEmulatorStep4_WECSim_B.TmpSignalConversionAtToWorksp_m[i + 12] =
+          windEmulatorStep4_WECSim_B.TmpSignalConversionAtToWorksp_m[i] = u1;
+          windEmulatorStep4_WECSim_B.TmpSignalConversionAtToWorksp_m[i + 6] =
             Clock_tmp;
+          windEmulatorStep4_WECSim_B.TmpSignalConversionAtToWorksp_m[i + 12] =
+            riseValLimit;
           windEmulatorStep4_WECSim_B.TmpSignalConversionAtToWorksp_m[i + 18] =
             windEmulatorStep4_WECSim_B.OUTPUT_1_0_k[i];
         }
@@ -17982,6 +17196,791 @@ void windEmulatorStep4_WECSim_step(void)
 
         /* End of Outputs for SubSystem: '<S139>/Nonlinear Wave Elevation' */
 
+        /* Memory: '<S433>/Memory' */
+        windEmulatorStep4_WECSim_B.Memory_f =
+          windEmulatorStep4_WECSim_DW.Memory_PreviousInput_kk;
+
+        /* RateLimiter: '<S373>/Rate Limiter1' incorporates:
+         *  Constant: '<S373>/shaftSpeedRefMin'
+         */
+        rateLimiterRate = windEmulatorStep4_WECSim_cal->shaftSpeedRefMin_Value -
+          windEmulatorStep4_WECSim_DW.PrevY_m;
+        if (rateLimiterRate >
+            windEmulatorStep4_WECSim_cal->RateLimiter1_RisingLim *
+            windEmulatorStep4_WECSim_period) {
+          /* RateLimiter: '<S373>/Rate Limiter1' */
+          windEmulatorStep4_WECSim_B.RateLimiter1 =
+            windEmulatorStep4_WECSim_cal->RateLimiter1_RisingLim *
+            windEmulatorStep4_WECSim_period +
+            windEmulatorStep4_WECSim_DW.PrevY_m;
+        } else if (rateLimiterRate <
+                   windEmulatorStep4_WECSim_cal->RateLimiter1_FallingLim *
+                   windEmulatorStep4_WECSim_period) {
+          /* RateLimiter: '<S373>/Rate Limiter1' */
+          windEmulatorStep4_WECSim_B.RateLimiter1 =
+            windEmulatorStep4_WECSim_cal->RateLimiter1_FallingLim *
+            windEmulatorStep4_WECSim_period +
+            windEmulatorStep4_WECSim_DW.PrevY_m;
+        } else {
+          /* RateLimiter: '<S373>/Rate Limiter1' */
+          windEmulatorStep4_WECSim_B.RateLimiter1 =
+            windEmulatorStep4_WECSim_cal->shaftSpeedRefMin_Value;
+        }
+
+        windEmulatorStep4_WECSim_DW.PrevY_m =
+          windEmulatorStep4_WECSim_B.RateLimiter1;
+
+        /* End of RateLimiter: '<S373>/Rate Limiter1' */
+
+        /* Memory: '<S434>/Memory' */
+        windEmulatorStep4_WECSim_B.Memory_in =
+          windEmulatorStep4_WECSim_DW.Memory_PreviousInput_h;
+      }
+
+      /* Sum: '<S376>/Add' */
+      windEmulatorStep4_WECSim_B.Add_mw =
+        windEmulatorStep4_WECSim_B.BusAssignment_c.genSpeedActual -
+        windEmulatorStep4_WECSim_B.BusAssignment_c.speedRef_rpm;
+
+      /* Product: '<S431>/Product' incorporates:
+       *  Constant: '<S431>/Constant1'
+       */
+      riseValLimit = -tmp_m->PG;
+
+      /* Product: '<S431>/Product' */
+      windEmulatorStep4_WECSim_B.ControlSignal31 = riseValLimit *
+        windEmulatorStep4_WECSim_B.Add_mw;
+
+      /* RelationalOperator: '<S431>/Relational Operator' */
+      windEmulatorStep4_WECSim_B.RelationalOperator_l =
+        (windEmulatorStep4_WECSim_B.BusAssignment_c.speedRef_rpm <=
+         windEmulatorStep4_WECSim_B.BusAssignment_c.genSpeedActual);
+
+      /* CombinatorialLogic: '<S433>/Logic' incorporates:
+       *  Constant: '<S431>/Constant'
+       */
+      f = windEmulatorStep4_WECSim_B.RelationalOperator_l;
+      q0 = f;
+      f = windEmulatorStep4_WECSim_cal->Constant_Value_bl;
+      q0 = (q0 << 1) + f;
+      f = windEmulatorStep4_WECSim_B.Memory_f;
+      q0 = (q0 << 1) + f;
+      windEmulatorStep4_WECSim_B.Logic[0U] =
+        windEmulatorStep4_WECSim_cal->Logic_table[q0];
+      windEmulatorStep4_WECSim_B.Logic[1U] =
+        windEmulatorStep4_WECSim_cal->Logic_table[q0 + 8U];
+
+      /* Sum: '<S376>/Add1' */
+      windEmulatorStep4_WECSim_B.Add1_p =
+        windEmulatorStep4_WECSim_B.BusAssignment_c.genSpeedActual -
+        windEmulatorStep4_WECSim_B.RateLimiter1;
+
+      /* Product: '<S432>/Product' incorporates:
+       *  Constant: '<S432>/Constant1'
+       */
+      riseValLimit = -tmp_l;
+
+      /* Product: '<S432>/Product' */
+      windEmulatorStep4_WECSim_B.ControlSignal31_o = riseValLimit *
+        windEmulatorStep4_WECSim_B.Add1_p;
+
+      /* RelationalOperator: '<S432>/Relational Operator' */
+      windEmulatorStep4_WECSim_B.RelationalOperator_k =
+        (windEmulatorStep4_WECSim_B.RateLimiter1 >=
+         windEmulatorStep4_WECSim_B.BusAssignment_c.genSpeedActual);
+
+      /* CombinatorialLogic: '<S434>/Logic' incorporates:
+       *  Constant: '<S432>/Constant'
+       */
+      f = windEmulatorStep4_WECSim_B.RelationalOperator_k;
+      q0 = f;
+      f = windEmulatorStep4_WECSim_cal->Constant_Value_k3;
+      q0 = (q0 << 1) + f;
+      f = windEmulatorStep4_WECSim_B.Memory_in;
+      q0 = (q0 << 1) + f;
+      windEmulatorStep4_WECSim_B.Logic_g[0U] =
+        windEmulatorStep4_WECSim_cal->Logic_table_o[q0];
+      windEmulatorStep4_WECSim_B.Logic_g[1U] =
+        windEmulatorStep4_WECSim_cal->Logic_table_o[q0 + 8U];
+
+      /* Switch: '<S376>/Switch' incorporates:
+       *  Switch: '<S376>/Switch1'
+       *  Switch: '<S432>/Switch'
+       */
+      if (windEmulatorStep4_WECSim_B.Add_mw >
+          windEmulatorStep4_WECSim_cal->Switch_Threshold_j) {
+        /* Switch: '<S431>/Switch' */
+        if (windEmulatorStep4_WECSim_B.Logic[0]) {
+          /* Saturate: '<S431>/Saturation' */
+          riseValLimit = windEmulatorStep4_WECSim_B.ControlSignal31;
+          u1 = windEmulatorStep4_WECSim_cal->Saturation_LowerSat;
+          rateLimiterRate = windEmulatorStep4_WECSim_cal->Saturation_UpperSat;
+          if (riseValLimit > rateLimiterRate) {
+            /* Saturate: '<S431>/Saturation' */
+            windEmulatorStep4_WECSim_B.Saturation_a3 = rateLimiterRate;
+          } else if (riseValLimit < u1) {
+            /* Saturate: '<S431>/Saturation' */
+            windEmulatorStep4_WECSim_B.Saturation_a3 = u1;
+          } else {
+            /* Saturate: '<S431>/Saturation' */
+            windEmulatorStep4_WECSim_B.Saturation_a3 = riseValLimit;
+          }
+
+          /* End of Saturate: '<S431>/Saturation' */
+
+          /* Switch: '<S431>/Switch' */
+          windEmulatorStep4_WECSim_B.ControlSignal3_f =
+            windEmulatorStep4_WECSim_B.Saturation_a3;
+        } else {
+          /* Switch: '<S431>/Switch' */
+          windEmulatorStep4_WECSim_B.ControlSignal3_f =
+            windEmulatorStep4_WECSim_B.ControlSignal31;
+        }
+
+        /* End of Switch: '<S431>/Switch' */
+
+        /* Switch: '<S376>/Switch' */
+        windEmulatorStep4_WECSim_B.Switch_g =
+          windEmulatorStep4_WECSim_B.ControlSignal3_f;
+      } else {
+        if (windEmulatorStep4_WECSim_B.Add1_p >
+            windEmulatorStep4_WECSim_cal->Switch1_Threshold) {
+          /* Switch: '<S376>/Switch1' incorporates:
+           *  Constant: '<S376>/Constant1'
+           */
+          windEmulatorStep4_WECSim_B.Switch1_o =
+            windEmulatorStep4_WECSim_cal->Constant1_Value_c;
+        } else {
+          if (windEmulatorStep4_WECSim_B.Logic_g[0]) {
+            /* Saturate: '<S432>/Saturation' incorporates:
+             *  Switch: '<S376>/Switch1'
+             *  Switch: '<S432>/Switch'
+             */
+            riseValLimit = windEmulatorStep4_WECSim_B.ControlSignal31_o;
+            u1 = windEmulatorStep4_WECSim_cal->Saturation_LowerSat_n;
+            rateLimiterRate =
+              windEmulatorStep4_WECSim_cal->Saturation_UpperSat_g;
+            if (riseValLimit > rateLimiterRate) {
+              /* Saturate: '<S432>/Saturation' */
+              windEmulatorStep4_WECSim_B.Saturation_k = rateLimiterRate;
+            } else if (riseValLimit < u1) {
+              /* Saturate: '<S432>/Saturation' */
+              windEmulatorStep4_WECSim_B.Saturation_k = u1;
+            } else {
+              /* Saturate: '<S432>/Saturation' */
+              windEmulatorStep4_WECSim_B.Saturation_k = riseValLimit;
+            }
+
+            /* End of Saturate: '<S432>/Saturation' */
+
+            /* Switch: '<S432>/Switch' incorporates:
+             *  Switch: '<S376>/Switch1'
+             */
+            windEmulatorStep4_WECSim_B.ControlSignal3_e =
+              windEmulatorStep4_WECSim_B.Saturation_k;
+          } else {
+            /* Switch: '<S432>/Switch' incorporates:
+             *  Switch: '<S376>/Switch1'
+             */
+            windEmulatorStep4_WECSim_B.ControlSignal3_e =
+              windEmulatorStep4_WECSim_B.ControlSignal31_o;
+          }
+
+          /* Switch: '<S376>/Switch1' */
+          windEmulatorStep4_WECSim_B.Switch1_o =
+            windEmulatorStep4_WECSim_B.ControlSignal3_e;
+        }
+
+        /* Switch: '<S376>/Switch' incorporates:
+         *  Switch: '<S376>/Switch1'
+         *  Switch: '<S432>/Switch'
+         */
+        windEmulatorStep4_WECSim_B.Switch_g =
+          windEmulatorStep4_WECSim_B.Switch1_o;
+      }
+
+      /* End of Switch: '<S376>/Switch' */
+
+      /* Gain: '<S376>/Gain' */
+      windEmulatorStep4_WECSim_B.Gain_lr = tmp_x *
+        windEmulatorStep4_WECSim_B.Switch_g;
+
+      /* RateLimiter: '<S373>/Rate Limiter' */
+      if (windEmulatorStep4_WECSim_DW.LastMajorTime_d == (rtInf)) {
+        /* RateLimiter: '<S373>/Rate Limiter' */
+        windEmulatorStep4_WECSim_B.RateLimiter_b =
+          windEmulatorStep4_WECSim_B.Gain_lr;
+      } else {
+        u1 = deltaT_tmp - windEmulatorStep4_WECSim_DW.LastMajorTime_d;
+        if (windEmulatorStep4_WECSim_DW.LastMajorTime_d == deltaT_tmp) {
+          if (windEmulatorStep4_WECSim_DW.PrevLimited_g) {
+            /* RateLimiter: '<S373>/Rate Limiter' */
+            windEmulatorStep4_WECSim_B.RateLimiter_b =
+              windEmulatorStep4_WECSim_DW.PrevY_l;
+          } else {
+            /* RateLimiter: '<S373>/Rate Limiter' */
+            windEmulatorStep4_WECSim_B.RateLimiter_b =
+              windEmulatorStep4_WECSim_B.Gain_lr;
+          }
+        } else {
+          riseValLimit = u1 * tmp_k;
+          rateLimiterRate = windEmulatorStep4_WECSim_B.Gain_lr -
+            windEmulatorStep4_WECSim_DW.PrevY_l;
+          if (rateLimiterRate > riseValLimit) {
+            /* RateLimiter: '<S373>/Rate Limiter' */
+            windEmulatorStep4_WECSim_B.RateLimiter_b =
+              windEmulatorStep4_WECSim_DW.PrevY_l + riseValLimit;
+            f = true;
+          } else {
+            riseValLimit = -tmp_k;
+            u1 *= riseValLimit;
+            if (rateLimiterRate < u1) {
+              /* RateLimiter: '<S373>/Rate Limiter' */
+              windEmulatorStep4_WECSim_B.RateLimiter_b =
+                windEmulatorStep4_WECSim_DW.PrevY_l + u1;
+              f = true;
+            } else {
+              /* RateLimiter: '<S373>/Rate Limiter' */
+              windEmulatorStep4_WECSim_B.RateLimiter_b =
+                windEmulatorStep4_WECSim_B.Gain_lr;
+              f = false;
+            }
+          }
+
+          if (tmp_h) {
+            windEmulatorStep4_WECSim_DW.PrevLimited_g = f;
+          }
+        }
+      }
+
+      /* Sum: '<S375>/Sum' */
+      windEmulatorStep4_WECSim_B.wError =
+        windEmulatorStep4_WECSim_B.BusAssignment_c.genSpeedActual -
+        windEmulatorStep4_WECSim_B.BusAssignment_c.speedRef_rpm;
+      if (tmp_g) {
+        /* Gain: '<S417>/Proportional Gain' */
+        windEmulatorStep4_WECSim_B.ProportionalGain_p = tmp_m->PG *
+          windEmulatorStep4_WECSim_B.wError;
+
+        /* DiscreteIntegrator: '<S412>/Integrator' */
+        if (windEmulatorStep4_WECSim_B.BusAssignment_c.speedCtrlReset ||
+            (windEmulatorStep4_WECSim_DW.Integrator_PrevResetState != 0)) {
+          windEmulatorStep4_WECSim_DW.Integrator_DSTATE_d =
+            windEmulatorStep4_WECSim_cal->PIDController_InitialConditio_a;
+        }
+
+        /* DiscreteIntegrator: '<S412>/Integrator' */
+        windEmulatorStep4_WECSim_B.Integrator_b =
+          windEmulatorStep4_WECSim_DW.Integrator_DSTATE_d;
+
+        /* Gain: '<S405>/Derivative Gain' */
+        windEmulatorStep4_WECSim_B.DerivativeGain_a =
+          windEmulatorStep4_WECSim_cal->PIDController_D *
+          windEmulatorStep4_WECSim_B.wError;
+
+        /* DiscreteIntegrator: '<S407>/Filter' */
+        if (windEmulatorStep4_WECSim_B.BusAssignment_c.speedCtrlReset ||
+            (windEmulatorStep4_WECSim_DW.Filter_PrevResetState != 0)) {
+          windEmulatorStep4_WECSim_DW.Filter_DSTATE =
+            windEmulatorStep4_WECSim_cal->PIDController_InitialConditionF;
+        }
+
+        /* DiscreteIntegrator: '<S407>/Filter' */
+        windEmulatorStep4_WECSim_B.Filter =
+          windEmulatorStep4_WECSim_DW.Filter_DSTATE;
+
+        /* Sum: '<S407>/SumD' */
+        windEmulatorStep4_WECSim_B.SumD =
+          windEmulatorStep4_WECSim_B.DerivativeGain_a -
+          windEmulatorStep4_WECSim_B.Filter;
+
+        /* Gain: '<S415>/Filter Coefficient' */
+        windEmulatorStep4_WECSim_B.FilterCoefficient =
+          windEmulatorStep4_WECSim_cal->PIDController_N *
+          windEmulatorStep4_WECSim_B.SumD;
+
+        /* Sum: '<S422>/Sum' */
+        windEmulatorStep4_WECSim_B.Sum_c =
+          (windEmulatorStep4_WECSim_B.ProportionalGain_p +
+           windEmulatorStep4_WECSim_B.Integrator_b) +
+          windEmulatorStep4_WECSim_B.FilterCoefficient;
+
+        /* RelationalOperator: '<S420>/LowerRelop1' incorporates:
+         *  Constant: '<S375>/Constant'
+         */
+        windEmulatorStep4_WECSim_B.LowerRelop1_g =
+          (windEmulatorStep4_WECSim_B.Sum_c > tmp_j);
+
+        /* RelationalOperator: '<S420>/UpperRelop' incorporates:
+         *  Constant: '<S375>/Constant1'
+         */
+        riseValLimit = -tmp_j;
+
+        /* RelationalOperator: '<S420>/UpperRelop' */
+        windEmulatorStep4_WECSim_B.UpperRelop_g =
+          (windEmulatorStep4_WECSim_B.Sum_c < riseValLimit);
+
+        /* Switch: '<S420>/Switch' */
+        if (windEmulatorStep4_WECSim_B.UpperRelop_g) {
+          /* Switch: '<S420>/Switch' incorporates:
+           *  Constant: '<S375>/Constant1'
+           */
+          windEmulatorStep4_WECSim_B.Switch_i = -tmp_j;
+        } else {
+          /* Switch: '<S420>/Switch' */
+          windEmulatorStep4_WECSim_B.Switch_i = windEmulatorStep4_WECSim_B.Sum_c;
+        }
+
+        /* End of Switch: '<S420>/Switch' */
+
+        /* Switch: '<S420>/Switch2' */
+        if (windEmulatorStep4_WECSim_B.LowerRelop1_g) {
+          /* Switch: '<S420>/Switch2' incorporates:
+           *  Constant: '<S375>/Constant'
+           */
+          windEmulatorStep4_WECSim_B.Switch2_k = tmp_j;
+        } else {
+          /* Switch: '<S420>/Switch2' */
+          windEmulatorStep4_WECSim_B.Switch2_k =
+            windEmulatorStep4_WECSim_B.Switch_i;
+        }
+
+        /* End of Switch: '<S420>/Switch2' */
+
+        /* Gain: '<S375>/Gain2' */
+        windEmulatorStep4_WECSim_B.ContolTorque =
+          windEmulatorStep4_WECSim_cal->Gain2_Gain_o *
+          windEmulatorStep4_WECSim_B.Switch2_k;
+
+        /* Gain: '<S409>/Integral Gain' */
+        windEmulatorStep4_WECSim_B.IntegralGain_h = tmp_m->IG *
+          windEmulatorStep4_WECSim_B.wError;
+
+        /* Memory: '<S496>/Memory' */
+        windEmulatorStep4_WECSim_B.Memory_o =
+          windEmulatorStep4_WECSim_DW.Memory_PreviousInput_g;
+
+        /* RateLimiter: '<S436>/Rate Limiter1' incorporates:
+         *  Constant: '<S436>/shaftSpeedRefMin'
+         */
+        rateLimiterRate = windEmulatorStep4_WECSim_cal->shaftSpeedRefMin_Value_k
+          - windEmulatorStep4_WECSim_DW.PrevY_fq;
+        if (rateLimiterRate >
+            windEmulatorStep4_WECSim_cal->RateLimiter1_RisingLim_o *
+            windEmulatorStep4_WECSim_period) {
+          /* RateLimiter: '<S436>/Rate Limiter1' */
+          windEmulatorStep4_WECSim_B.RateLimiter1_m =
+            windEmulatorStep4_WECSim_cal->RateLimiter1_RisingLim_o *
+            windEmulatorStep4_WECSim_period +
+            windEmulatorStep4_WECSim_DW.PrevY_fq;
+        } else if (rateLimiterRate <
+                   windEmulatorStep4_WECSim_cal->RateLimiter1_FallingLim_e *
+                   windEmulatorStep4_WECSim_period) {
+          /* RateLimiter: '<S436>/Rate Limiter1' */
+          windEmulatorStep4_WECSim_B.RateLimiter1_m =
+            windEmulatorStep4_WECSim_cal->RateLimiter1_FallingLim_e *
+            windEmulatorStep4_WECSim_period +
+            windEmulatorStep4_WECSim_DW.PrevY_fq;
+        } else {
+          /* RateLimiter: '<S436>/Rate Limiter1' */
+          windEmulatorStep4_WECSim_B.RateLimiter1_m =
+            windEmulatorStep4_WECSim_cal->shaftSpeedRefMin_Value_k;
+        }
+
+        windEmulatorStep4_WECSim_DW.PrevY_fq =
+          windEmulatorStep4_WECSim_B.RateLimiter1_m;
+
+        /* End of RateLimiter: '<S436>/Rate Limiter1' */
+
+        /* Memory: '<S497>/Memory' */
+        windEmulatorStep4_WECSim_B.Memory_a =
+          windEmulatorStep4_WECSim_DW.Memory_PreviousInput_n;
+      }
+
+      /* Sum: '<S439>/Add' */
+      windEmulatorStep4_WECSim_B.Add_mo =
+        windEmulatorStep4_WECSim_B.BusAssignment_c.genSpeedActual -
+        windEmulatorStep4_WECSim_B.BusAssignment_c.speedRef_rpm;
+
+      /* Product: '<S494>/Product' incorporates:
+       *  Constant: '<S494>/Constant1'
+       */
+      riseValLimit = -tmp_m->PG;
+
+      /* Product: '<S494>/Product' */
+      windEmulatorStep4_WECSim_B.ControlSignal31_d = riseValLimit *
+        windEmulatorStep4_WECSim_B.Add_mo;
+
+      /* RelationalOperator: '<S494>/Relational Operator' */
+      windEmulatorStep4_WECSim_B.RelationalOperator_e =
+        (windEmulatorStep4_WECSim_B.BusAssignment_c.speedRef_rpm <=
+         windEmulatorStep4_WECSim_B.BusAssignment_c.genSpeedActual);
+
+      /* CombinatorialLogic: '<S496>/Logic' incorporates:
+       *  Constant: '<S494>/Constant'
+       */
+      f = windEmulatorStep4_WECSim_B.RelationalOperator_e;
+      q0 = f;
+      f = windEmulatorStep4_WECSim_cal->Constant_Value_cl;
+      q0 = (q0 << 1) + f;
+      f = windEmulatorStep4_WECSim_B.Memory_o;
+      q0 = (q0 << 1) + f;
+      windEmulatorStep4_WECSim_B.Logic_c[0U] =
+        windEmulatorStep4_WECSim_cal->Logic_table_h[q0];
+      windEmulatorStep4_WECSim_B.Logic_c[1U] =
+        windEmulatorStep4_WECSim_cal->Logic_table_h[q0 + 8U];
+
+      /* Sum: '<S439>/Add1' */
+      windEmulatorStep4_WECSim_B.Add1_f =
+        windEmulatorStep4_WECSim_B.BusAssignment_c.genSpeedActual -
+        windEmulatorStep4_WECSim_B.RateLimiter1_m;
+
+      /* Product: '<S495>/Product' incorporates:
+       *  Constant: '<S495>/Constant1'
+       */
+      riseValLimit = -tmp_l;
+
+      /* Product: '<S495>/Product' */
+      windEmulatorStep4_WECSim_B.ControlSignal31_m = riseValLimit *
+        windEmulatorStep4_WECSim_B.Add1_f;
+
+      /* RelationalOperator: '<S495>/Relational Operator' */
+      windEmulatorStep4_WECSim_B.RelationalOperator_g =
+        (windEmulatorStep4_WECSim_B.RateLimiter1_m >=
+         windEmulatorStep4_WECSim_B.BusAssignment_c.genSpeedActual);
+
+      /* CombinatorialLogic: '<S497>/Logic' incorporates:
+       *  Constant: '<S495>/Constant'
+       */
+      f = windEmulatorStep4_WECSim_B.RelationalOperator_g;
+      q0 = f;
+      f = windEmulatorStep4_WECSim_cal->Constant_Value_ks;
+      q0 = (q0 << 1) + f;
+      f = windEmulatorStep4_WECSim_B.Memory_a;
+      q0 = (q0 << 1) + f;
+      windEmulatorStep4_WECSim_B.Logic_p[0U] =
+        windEmulatorStep4_WECSim_cal->Logic_table_n[q0];
+      windEmulatorStep4_WECSim_B.Logic_p[1U] =
+        windEmulatorStep4_WECSim_cal->Logic_table_n[q0 + 8U];
+
+      /* Switch: '<S439>/Switch' incorporates:
+       *  Switch: '<S439>/Switch1'
+       *  Switch: '<S495>/Switch'
+       */
+      if (windEmulatorStep4_WECSim_B.Add_mo >
+          windEmulatorStep4_WECSim_cal->Switch_Threshold_k) {
+        /* Switch: '<S494>/Switch' */
+        if (windEmulatorStep4_WECSim_B.Logic_c[0]) {
+          /* Saturate: '<S494>/Saturation' */
+          riseValLimit = windEmulatorStep4_WECSim_B.ControlSignal31_d;
+          u1 = windEmulatorStep4_WECSim_cal->Saturation_LowerSat_f;
+          rateLimiterRate = windEmulatorStep4_WECSim_cal->Saturation_UpperSat_f;
+          if (riseValLimit > rateLimiterRate) {
+            /* Saturate: '<S494>/Saturation' */
+            windEmulatorStep4_WECSim_B.Saturation_af = rateLimiterRate;
+          } else if (riseValLimit < u1) {
+            /* Saturate: '<S494>/Saturation' */
+            windEmulatorStep4_WECSim_B.Saturation_af = u1;
+          } else {
+            /* Saturate: '<S494>/Saturation' */
+            windEmulatorStep4_WECSim_B.Saturation_af = riseValLimit;
+          }
+
+          /* End of Saturate: '<S494>/Saturation' */
+
+          /* Switch: '<S494>/Switch' */
+          windEmulatorStep4_WECSim_B.ControlSignal3_h =
+            windEmulatorStep4_WECSim_B.Saturation_af;
+        } else {
+          /* Switch: '<S494>/Switch' */
+          windEmulatorStep4_WECSim_B.ControlSignal3_h =
+            windEmulatorStep4_WECSim_B.ControlSignal31_d;
+        }
+
+        /* End of Switch: '<S494>/Switch' */
+
+        /* Switch: '<S439>/Switch' */
+        windEmulatorStep4_WECSim_B.Switch_n =
+          windEmulatorStep4_WECSim_B.ControlSignal3_h;
+      } else {
+        if (windEmulatorStep4_WECSim_B.Add1_f >
+            windEmulatorStep4_WECSim_cal->Switch1_Threshold_k) {
+          /* Switch: '<S439>/Switch1' incorporates:
+           *  Constant: '<S439>/Constant1'
+           */
+          windEmulatorStep4_WECSim_B.Switch1_g =
+            windEmulatorStep4_WECSim_cal->Constant1_Value_j;
+        } else {
+          if (windEmulatorStep4_WECSim_B.Logic_p[0]) {
+            /* Saturate: '<S495>/Saturation' incorporates:
+             *  Switch: '<S439>/Switch1'
+             *  Switch: '<S495>/Switch'
+             */
+            riseValLimit = windEmulatorStep4_WECSim_B.ControlSignal31_m;
+            u1 = windEmulatorStep4_WECSim_cal->Saturation_LowerSat_h;
+            rateLimiterRate =
+              windEmulatorStep4_WECSim_cal->Saturation_UpperSat_m;
+            if (riseValLimit > rateLimiterRate) {
+              /* Saturate: '<S495>/Saturation' */
+              windEmulatorStep4_WECSim_B.Saturation_p = rateLimiterRate;
+            } else if (riseValLimit < u1) {
+              /* Saturate: '<S495>/Saturation' */
+              windEmulatorStep4_WECSim_B.Saturation_p = u1;
+            } else {
+              /* Saturate: '<S495>/Saturation' */
+              windEmulatorStep4_WECSim_B.Saturation_p = riseValLimit;
+            }
+
+            /* End of Saturate: '<S495>/Saturation' */
+
+            /* Switch: '<S495>/Switch' incorporates:
+             *  Switch: '<S439>/Switch1'
+             */
+            windEmulatorStep4_WECSim_B.ControlSignal3 =
+              windEmulatorStep4_WECSim_B.Saturation_p;
+          } else {
+            /* Switch: '<S495>/Switch' incorporates:
+             *  Switch: '<S439>/Switch1'
+             */
+            windEmulatorStep4_WECSim_B.ControlSignal3 =
+              windEmulatorStep4_WECSim_B.ControlSignal31_m;
+          }
+
+          /* Switch: '<S439>/Switch1' */
+          windEmulatorStep4_WECSim_B.Switch1_g =
+            windEmulatorStep4_WECSim_B.ControlSignal3;
+        }
+
+        /* Switch: '<S439>/Switch' incorporates:
+         *  Switch: '<S439>/Switch1'
+         *  Switch: '<S495>/Switch'
+         */
+        windEmulatorStep4_WECSim_B.Switch_n =
+          windEmulatorStep4_WECSim_B.Switch1_g;
+      }
+
+      /* End of Switch: '<S439>/Switch' */
+
+      /* Gain: '<S439>/Gain' */
+      windEmulatorStep4_WECSim_B.Gain_fp = tmp_x *
+        windEmulatorStep4_WECSim_B.Switch_n;
+
+      /* RateLimiter: '<S436>/Rate Limiter' */
+      if (windEmulatorStep4_WECSim_DW.LastMajorTime_k == (rtInf)) {
+        /* RateLimiter: '<S436>/Rate Limiter' */
+        windEmulatorStep4_WECSim_B.RateLimiter_a =
+          windEmulatorStep4_WECSim_B.Gain_fp;
+      } else {
+        u1 = deltaT_tmp - windEmulatorStep4_WECSim_DW.LastMajorTime_k;
+        if (windEmulatorStep4_WECSim_DW.LastMajorTime_k == deltaT_tmp) {
+          if (windEmulatorStep4_WECSim_DW.PrevLimited_dz) {
+            /* RateLimiter: '<S436>/Rate Limiter' */
+            windEmulatorStep4_WECSim_B.RateLimiter_a =
+              windEmulatorStep4_WECSim_DW.PrevY_e;
+          } else {
+            /* RateLimiter: '<S436>/Rate Limiter' */
+            windEmulatorStep4_WECSim_B.RateLimiter_a =
+              windEmulatorStep4_WECSim_B.Gain_fp;
+          }
+        } else {
+          riseValLimit = u1 * tmp_k;
+          rateLimiterRate = windEmulatorStep4_WECSim_B.Gain_fp -
+            windEmulatorStep4_WECSim_DW.PrevY_e;
+          if (rateLimiterRate > riseValLimit) {
+            /* RateLimiter: '<S436>/Rate Limiter' */
+            windEmulatorStep4_WECSim_B.RateLimiter_a =
+              windEmulatorStep4_WECSim_DW.PrevY_e + riseValLimit;
+            f = true;
+          } else {
+            riseValLimit = -tmp_k;
+            u1 *= riseValLimit;
+            if (rateLimiterRate < u1) {
+              /* RateLimiter: '<S436>/Rate Limiter' */
+              windEmulatorStep4_WECSim_B.RateLimiter_a =
+                windEmulatorStep4_WECSim_DW.PrevY_e + u1;
+              f = true;
+            } else {
+              /* RateLimiter: '<S436>/Rate Limiter' */
+              windEmulatorStep4_WECSim_B.RateLimiter_a =
+                windEmulatorStep4_WECSim_B.Gain_fp;
+              f = false;
+            }
+          }
+
+          if (tmp_h) {
+            windEmulatorStep4_WECSim_DW.PrevLimited_dz = f;
+          }
+        }
+      }
+
+      /* Sum: '<S438>/Sum' */
+      windEmulatorStep4_WECSim_B.wError_c =
+        windEmulatorStep4_WECSim_B.BusAssignment_c.genSpeedActual -
+        windEmulatorStep4_WECSim_B.BusAssignment_c.speedRef_rpm;
+      if (tmp_g) {
+        /* Gain: '<S480>/Proportional Gain' */
+        windEmulatorStep4_WECSim_B.ProportionalGain_h = tmp_m->PG *
+          windEmulatorStep4_WECSim_B.wError_c;
+
+        /* DiscreteIntegrator: '<S475>/Integrator' */
+        if (windEmulatorStep4_WECSim_B.BusAssignment_c.speedCtrlReset ||
+            (windEmulatorStep4_WECSim_DW.Integrator_PrevResetState_g != 0)) {
+          windEmulatorStep4_WECSim_DW.Integrator_DSTATE_e =
+            windEmulatorStep4_WECSim_cal->PIDController_InitialConditio_c;
+        }
+
+        /* DiscreteIntegrator: '<S475>/Integrator' */
+        windEmulatorStep4_WECSim_B.Integrator_l =
+          windEmulatorStep4_WECSim_DW.Integrator_DSTATE_e;
+
+        /* Gain: '<S468>/Derivative Gain' */
+        windEmulatorStep4_WECSim_B.DerivativeGain_g =
+          windEmulatorStep4_WECSim_cal->PIDController_D_d *
+          windEmulatorStep4_WECSim_B.wError_c;
+
+        /* DiscreteIntegrator: '<S470>/Filter' */
+        if (windEmulatorStep4_WECSim_B.BusAssignment_c.speedCtrlReset ||
+            (windEmulatorStep4_WECSim_DW.Filter_PrevResetState_g != 0)) {
+          windEmulatorStep4_WECSim_DW.Filter_DSTATE_b =
+            windEmulatorStep4_WECSim_cal->PIDController_InitialConditio_k;
+        }
+
+        /* DiscreteIntegrator: '<S470>/Filter' */
+        windEmulatorStep4_WECSim_B.Filter_j =
+          windEmulatorStep4_WECSim_DW.Filter_DSTATE_b;
+
+        /* Sum: '<S470>/SumD' */
+        windEmulatorStep4_WECSim_B.SumD_c =
+          windEmulatorStep4_WECSim_B.DerivativeGain_g -
+          windEmulatorStep4_WECSim_B.Filter_j;
+
+        /* Gain: '<S478>/Filter Coefficient' */
+        windEmulatorStep4_WECSim_B.FilterCoefficient_g =
+          windEmulatorStep4_WECSim_cal->PIDController_N_p *
+          windEmulatorStep4_WECSim_B.SumD_c;
+
+        /* Sum: '<S485>/Sum' */
+        windEmulatorStep4_WECSim_B.Sum_n =
+          (windEmulatorStep4_WECSim_B.ProportionalGain_h +
+           windEmulatorStep4_WECSim_B.Integrator_l) +
+          windEmulatorStep4_WECSim_B.FilterCoefficient_g;
+
+        /* RelationalOperator: '<S483>/LowerRelop1' incorporates:
+         *  Constant: '<S438>/Constant'
+         */
+        windEmulatorStep4_WECSim_B.LowerRelop1_h =
+          (windEmulatorStep4_WECSim_B.Sum_n > tmp_j);
+
+        /* RelationalOperator: '<S483>/UpperRelop' incorporates:
+         *  Constant: '<S438>/Constant1'
+         */
+        riseValLimit = -tmp_j;
+
+        /* RelationalOperator: '<S483>/UpperRelop' */
+        windEmulatorStep4_WECSim_B.UpperRelop_m =
+          (windEmulatorStep4_WECSim_B.Sum_n < riseValLimit);
+
+        /* Switch: '<S483>/Switch' */
+        if (windEmulatorStep4_WECSim_B.UpperRelop_m) {
+          /* Switch: '<S483>/Switch' incorporates:
+           *  Constant: '<S438>/Constant1'
+           */
+          windEmulatorStep4_WECSim_B.Switch_c = -tmp_j;
+        } else {
+          /* Switch: '<S483>/Switch' */
+          windEmulatorStep4_WECSim_B.Switch_c = windEmulatorStep4_WECSim_B.Sum_n;
+        }
+
+        /* Switch: '<S483>/Switch2' */
+        if (windEmulatorStep4_WECSim_B.LowerRelop1_h) {
+          /* Switch: '<S483>/Switch2' incorporates:
+           *  Constant: '<S438>/Constant'
+           */
+          windEmulatorStep4_WECSim_B.Switch2_m = tmp_j;
+        } else {
+          /* Switch: '<S483>/Switch2' */
+          windEmulatorStep4_WECSim_B.Switch2_m =
+            windEmulatorStep4_WECSim_B.Switch_c;
+        }
+
+        /* End of Switch: '<S483>/Switch2' */
+
+        /* Gain: '<S438>/Gain2' */
+        windEmulatorStep4_WECSim_B.ContolTorque_f =
+          windEmulatorStep4_WECSim_cal->Gain2_Gain_e *
+          windEmulatorStep4_WECSim_B.Switch2_m;
+
+        /* Gain: '<S472>/Integral Gain' */
+        windEmulatorStep4_WECSim_B.IntegralGain_hk = tmp_m->IG *
+          windEmulatorStep4_WECSim_B.wError_c;
+      }
+
+      /* Switch generated from: '<S365>/Switch' incorporates:
+       *  Constant: '<S436>/DeadBandController'
+       *  Switch: '<S365>/Switch1'
+       *  Switch: '<S436>/Switch'
+       */
+      if (windEmulatorStep4_WECSim_B.Abs >= tmp_v) {
+        /* Switch: '<S373>/Switch' incorporates:
+         *  Constant: '<S373>/DeadBandController'
+         */
+        if (tmp_u) {
+          /* Switch: '<S373>/Switch' */
+          windEmulatorStep4_WECSim_B.Switch_cn =
+            windEmulatorStep4_WECSim_B.RateLimiter_b;
+        } else {
+          /* Switch: '<S373>/Switch' */
+          windEmulatorStep4_WECSim_B.Switch_cn =
+            windEmulatorStep4_WECSim_B.ContolTorque;
+        }
+
+        /* Switch generated from: '<S365>/Switch' */
+        windEmulatorStep4_WECSim_B.ControlTorqueLoad =
+          windEmulatorStep4_WECSim_B.Switch_cn;
+
+        /* Switch: '<S365>/Switch1' incorporates:
+         *  Constant: '<S365>/Constant'
+         */
+        windEmulatorStep4_WECSim_B.SwitchLogic =
+          windEmulatorStep4_WECSim_cal->Constant_Value_ir;
+      } else {
+        if (tmp_u) {
+          /* Switch: '<S436>/Switch' */
+          windEmulatorStep4_WECSim_B.Switch_f =
+            windEmulatorStep4_WECSim_B.RateLimiter_a;
+        } else {
+          /* Switch: '<S436>/Switch' */
+          windEmulatorStep4_WECSim_B.Switch_f =
+            windEmulatorStep4_WECSim_B.ContolTorque_f;
+        }
+
+        /* Switch generated from: '<S365>/Switch' */
+        windEmulatorStep4_WECSim_B.ControlTorqueLoad =
+          windEmulatorStep4_WECSim_B.Switch_f;
+
+        /* Switch: '<S365>/Switch1' incorporates:
+         *  Constant: '<S365>/Constant1'
+         */
+        windEmulatorStep4_WECSim_B.SwitchLogic =
+          windEmulatorStep4_WECSim_cal->Constant1_Value_p;
+      }
+
+      if (tmp_g) {
+        /* Gain: '<S499>/m3toL' */
+        windEmulatorStep4_WECSim_B.FlowPump1 =
+          windEmulatorStep4_WECSim_cal->m3toL_Gain *
+          windEmulatorStep4_WECSim_B.OUTPUT_1_0[0];
+
+        /* Sum: '<S522>/Sum' */
+        windEmulatorStep4_WECSim_B.Sum_a =
+          windEmulatorStep4_WECSim_B.BusAssignment_c.excForce_N +
+          windEmulatorStep4_WECSim_B.OUTPUT_1_0[4];
+
+        /* Gain: '<S500>/Gain' */
+        windEmulatorStep4_WECSim_B.FlowAccumulator =
+          windEmulatorStep4_WECSim_cal->Gain_Gain_p *
+          windEmulatorStep4_WECSim_B.OUTPUT_1_0[1];
+
         /* DataTypeConversion: '<S609>/vecIndex' */
         windEmulatorStep4_WECSim_B.vecIndex = windEmulatorStep4_WECSim_B.Mod;
 
@@ -18049,6 +18048,7 @@ void windEmulatorStep4_WECSim_step(void)
     real_T time;
     real_T time_0;
     real_T time_1;
+    real_T time_tmp;
     int_T tmp_4[14];
     int_T tmp_1[6];
     int_T tmp_7[4];
@@ -18077,11 +18077,6 @@ void windEmulatorStep4_WECSim_step(void)
     windEmulatorStep4_WECSim_DW.PrevY_a =
       windEmulatorStep4_WECSim_B.speedSlewRate;
     windEmulatorStep4_WECSim_DW.LastMajorTime_j = LastMajorTime_tmp;
-
-    /* Update for RateLimiter: '<S373>/Rate Limiter' */
-    windEmulatorStep4_WECSim_DW.PrevY_l =
-      windEmulatorStep4_WECSim_B.RateLimiter_b;
-    windEmulatorStep4_WECSim_DW.LastMajorTime_d = LastMajorTime_tmp;
     if (tmp_8) {
       /* Update for Memory: '<S2>/Memory' incorporates:
        *  Constant: '<S2>/powerUpButton'
@@ -18118,28 +18113,6 @@ void windEmulatorStep4_WECSim_step(void)
        */
       windEmulatorStep4_WECSim_DW.Memory2_PreviousInput_l =
         windEmulatorStep4_WECSim_cal->stopButton_Value;
-
-      /* Update for Memory: '<S433>/Memory' */
-      windEmulatorStep4_WECSim_DW.Memory_PreviousInput_kk =
-        windEmulatorStep4_WECSim_B.Logic[0];
-
-      /* Update for Memory: '<S434>/Memory' */
-      windEmulatorStep4_WECSim_DW.Memory_PreviousInput_h =
-        windEmulatorStep4_WECSim_B.Logic_g[0];
-
-      /* Update for DiscreteIntegrator: '<S412>/Integrator' */
-      windEmulatorStep4_WECSim_DW.Integrator_DSTATE +=
-        windEmulatorStep4_WECSim_cal->Integrator_gainval *
-        windEmulatorStep4_WECSim_B.IntegralGain;
-      windEmulatorStep4_WECSim_DW.Integrator_PrevResetState = static_cast<int8_T>
-        (windEmulatorStep4_WECSim_B.BusAssignment_c.speedCtrlReset);
-
-      /* Update for DiscreteIntegrator: '<S407>/Filter' */
-      windEmulatorStep4_WECSim_DW.Filter_DSTATE +=
-        windEmulatorStep4_WECSim_cal->Filter_gainval *
-        windEmulatorStep4_WECSim_B.FilterCoefficient;
-      windEmulatorStep4_WECSim_DW.Filter_PrevResetState = static_cast<int8_T>
-        (windEmulatorStep4_WECSim_B.BusAssignment_c.speedCtrlReset);
 
       /* Update for SimscapeExecutionBlock: '<S541>/STATE_1' */
       simulationData = static_cast<NeslSimulationData *>
@@ -18213,29 +18186,6 @@ void windEmulatorStep4_WECSim_step(void)
 
       /* End of Update for SimscapeExecutionBlock: '<S541>/STATE_1' */
 
-      /* Update for Memory: '<S496>/Memory' */
-      windEmulatorStep4_WECSim_DW.Memory_PreviousInput_g =
-        windEmulatorStep4_WECSim_B.Logic_c[0];
-
-      /* Update for Memory: '<S497>/Memory' */
-      windEmulatorStep4_WECSim_DW.Memory_PreviousInput_n =
-        windEmulatorStep4_WECSim_B.Logic_p[0];
-
-      /* Update for DiscreteIntegrator: '<S475>/Integrator' */
-      windEmulatorStep4_WECSim_DW.Integrator_DSTATE_e +=
-        windEmulatorStep4_WECSim_cal->Integrator_gainval_b *
-        windEmulatorStep4_WECSim_B.IntegralGain_h;
-      windEmulatorStep4_WECSim_DW.Integrator_PrevResetState_g =
-        static_cast<int8_T>
-        (windEmulatorStep4_WECSim_B.BusAssignment_c.speedCtrlReset);
-
-      /* Update for DiscreteIntegrator: '<S470>/Filter' */
-      windEmulatorStep4_WECSim_DW.Filter_DSTATE_b +=
-        windEmulatorStep4_WECSim_cal->Filter_gainval_d *
-        windEmulatorStep4_WECSim_B.FilterCoefficient_g;
-      windEmulatorStep4_WECSim_DW.Filter_PrevResetState_g = static_cast<int8_T>
-        (windEmulatorStep4_WECSim_B.BusAssignment_c.speedCtrlReset);
-
       /* Update for DiscreteIntegrator: '<S437>/Discrete-Time Integrator' */
       windEmulatorStep4_WECSim_DW.DiscreteTimeIntegrator_DSTATE +=
         windEmulatorStep4_WECSim_cal->DiscreteTimeIntegrator_gainval *
@@ -18275,7 +18225,7 @@ void windEmulatorStep4_WECSim_step(void)
 
       /* Update for Memory: '<S552>/lastTurn' */
       windEmulatorStep4_WECSim_DW.lastTurn_PreviousInput =
-        windEmulatorStep4_WECSim_B.Add1_p;
+        windEmulatorStep4_WECSim_B.Add1_p2;
 
       /* Update for UnitDelay: '<S553>/UD' */
       windEmulatorStep4_WECSim_DW.UD_DSTATE = windEmulatorStep4_WECSim_B.TSamp;
@@ -18285,18 +18235,13 @@ void windEmulatorStep4_WECSim_step(void)
         windEmulatorStep4_WECSim_B.Sum_e;
     }
 
-    /* Update for RateLimiter: '<S436>/Rate Limiter' */
-    windEmulatorStep4_WECSim_DW.PrevY_e =
-      windEmulatorStep4_WECSim_B.RateLimiter_aw;
-    windEmulatorStep4_WECSim_DW.LastMajorTime_k = LastMajorTime_tmp;
-
     /* Update for RateLimiter: '<S2>/acs880RateLim' */
     windEmulatorStep4_WECSim_DW.PrevY_b =
       windEmulatorStep4_WECSim_B.acs880RateLim;
     windEmulatorStep4_WECSim_DW.LastMajorTime_a = LastMajorTime_tmp;
 
     /* Update for SimscapeExecutionBlock: '<S216>/STATE_1' incorporates:
-     *  SimscapeExecutionBlock: '<S350>/STATE_1'
+     *  SimscapeExecutionBlock: '<S332>/STATE_1'
      *  TransportDelay: '<S139>/Transport Delay'
      *  TransportDelay: '<S143>/Transport Delay'
      *  TransportDelay: '<S60>/Transport Delay'
@@ -18304,8 +18249,8 @@ void windEmulatorStep4_WECSim_step(void)
      */
     simulationData = static_cast<NeslSimulationData *>
       (windEmulatorStep4_WECSim_DW.STATE_1_SimData_h);
-    LastMajorTime_tmp = windEmulatorStep4_WECSim_M->Timing.t[0];
-    time_0 = LastMajorTime_tmp;
+    time_tmp = windEmulatorStep4_WECSim_M->Timing.t[0];
+    time_0 = time_tmp;
     simulationData->mData->mTime.mN = 1;
     simulationData->mData->mTime.mX = &time_0;
     simulationData->mData->mContStates.mN = 2;
@@ -18419,44 +18364,43 @@ void windEmulatorStep4_WECSim_step(void)
 
     /* End of Update for SimscapeExecutionBlock: '<S216>/STATE_1' */
     if (tmp_8) {
-      /* Update for Delay: '<S59>/Delay One Step' */
+      /* Update for Delay: '<S58>/Delay One Step' */
       windEmulatorStep4_WECSim_DW.DelayOneStep_DSTATE =
         windEmulatorStep4_WECSim_B.shaftSpeed;
 
-      /* Update for DiscreteIntegrator: '<S300>/Integrator' */
-      windEmulatorStep4_WECSim_DW.Integrator_DSTATE_l +=
-        windEmulatorStep4_WECSim_cal->Integrator_gainval_n *
-        windEmulatorStep4_WECSim_B.IntegralGain_hm;
+      /* Update for DiscreteIntegrator: '<S282>/Integrator' */
+      windEmulatorStep4_WECSim_DW.Integrator_DSTATE +=
+        windEmulatorStep4_WECSim_cal->Integrator_gainval *
+        windEmulatorStep4_WECSim_B.IntegralGain;
 
-      /* Update for Delay: '<S293>/UD' */
+      /* Update for Delay: '<S275>/UD' */
       windEmulatorStep4_WECSim_DW.UD_DSTATE_j = windEmulatorStep4_WECSim_B.Tsamp;
     }
 
-    /* Update for SimscapeExecutionBlock: '<S350>/STATE_1' */
+    /* Update for SimscapeExecutionBlock: '<S332>/STATE_1' */
     simulationData = static_cast<NeslSimulationData *>
       (windEmulatorStep4_WECSim_DW.STATE_1_SimData_a);
-    time_1 = LastMajorTime_tmp;
+    time_1 = time_tmp;
     simulationData->mData->mTime.mN = 1;
     simulationData->mData->mTime.mX = &time_1;
     simulationData->mData->mContStates.mN = 35;
     simulationData->mData->mContStates.mX =
-      &windEmulatorStep4_WECSim_X.windEmulatorStep4_WECSimhptoS_d[0];
+      &windEmulatorStep4_WECSim_X.windEmulatorStep4_WECSimhptoS_h[0];
     simulationData->mData->mDiscStates.mN = 6;
     simulationData->mData->mDiscStates.mX =
-      &windEmulatorStep4_WECSim_DW.STATE_1_Discrete_3239082943[0];
+      &windEmulatorStep4_WECSim_DW.STATE_1_Discrete_208214823[0];
     simulationData->mData->mModeVector.mN = 21;
     simulationData->mData->mModeVector.mX =
       &windEmulatorStep4_WECSim_DW.STATE_1_Modes_i[0];
-    tmp_8 = false;
-    simulationData->mData->mFoundZcEvents = tmp_8;
+    tmp_5 = false;
+    simulationData->mData->mFoundZcEvents = tmp_5;
     simulationData->mData->mHadEvents = false;
     simulationData->mData->mIsMajorTimeStep = tmp;
-    tmp_8 = false;
-    simulationData->mData->mIsSolverAssertCheck = tmp_8;
+    tmp = false;
+    simulationData->mData->mIsSolverAssertCheck = tmp;
     simulationData->mData->mIsSolverCheckingCIC = false;
-    tmp_8 = rtsiIsSolverComputingJacobian
-      (&windEmulatorStep4_WECSim_M->solverInfo);
-    simulationData->mData->mIsComputingJacobian = tmp_8;
+    tmp = rtsiIsSolverComputingJacobian(&windEmulatorStep4_WECSim_M->solverInfo);
+    simulationData->mData->mIsComputingJacobian = tmp;
     simulationData->mData->mIsEvaluatingF0 = false;
     simulationData->mData->mIsSolverRequestingReset = false;
     simulationData->mData->mIsModeUpdateTimeStep = tmp_2;
@@ -18488,8 +18432,8 @@ void windEmulatorStep4_WECSim_step(void)
     i = ne_simulator_method(simulator, NESL_SIM_UPDATE, simulationData,
       diagnosticManager);
     if (i != 0) {
-      tmp_8 = error_buffer_is_empty(rtmGetErrorStatus(windEmulatorStep4_WECSim_M));
-      if (tmp_8) {
+      tmp = error_buffer_is_empty(rtmGetErrorStatus(windEmulatorStep4_WECSim_M));
+      if (tmp) {
         msg = rtw_diagnostics_msg(diagnosticTree);
         rtmSetErrorStatus(windEmulatorStep4_WECSim_M, msg);
       }
@@ -18537,7 +18481,7 @@ void windEmulatorStep4_WECSim_step(void)
       (static_cast<real_T *>(windEmulatorStep4_WECSim_DW.TransportDelay_PWORK[i]))
         [TransportDelay_IWORK] = tmp_9[i];
       (static_cast<real_T *>(windEmulatorStep4_WECSim_DW.TransportDelay_PWORK[i]))
-        [TransportDelay_IWORK_0 + TransportDelay_IWORK] = LastMajorTime_tmp;
+        [TransportDelay_IWORK_0 + TransportDelay_IWORK] = time_tmp;
     }
 
     /* Update for TransportDelay: '<S139>/Transport Delay' */
@@ -18584,7 +18528,7 @@ void windEmulatorStep4_WECSim_step(void)
         [TransportDelay_IWORK] = tmp_9[i];
       (static_cast<real_T *>
         (windEmulatorStep4_WECSim_DW.TransportDelay_PWORK_f[i]))
-        [TransportDelay_IWORK_0 + TransportDelay_IWORK] = LastMajorTime_tmp;
+        [TransportDelay_IWORK_0 + TransportDelay_IWORK] = time_tmp;
     }
 
     /* Update for TransportDelay: '<S64>/Transport Delay' */
@@ -18619,7 +18563,7 @@ void windEmulatorStep4_WECSim_step(void)
         [TransportDelay_IWORK] = windEmulatorStep4_WECSim_B.TransportDelay[i];
       (static_cast<real_T *>
         (windEmulatorStep4_WECSim_DW.TransportDelay_PWORK_j[i]))
-        [TransportDelay_IWORK_0 + TransportDelay_IWORK] = LastMajorTime_tmp;
+        [TransportDelay_IWORK_0 + TransportDelay_IWORK] = time_tmp;
     }
 
     /* Update for TransportDelay: '<S143>/Transport Delay' */
@@ -18654,8 +18598,65 @@ void windEmulatorStep4_WECSim_step(void)
         [TransportDelay_IWORK] = windEmulatorStep4_WECSim_B.TransportDelay_b[i];
       (static_cast<real_T *>
         (windEmulatorStep4_WECSim_DW.TransportDelay_PWORK_n[i]))
-        [TransportDelay_IWORK_0 + TransportDelay_IWORK] = LastMajorTime_tmp;
+        [TransportDelay_IWORK_0 + TransportDelay_IWORK] = time_tmp;
     }
+
+    if (tmp_8) {
+      /* Update for Memory: '<S433>/Memory' */
+      windEmulatorStep4_WECSim_DW.Memory_PreviousInput_kk =
+        windEmulatorStep4_WECSim_B.Logic[0];
+
+      /* Update for Memory: '<S434>/Memory' */
+      windEmulatorStep4_WECSim_DW.Memory_PreviousInput_h =
+        windEmulatorStep4_WECSim_B.Logic_g[0];
+
+      /* Update for DiscreteIntegrator: '<S412>/Integrator' */
+      windEmulatorStep4_WECSim_DW.Integrator_DSTATE_d +=
+        windEmulatorStep4_WECSim_cal->Integrator_gainval_d *
+        windEmulatorStep4_WECSim_B.IntegralGain_h;
+      windEmulatorStep4_WECSim_DW.Integrator_PrevResetState = static_cast<int8_T>
+        (windEmulatorStep4_WECSim_B.BusAssignment_c.speedCtrlReset);
+
+      /* Update for DiscreteIntegrator: '<S407>/Filter' */
+      windEmulatorStep4_WECSim_DW.Filter_DSTATE +=
+        windEmulatorStep4_WECSim_cal->Filter_gainval *
+        windEmulatorStep4_WECSim_B.FilterCoefficient;
+      windEmulatorStep4_WECSim_DW.Filter_PrevResetState = static_cast<int8_T>
+        (windEmulatorStep4_WECSim_B.BusAssignment_c.speedCtrlReset);
+
+      /* Update for Memory: '<S496>/Memory' */
+      windEmulatorStep4_WECSim_DW.Memory_PreviousInput_g =
+        windEmulatorStep4_WECSim_B.Logic_c[0];
+
+      /* Update for Memory: '<S497>/Memory' */
+      windEmulatorStep4_WECSim_DW.Memory_PreviousInput_n =
+        windEmulatorStep4_WECSim_B.Logic_p[0];
+
+      /* Update for DiscreteIntegrator: '<S475>/Integrator' */
+      windEmulatorStep4_WECSim_DW.Integrator_DSTATE_e +=
+        windEmulatorStep4_WECSim_cal->Integrator_gainval_b *
+        windEmulatorStep4_WECSim_B.IntegralGain_hk;
+      windEmulatorStep4_WECSim_DW.Integrator_PrevResetState_g =
+        static_cast<int8_T>
+        (windEmulatorStep4_WECSim_B.BusAssignment_c.speedCtrlReset);
+
+      /* Update for DiscreteIntegrator: '<S470>/Filter' */
+      windEmulatorStep4_WECSim_DW.Filter_DSTATE_b +=
+        windEmulatorStep4_WECSim_cal->Filter_gainval_d *
+        windEmulatorStep4_WECSim_B.FilterCoefficient_g;
+      windEmulatorStep4_WECSim_DW.Filter_PrevResetState_g = static_cast<int8_T>
+        (windEmulatorStep4_WECSim_B.BusAssignment_c.speedCtrlReset);
+    }
+
+    /* Update for RateLimiter: '<S373>/Rate Limiter' */
+    windEmulatorStep4_WECSim_DW.PrevY_l =
+      windEmulatorStep4_WECSim_B.RateLimiter_b;
+    windEmulatorStep4_WECSim_DW.LastMajorTime_d = LastMajorTime_tmp;
+
+    /* Update for RateLimiter: '<S436>/Rate Limiter' */
+    windEmulatorStep4_WECSim_DW.PrevY_e =
+      windEmulatorStep4_WECSim_B.RateLimiter_a;
+    windEmulatorStep4_WECSim_DW.LastMajorTime_k = LastMajorTime_tmp;
   }                                    /* end MajorTimeStep */
 
   if (rtmIsMajorTimeStep(windEmulatorStep4_WECSim_M)) {
@@ -18801,7 +18802,7 @@ void windEmulatorStep4_WECSim_derivatives(void)
   /* End of Derivatives for StateSpace: '<S542>/Internal' */
 
   /* Derivatives for SimscapeExecutionBlock: '<S216>/STATE_1' incorporates:
-   *  SimscapeExecutionBlock: '<S350>/STATE_1'
+   *  SimscapeExecutionBlock: '<S332>/STATE_1'
    */
   simulationData = static_cast<NeslSimulationData *>
     (windEmulatorStep4_WECSim_DW.STATE_1_SimData_h);
@@ -18921,12 +18922,12 @@ void windEmulatorStep4_WECSim_derivatives(void)
 
   /* End of Derivatives for SimscapeExecutionBlock: '<S216>/STATE_1' */
 
-  /* Derivatives for SimscapeInputBlock: '<S350>/INPUT_3_1_1' */
-  _rtXdot->windEmulatorStep4_WECSimhptoS_f =
+  /* Derivatives for SimscapeInputBlock: '<S332>/INPUT_3_1_1' */
+  _rtXdot->windEmulatorStep4_WECSimhptoS_n =
     (windEmulatorStep4_WECSim_B.velocity[4] -
-     windEmulatorStep4_WECSim_X.windEmulatorStep4_WECSimhptoS_f) * 1000.0;
+     windEmulatorStep4_WECSim_X.windEmulatorStep4_WECSimhptoS_n) * 1000.0;
 
-  /* Derivatives for SimscapeExecutionBlock: '<S350>/STATE_1' */
+  /* Derivatives for SimscapeExecutionBlock: '<S332>/STATE_1' */
   simulationData = static_cast<NeslSimulationData *>
     (windEmulatorStep4_WECSim_DW.STATE_1_SimData_a);
   time_0 = time_tmp;
@@ -18934,10 +18935,10 @@ void windEmulatorStep4_WECSim_derivatives(void)
   simulationData->mData->mTime.mX = &time_0;
   simulationData->mData->mContStates.mN = 35;
   simulationData->mData->mContStates.mX =
-    &windEmulatorStep4_WECSim_X.windEmulatorStep4_WECSimhptoS_d[0];
+    &windEmulatorStep4_WECSim_X.windEmulatorStep4_WECSimhptoS_h[0];
   simulationData->mData->mDiscStates.mN = 6;
   simulationData->mData->mDiscStates.mX =
-    &windEmulatorStep4_WECSim_DW.STATE_1_Discrete_3239082943[0];
+    &windEmulatorStep4_WECSim_DW.STATE_1_Discrete_208214823[0];
   simulationData->mData->mModeVector.mN = 21;
   simulationData->mData->mModeVector.mX =
     &windEmulatorStep4_WECSim_DW.STATE_1_Modes_i[0];
@@ -18974,7 +18975,7 @@ void windEmulatorStep4_WECSim_derivatives(void)
   simulationData->mData->mInputOffsets.mN = 4;
   simulationData->mData->mInputOffsets.mX = &tmp_5[0];
   simulationData->mData->mDx.mN = 35;
-  simulationData->mData->mDx.mX = &_rtXdot->windEmulatorStep4_WECSimhptoS_d[0];
+  simulationData->mData->mDx.mX = &_rtXdot->windEmulatorStep4_WECSimhptoS_h[0];
   simulator = static_cast<NeslSimulator *>
     (windEmulatorStep4_WECSim_DW.STATE_1_Simulator_i);
   diagnosticManager = static_cast<NeuDiagnosticManager *>
@@ -19187,7 +19188,7 @@ void windEmulatorStep4_WECSim_initialize(void)
 
   /* Root-level init GlobalMassMatrixPr offset */
   {
-    windEmulatorStep4_WECSim_DW.STATE_1_MASS_MATRIX_PR = 9;/* '<S350>/STATE_1' */
+    windEmulatorStep4_WECSim_DW.STATE_1_MASS_MATRIX_PR = 9;/* '<S332>/STATE_1' */
   }
 
   /* child S-Function registration */
@@ -19444,7 +19445,7 @@ void windEmulatorStep4_WECSim_initialize(void)
     modelParameters.mUseSimState = false;
     modelParameters.mLinTrimCompile = false;
     modelParameters.mLoggingMode = SSC_LOGGING_OFF;
-    modelParameters.mRTWModifiedTimeStamp = 7.05260265E+8;
+    modelParameters.mRTWModifiedTimeStamp = 7.06642264E+8;
     modelParameters.mZcDisabled = true;
     modelParameters.mUseModelRefSolver = false;
     modelParameters.mTargetFPGAHIL = false;
@@ -19507,7 +19508,7 @@ void windEmulatorStep4_WECSim_initialize(void)
     modelParameters_0.mUseSimState = false;
     modelParameters_0.mLinTrimCompile = false;
     modelParameters_0.mLoggingMode = SSC_LOGGING_OFF;
-    modelParameters_0.mRTWModifiedTimeStamp = 7.05260265E+8;
+    modelParameters_0.mRTWModifiedTimeStamp = 7.06642264E+8;
     modelParameters_0.mZcDisabled = true;
     modelParameters_0.mUseModelRefSolver = false;
     modelParameters_0.mTargetFPGAHIL = false;
@@ -19635,7 +19636,7 @@ void windEmulatorStep4_WECSim_initialize(void)
     modelParameters_1.mUseSimState = false;
     modelParameters_1.mLinTrimCompile = false;
     modelParameters_1.mLoggingMode = SSC_LOGGING_OFF;
-    modelParameters_1.mRTWModifiedTimeStamp = 7.05260265E+8;
+    modelParameters_1.mRTWModifiedTimeStamp = 7.06642264E+8;
     modelParameters_1.mZcDisabled = true;
     modelParameters_1.mUseModelRefSolver = false;
     modelParameters_1.mTargetFPGAHIL = false;
@@ -19698,7 +19699,7 @@ void windEmulatorStep4_WECSim_initialize(void)
     modelParameters_2.mUseSimState = false;
     modelParameters_2.mLinTrimCompile = false;
     modelParameters_2.mLoggingMode = SSC_LOGGING_OFF;
-    modelParameters_2.mRTWModifiedTimeStamp = 7.05260265E+8;
+    modelParameters_2.mRTWModifiedTimeStamp = 7.06642264E+8;
     modelParameters_2.mZcDisabled = true;
     modelParameters_2.mUseModelRefSolver = false;
     modelParameters_2.mTargetFPGAHIL = false;
@@ -19729,16 +19730,16 @@ void windEmulatorStep4_WECSim_initialize(void)
 
     /* End of Start for SimscapeExecutionBlock: '<S216>/OUTPUT_1_1' */
 
-    /* Start for SimscapeExecutionBlock: '<S350>/STATE_1' */
+    /* Start for SimscapeExecutionBlock: '<S332>/STATE_1' */
     simulator = nesl_lease_simulator(
-      "windEmulatorStep4_WECSim/hptoSim/WECSimModel/Subsystem/Solver Configuration_1",
+      "windEmulatorStep4_WECSim/hptoSim/WECSimModel/PTO_WECSim/Solver Configuration_1",
       0, 0);
     windEmulatorStep4_WECSim_DW.STATE_1_Simulator_i = (void *)simulator;
     zcDisabled = pointer_is_null(windEmulatorStep4_WECSim_DW.STATE_1_Simulator_i);
     if (zcDisabled) {
       windEmulatorStep4_WECSim_5bdcd402_1_gateway();
       simulator = nesl_lease_simulator(
-        "windEmulatorStep4_WECSim/hptoSim/WECSimModel/Subsystem/Solver Configuration_1",
+        "windEmulatorStep4_WECSim/hptoSim/WECSimModel/PTO_WECSim/Solver Configuration_1",
         0, 0);
       windEmulatorStep4_WECSim_DW.STATE_1_Simulator_i = (void *)simulator;
     }
@@ -19760,7 +19761,7 @@ void windEmulatorStep4_WECSim_initialize(void)
     modelParameters_3.mUseSimState = false;
     modelParameters_3.mLinTrimCompile = false;
     modelParameters_3.mLoggingMode = SSC_LOGGING_OFF;
-    modelParameters_3.mRTWModifiedTimeStamp = 7.05260265E+8;
+    modelParameters_3.mRTWModifiedTimeStamp = 7.06642264E+8;
     modelParameters_3.mZcDisabled = true;
     modelParameters_3.mUseModelRefSolver = false;
     modelParameters_3.mTargetFPGAHIL = false;
@@ -19789,11 +19790,11 @@ void windEmulatorStep4_WECSim_initialize(void)
       }
     }
 
-    /* End of Start for SimscapeExecutionBlock: '<S350>/STATE_1' */
+    /* End of Start for SimscapeExecutionBlock: '<S332>/STATE_1' */
 
-    /* Start for SimscapeExecutionBlock: '<S350>/OUTPUT_1_0' */
+    /* Start for SimscapeExecutionBlock: '<S332>/OUTPUT_1_0' */
     simulator = nesl_lease_simulator(
-      "windEmulatorStep4_WECSim/hptoSim/WECSimModel/Subsystem/Solver Configuration_1",
+      "windEmulatorStep4_WECSim/hptoSim/WECSimModel/PTO_WECSim/Solver Configuration_1",
       1, 0);
     windEmulatorStep4_WECSim_DW.OUTPUT_1_0_Simulator_d = (void *)simulator;
     zcDisabled = pointer_is_null
@@ -19801,7 +19802,7 @@ void windEmulatorStep4_WECSim_initialize(void)
     if (zcDisabled) {
       windEmulatorStep4_WECSim_5bdcd402_1_gateway();
       simulator = nesl_lease_simulator(
-        "windEmulatorStep4_WECSim/hptoSim/WECSimModel/Subsystem/Solver Configuration_1",
+        "windEmulatorStep4_WECSim/hptoSim/WECSimModel/PTO_WECSim/Solver Configuration_1",
         1, 0);
       windEmulatorStep4_WECSim_DW.OUTPUT_1_0_Simulator_d = (void *)simulator;
     }
@@ -19823,7 +19824,7 @@ void windEmulatorStep4_WECSim_initialize(void)
     modelParameters_4.mUseSimState = false;
     modelParameters_4.mLinTrimCompile = false;
     modelParameters_4.mLoggingMode = SSC_LOGGING_OFF;
-    modelParameters_4.mRTWModifiedTimeStamp = 7.05260265E+8;
+    modelParameters_4.mRTWModifiedTimeStamp = 7.06642264E+8;
     modelParameters_4.mZcDisabled = true;
     modelParameters_4.mUseModelRefSolver = false;
     modelParameters_4.mTargetFPGAHIL = false;
@@ -19852,8 +19853,7 @@ void windEmulatorStep4_WECSim_initialize(void)
       }
     }
 
-    /* End of Start for SimscapeExecutionBlock: '<S350>/OUTPUT_1_0' */
-
+    /* End of Start for SimscapeExecutionBlock: '<S332>/OUTPUT_1_0' */
     /* Start for TransportDelay: '<S60>/Transport Delay' */
     windEmulatorStep4_WECSim_DW.TransportDelay_RWORK[0] = 0.0;
     startIdx = 1;
@@ -19926,7 +19926,7 @@ void windEmulatorStep4_WECSim_initialize(void)
     modelParameters_5.mUseSimState = false;
     modelParameters_5.mLinTrimCompile = false;
     modelParameters_5.mLoggingMode = SSC_LOGGING_OFF;
-    modelParameters_5.mRTWModifiedTimeStamp = 7.05260265E+8;
+    modelParameters_5.mRTWModifiedTimeStamp = 7.06642264E+8;
     modelParameters_5.mZcDisabled = true;
     modelParameters_5.mUseModelRefSolver = false;
     modelParameters_5.mTargetFPGAHIL = false;
@@ -19956,6 +19956,7 @@ void windEmulatorStep4_WECSim_initialize(void)
     }
 
     /* End of Start for SimscapeExecutionBlock: '<S216>/OUTPUT_1_0' */
+
     /* Start for TransportDelay: '<S64>/Transport Delay' */
     windEmulatorStep4_WECSim_DW.TransportDelay_RWORK_l[0] = 0.0;
     startIdx = 1;
@@ -20041,38 +20042,9 @@ void windEmulatorStep4_WECSim_initialize(void)
     windEmulatorStep4_WECSim_X.Integrator_CSTATE =
       windEmulatorStep4_WECSim_cal->PIDController_InitialConditio_o;
 
-    /* InitializeConditions for RateLimiter: '<S7>/Rate Limiter' */
-    windEmulatorStep4_WECSim_DW.PrevY_f =
-      windEmulatorStep4_WECSim_cal->RateLimiter_IC;
-
-    /* InitializeConditions for Memory: '<S433>/Memory' */
-    windEmulatorStep4_WECSim_DW.Memory_PreviousInput_kk =
-      windEmulatorStep4_WECSim_cal->SRFlipFlop_initial_condition;
-
-    /* InitializeConditions for RateLimiter: '<S373>/Rate Limiter1' */
-    windEmulatorStep4_WECSim_DW.PrevY_m =
-      windEmulatorStep4_WECSim_cal->RateLimiter1_IC;
-
-    /* InitializeConditions for Memory: '<S434>/Memory' */
-    windEmulatorStep4_WECSim_DW.Memory_PreviousInput_h =
-      windEmulatorStep4_WECSim_cal->SRFlipFlop_initial_condition_d;
-
-    /* InitializeConditions for RateLimiter: '<S373>/Rate Limiter' */
-    windEmulatorStep4_WECSim_DW.LastMajorTime_d = (rtInf);
-
-    /* InitializeConditions for DiscreteIntegrator: '<S412>/Integrator' */
-    windEmulatorStep4_WECSim_DW.Integrator_DSTATE =
-      windEmulatorStep4_WECSim_cal->PIDController_InitialConditio_a;
-    windEmulatorStep4_WECSim_DW.Integrator_PrevResetState = 0;
-
-    /* InitializeConditions for DiscreteIntegrator: '<S407>/Filter' */
-    windEmulatorStep4_WECSim_DW.Filter_DSTATE =
-      windEmulatorStep4_WECSim_cal->PIDController_InitialConditionF;
-    windEmulatorStep4_WECSim_DW.Filter_PrevResetState = 0;
-
     /* InitializeConditions for RateLimiter: '<S498>/Rate Limiter' */
     windEmulatorStep4_WECSim_DW.PrevY_k =
-      windEmulatorStep4_WECSim_cal->RateLimiter_IC_g;
+      windEmulatorStep4_WECSim_cal->RateLimiter_IC;
 
     /* InitializeConditions for StateSpace: '<S531>/Internal' */
     windEmulatorStep4_WECSim_X.Internal_CSTATE[0] =
@@ -20086,34 +20058,13 @@ void windEmulatorStep4_WECSim_initialize(void)
     windEmulatorStep4_WECSim_X.Internal_CSTATE_j =
       windEmulatorStep4_WECSim_cal->Internal_InitialCondition_p;
 
+    /* InitializeConditions for RateLimiter: '<S7>/Rate Limiter' */
+    windEmulatorStep4_WECSim_DW.PrevY_f =
+      windEmulatorStep4_WECSim_cal->RateLimiter_IC_d;
+
     /* InitializeConditions for StateSpace: '<S542>/Internal' */
     windEmulatorStep4_WECSim_X.Internal_CSTATE_a =
       windEmulatorStep4_WECSim_cal->Internal_InitialCondition_j;
-
-    /* InitializeConditions for Memory: '<S496>/Memory' */
-    windEmulatorStep4_WECSim_DW.Memory_PreviousInput_g =
-      windEmulatorStep4_WECSim_cal->SRFlipFlop_initial_condition_k;
-
-    /* InitializeConditions for RateLimiter: '<S436>/Rate Limiter1' */
-    windEmulatorStep4_WECSim_DW.PrevY_fq =
-      windEmulatorStep4_WECSim_cal->RateLimiter1_IC_g;
-
-    /* InitializeConditions for Memory: '<S497>/Memory' */
-    windEmulatorStep4_WECSim_DW.Memory_PreviousInput_n =
-      windEmulatorStep4_WECSim_cal->SRFlipFlop_initial_condition_j;
-
-    /* InitializeConditions for RateLimiter: '<S436>/Rate Limiter' */
-    windEmulatorStep4_WECSim_DW.LastMajorTime_k = (rtInf);
-
-    /* InitializeConditions for DiscreteIntegrator: '<S475>/Integrator' */
-    windEmulatorStep4_WECSim_DW.Integrator_DSTATE_e =
-      windEmulatorStep4_WECSim_cal->PIDController_InitialConditio_c;
-    windEmulatorStep4_WECSim_DW.Integrator_PrevResetState_g = 0;
-
-    /* InitializeConditions for DiscreteIntegrator: '<S470>/Filter' */
-    windEmulatorStep4_WECSim_DW.Filter_DSTATE_b =
-      windEmulatorStep4_WECSim_cal->PIDController_InitialConditio_k;
-    windEmulatorStep4_WECSim_DW.Filter_PrevResetState_g = 0;
 
     /* InitializeConditions for DiscreteIntegrator: '<S437>/Discrete-Time Integrator' */
     windEmulatorStep4_WECSim_DW.DiscreteTimeIntegrator_DSTATE =
@@ -20158,26 +20109,26 @@ void windEmulatorStep4_WECSim_initialize(void)
     windEmulatorStep4_WECSim_DW.Memory_PreviousInput =
       windEmulatorStep4_WECSim_cal->Memory_InitialCondition;
 
-    /* InitializeConditions for SimscapeInputBlock: '<S350>/INPUT_3_1_1' */
+    /* InitializeConditions for SimscapeInputBlock: '<S332>/INPUT_3_1_1' */
     if (rtmIsMajorTimeStep(windEmulatorStep4_WECSim_M)) {
-      windEmulatorStep4_WECSim_DW.INPUT_3_1_1_FirstOutput_3515086 = 0.0;
+      windEmulatorStep4_WECSim_DW.INPUT_3_1_1_FirstOutput_4203252 = 0.0;
     }
 
-    /* End of InitializeConditions for SimscapeInputBlock: '<S350>/INPUT_3_1_1' */
+    /* End of InitializeConditions for SimscapeInputBlock: '<S332>/INPUT_3_1_1' */
 
-    /* InitializeConditions for Delay: '<S59>/Delay One Step' */
+    /* InitializeConditions for Delay: '<S58>/Delay One Step' */
     windEmulatorStep4_WECSim_DW.DelayOneStep_DSTATE =
       windEmulatorStep4_WECSim_cal->DelayOneStep_InitialCondition;
 
-    /* InitializeConditions for DiscreteIntegrator: '<S300>/Integrator' */
-    windEmulatorStep4_WECSim_DW.Integrator_DSTATE_l =
+    /* InitializeConditions for DiscreteIntegrator: '<S282>/Integrator' */
+    windEmulatorStep4_WECSim_DW.Integrator_DSTATE =
       windEmulatorStep4_WECSim_cal->DiscretePIDController_InitialCo;
 
-    /* InitializeConditions for Delay: '<S293>/UD' */
+    /* InitializeConditions for Delay: '<S275>/UD' */
     windEmulatorStep4_WECSim_DW.UD_DSTATE_j =
       windEmulatorStep4_WECSim_cal->DiscretePIDController_Different;
 
-    /* InitializeConditions for SimscapeExecutionBlock: '<S350>/STATE_1' */
+    /* InitializeConditions for SimscapeExecutionBlock: '<S332>/STATE_1' */
     tmp = false;
     tmp_0 = false;
     if (tmp_0 || tmp) {
@@ -20205,7 +20156,7 @@ void windEmulatorStep4_WECSim_initialize(void)
       }
     }
 
-    /* End of InitializeConditions for SimscapeExecutionBlock: '<S350>/STATE_1' */
+    /* End of InitializeConditions for SimscapeExecutionBlock: '<S332>/STATE_1' */
 
     /* InitializeConditions for TransportDelay: '<S60>/Transport Delay' */
     for (is = 0; is < 6; is++) {
@@ -20265,6 +20216,56 @@ void windEmulatorStep4_WECSim_initialize(void)
     }
 
     /* End of InitializeConditions for TransportDelay: '<S143>/Transport Delay' */
+
+    /* InitializeConditions for Memory: '<S433>/Memory' */
+    windEmulatorStep4_WECSim_DW.Memory_PreviousInput_kk =
+      windEmulatorStep4_WECSim_cal->SRFlipFlop_initial_condition;
+
+    /* InitializeConditions for RateLimiter: '<S373>/Rate Limiter1' */
+    windEmulatorStep4_WECSim_DW.PrevY_m =
+      windEmulatorStep4_WECSim_cal->RateLimiter1_IC;
+
+    /* InitializeConditions for Memory: '<S434>/Memory' */
+    windEmulatorStep4_WECSim_DW.Memory_PreviousInput_h =
+      windEmulatorStep4_WECSim_cal->SRFlipFlop_initial_condition_d;
+
+    /* InitializeConditions for RateLimiter: '<S373>/Rate Limiter' */
+    windEmulatorStep4_WECSim_DW.LastMajorTime_d = (rtInf);
+
+    /* InitializeConditions for DiscreteIntegrator: '<S412>/Integrator' */
+    windEmulatorStep4_WECSim_DW.Integrator_DSTATE_d =
+      windEmulatorStep4_WECSim_cal->PIDController_InitialConditio_a;
+    windEmulatorStep4_WECSim_DW.Integrator_PrevResetState = 0;
+
+    /* InitializeConditions for DiscreteIntegrator: '<S407>/Filter' */
+    windEmulatorStep4_WECSim_DW.Filter_DSTATE =
+      windEmulatorStep4_WECSim_cal->PIDController_InitialConditionF;
+    windEmulatorStep4_WECSim_DW.Filter_PrevResetState = 0;
+
+    /* InitializeConditions for Memory: '<S496>/Memory' */
+    windEmulatorStep4_WECSim_DW.Memory_PreviousInput_g =
+      windEmulatorStep4_WECSim_cal->SRFlipFlop_initial_condition_k;
+
+    /* InitializeConditions for RateLimiter: '<S436>/Rate Limiter1' */
+    windEmulatorStep4_WECSim_DW.PrevY_fq =
+      windEmulatorStep4_WECSim_cal->RateLimiter1_IC_g;
+
+    /* InitializeConditions for Memory: '<S497>/Memory' */
+    windEmulatorStep4_WECSim_DW.Memory_PreviousInput_n =
+      windEmulatorStep4_WECSim_cal->SRFlipFlop_initial_condition_j;
+
+    /* InitializeConditions for RateLimiter: '<S436>/Rate Limiter' */
+    windEmulatorStep4_WECSim_DW.LastMajorTime_k = (rtInf);
+
+    /* InitializeConditions for DiscreteIntegrator: '<S475>/Integrator' */
+    windEmulatorStep4_WECSim_DW.Integrator_DSTATE_e =
+      windEmulatorStep4_WECSim_cal->PIDController_InitialConditio_c;
+    windEmulatorStep4_WECSim_DW.Integrator_PrevResetState_g = 0;
+
+    /* InitializeConditions for DiscreteIntegrator: '<S470>/Filter' */
+    windEmulatorStep4_WECSim_DW.Filter_DSTATE_b =
+      windEmulatorStep4_WECSim_cal->PIDController_InitialConditio_k;
+    windEmulatorStep4_WECSim_DW.Filter_PrevResetState_g = 0;
 
     /* SystemInitialize for MATLAB Function: '<S49>/Parse Status Word' */
     windEmulat_ParseStatusWord_Init
@@ -20490,23 +20491,23 @@ void windEmulatorStep4_WECSim_terminate(void)
   nesl_destroy_simulation_data(simulationData);
   nesl_erase_simulator("windEmulatorStep4_WECSim/hptoSim/WECSimModel/Global Reference Frame/Solver Configuration_1");
 
-  /* Terminate for SimscapeExecutionBlock: '<S350>/STATE_1' */
+  /* Terminate for SimscapeExecutionBlock: '<S332>/STATE_1' */
   diagnosticManager = static_cast<NeuDiagnosticManager *>
     (windEmulatorStep4_WECSim_DW.STATE_1_DiagMgr_g);
   neu_destroy_diagnostic_manager(diagnosticManager);
   simulationData = static_cast<NeslSimulationData *>
     (windEmulatorStep4_WECSim_DW.STATE_1_SimData_a);
   nesl_destroy_simulation_data(simulationData);
-  nesl_erase_simulator("windEmulatorStep4_WECSim/hptoSim/WECSimModel/Subsystem/Solver Configuration_1");
+  nesl_erase_simulator("windEmulatorStep4_WECSim/hptoSim/WECSimModel/PTO_WECSim/Solver Configuration_1");
 
-  /* Terminate for SimscapeExecutionBlock: '<S350>/OUTPUT_1_0' */
+  /* Terminate for SimscapeExecutionBlock: '<S332>/OUTPUT_1_0' */
   diagnosticManager = static_cast<NeuDiagnosticManager *>
     (windEmulatorStep4_WECSim_DW.OUTPUT_1_0_DiagMgr_i);
   neu_destroy_diagnostic_manager(diagnosticManager);
   simulationData = static_cast<NeslSimulationData *>
     (windEmulatorStep4_WECSim_DW.OUTPUT_1_0_SimData_l);
   nesl_destroy_simulation_data(simulationData);
-  nesl_erase_simulator("windEmulatorStep4_WECSim/hptoSim/WECSimModel/Subsystem/Solver Configuration_1");
+  nesl_erase_simulator("windEmulatorStep4_WECSim/hptoSim/WECSimModel/PTO_WECSim/Solver Configuration_1");
 
   /* Terminate for SimscapeExecutionBlock: '<S216>/OUTPUT_1_0' */
   diagnosticManager = static_cast<NeuDiagnosticManager *>

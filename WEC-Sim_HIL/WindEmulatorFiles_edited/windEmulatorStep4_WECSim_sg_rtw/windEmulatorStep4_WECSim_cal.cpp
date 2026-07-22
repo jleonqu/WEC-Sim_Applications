@@ -224,17 +224,17 @@ windEmulatorStep4_WECS_cal_type windEmulatorStep4_WECS_cal_impl = {
   { -118.13271821199052, 8.0, -11.623239835183748, 8.0, -15.144377718883565 },
 
   /* Expression: [0 0 0 0 0 0]
-   * Referenced by: '<S58>/Constant'
+   * Referenced by: '<S59>/Constant1'
    */
   { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 },
 
   /* Expression: [0 0 0 0 0 0]
-   * Referenced by: '<S58>/Constant1'
+   * Referenced by: '<S59>/Constant'
    */
   { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 },
 
   /* Expression: [0 0 0 0 0 0]
-   * Referenced by: '<S58>/Constant2'
+   * Referenced by: '<S59>/Constant2'
    */
   { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 },
 
@@ -329,7 +329,7 @@ windEmulatorStep4_WECS_cal_type windEmulatorStep4_WECS_cal_impl = {
   { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 },
 
   /* Expression: [0 0 0 0 0 0]
-   * Referenced by: '<S58>/Constant3'
+   * Referenced by: '<S59>/Constant3'
    */
   { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 },
 
@@ -348,6 +348,11 @@ windEmulatorStep4_WECS_cal_type windEmulatorStep4_WECS_cal_impl = {
    */
   { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 },
 
+  /* Mask Parameter: DiscretePIDController_D
+   * Referenced by: '<S273>/Derivative Gain'
+   */
+  0.0,
+
   /* Mask Parameter: PIDController_D
    * Referenced by: '<S405>/Derivative Gain'
    */
@@ -358,13 +363,8 @@ windEmulatorStep4_WECS_cal_type windEmulatorStep4_WECS_cal_impl = {
    */
   0.0,
 
-  /* Mask Parameter: DiscretePIDController_D
-   * Referenced by: '<S291>/Derivative Gain'
-   */
-  0.0,
-
   /* Mask Parameter: DiscretePIDController_Different
-   * Referenced by: '<S293>/UD'
+   * Referenced by: '<S275>/UD'
    */
   0.0,
 
@@ -388,6 +388,11 @@ windEmulatorStep4_WECS_cal_type windEmulatorStep4_WECS_cal_impl = {
    */
   0.0,
 
+  /* Mask Parameter: DiscretePIDController_InitialCo
+   * Referenced by: '<S282>/Integrator'
+   */
+  0.0,
+
   /* Mask Parameter: PIDController_InitialConditio_a
    * Referenced by: '<S412>/Integrator'
    */
@@ -395,11 +400,6 @@ windEmulatorStep4_WECS_cal_type windEmulatorStep4_WECS_cal_impl = {
 
   /* Mask Parameter: PIDController_InitialConditio_c
    * Referenced by: '<S475>/Integrator'
-   */
-  0.0,
-
-  /* Mask Parameter: DiscretePIDController_InitialCo
-   * Referenced by: '<S300>/Integrator'
    */
   0.0,
 
@@ -655,116 +655,6 @@ windEmulatorStep4_WECS_cal_type windEmulatorStep4_WECS_cal_impl = {
    */
   0.0,
 
-  /* Expression: 0
-   * Referenced by: '<S7>/speedReference'
-   */
-  0.0,
-
-  /* Expression: 50
-   * Referenced by: '<S7>/Rate Limiter'
-   */
-  50.0,
-
-  /* Expression: -50
-   * Referenced by: '<S7>/Rate Limiter'
-   */
-  -50.0,
-
-  /* Expression: 0
-   * Referenced by: '<S7>/Rate Limiter'
-   */
-  0.0,
-
-  /* Expression: 0
-   * Referenced by: '<S7>/excForceFreq_Hz'
-   */
-  0.0,
-
-  /* Expression: 2*pi
-   * Referenced by: '<S7>/f->w'
-   */
-  6.2831853071795862,
-
-  /* Expression: 0
-   * Referenced by: '<S7>/excForceAmp_N'
-   */
-  0.0,
-
-  /* Expression: 1
-   * Referenced by: '<S7>/excForceAmpNow_N'
-   */
-  1.0,
-
-  /* Expression: 0
-   * Referenced by: '<S376>/Constant1'
-   */
-  0.0,
-
-  /* Expression: 0
-   * Referenced by: '<S373>/shaftSpeedRefMin'
-   */
-  0.0,
-
-  /* Expression: 50
-   * Referenced by: '<S373>/Rate Limiter1'
-   */
-  50.0,
-
-  /* Expression: -50
-   * Referenced by: '<S373>/Rate Limiter1'
-   */
-  -50.0,
-
-  /* Expression: 0
-   * Referenced by: '<S373>/Rate Limiter1'
-   */
-  0.0,
-
-  /* Expression: 0
-   * Referenced by: '<S376>/Switch'
-   */
-  0.0,
-
-  /* Computed Parameter: Integrator_gainval
-   * Referenced by: '<S412>/Integrator'
-   */
-  0.004,
-
-  /* Computed Parameter: Filter_gainval
-   * Referenced by: '<S407>/Filter'
-   */
-  0.004,
-
-  /* Expression: -1
-   * Referenced by: '<S375>/Gain2'
-   */
-  -1.0,
-
-  /* Expression: 0
-   * Referenced by: '<S370>/Step'
-   */
-  0.0,
-
-  /* Expression: 1
-   * Referenced by: '<S365>/Saturation'
-   */
-  1.0,
-
-  /* Expression: 0
-   * Referenced by: '<S365>/Saturation'
-   */
-  0.0,
-
-  /* Expression: 0
-   * Referenced by: '<S371>/kDamping'
-   */
-  0.0,
-
-  /* Expression: 1
-   * Referenced by: '<S371>/kDampingNow'
-   */
-  1.0,
-
   /* Expression: 200
    * Referenced by: '<S498>/Rate Limiter'
    */
@@ -820,6 +710,46 @@ windEmulatorStep4_WECS_cal_type windEmulatorStep4_WECS_cal_impl = {
    */
   0.0075,
 
+  /* Expression: 0
+   * Referenced by: '<S7>/speedReference'
+   */
+  0.0,
+
+  /* Expression: 50
+   * Referenced by: '<S7>/Rate Limiter'
+   */
+  50.0,
+
+  /* Expression: -50
+   * Referenced by: '<S7>/Rate Limiter'
+   */
+  -50.0,
+
+  /* Expression: 0
+   * Referenced by: '<S7>/Rate Limiter'
+   */
+  0.0,
+
+  /* Expression: 0
+   * Referenced by: '<S7>/excForceFreq_Hz'
+   */
+  0.0,
+
+  /* Expression: 2*pi
+   * Referenced by: '<S7>/f->w'
+   */
+  6.2831853071795862,
+
+  /* Expression: 0
+   * Referenced by: '<S7>/excForceAmp_N'
+   */
+  0.0,
+
+  /* Expression: 1
+   * Referenced by: '<S7>/excForceAmpNow_N'
+   */
+  1.0,
+
   /* Computed Parameter: Internal_A_pr_e
    * Referenced by: '<S542>/Internal'
    */
@@ -860,6 +790,41 @@ windEmulatorStep4_WECS_cal_type windEmulatorStep4_WECS_cal_impl = {
    */
   0.0049,
 
+  /* Expression: 1/6894.75
+   * Referenced by: '<S504>/Gain'
+   */
+  0.00014503789114906271,
+
+  /* Expression: -1
+   * Referenced by: '<S374>/Constant'
+   */
+  -1.0,
+
+  /* Expression: 0
+   * Referenced by: '<S370>/Step'
+   */
+  0.0,
+
+  /* Expression: 1
+   * Referenced by: '<S365>/Saturation'
+   */
+  1.0,
+
+  /* Expression: 0
+   * Referenced by: '<S365>/Saturation'
+   */
+  0.0,
+
+  /* Expression: 0
+   * Referenced by: '<S371>/kDamping'
+   */
+  0.0,
+
+  /* Expression: 1
+   * Referenced by: '<S371>/kDampingNow'
+   */
+  1.0,
+
   /* Expression: 0
    * Referenced by: '<S371>/kSpring'
    */
@@ -872,61 +837,6 @@ windEmulatorStep4_WECS_cal_type windEmulatorStep4_WECS_cal_impl = {
 
   /* Expression: -1
    * Referenced by: '<S367>/Gain'
-   */
-  -1.0,
-
-  /* Expression: 0
-   * Referenced by: '<S439>/Constant1'
-   */
-  0.0,
-
-  /* Expression: 0
-   * Referenced by: '<S436>/shaftSpeedRefMin'
-   */
-  0.0,
-
-  /* Expression: 50
-   * Referenced by: '<S436>/Rate Limiter1'
-   */
-  50.0,
-
-  /* Expression: -50
-   * Referenced by: '<S436>/Rate Limiter1'
-   */
-  -50.0,
-
-  /* Expression: 0
-   * Referenced by: '<S436>/Rate Limiter1'
-   */
-  0.0,
-
-  /* Expression: 0
-   * Referenced by: '<S439>/Switch'
-   */
-  0.0,
-
-  /* Computed Parameter: Integrator_gainval_b
-   * Referenced by: '<S475>/Integrator'
-   */
-  0.004,
-
-  /* Computed Parameter: Filter_gainval_d
-   * Referenced by: '<S470>/Filter'
-   */
-  0.004,
-
-  /* Expression: -1
-   * Referenced by: '<S438>/Gain2'
-   */
-  -1.0,
-
-  /* Expression: 1/6894.75
-   * Referenced by: '<S504>/Gain'
-   */
-  0.00014503789114906271,
-
-  /* Expression: -1
-   * Referenced by: '<S374>/Constant'
    */
   -1.0,
 
@@ -1160,80 +1070,70 @@ windEmulatorStep4_WECS_cal_type windEmulatorStep4_WECS_cal_impl = {
    */
   0.0,
 
-  /* Expression: 1
-   * Referenced by: '<S365>/Constant'
-   */
-  1.0,
-
   /* Expression: -1
-   * Referenced by: '<S365>/Constant1'
-   */
-  -1.0,
-
-  /* Expression: 1000*60
-   * Referenced by: '<S499>/m3toL'
-   */
-  60000.0,
-
-  /* Expression: 1000*60
-   * Referenced by: '<S500>/Gain'
-   */
-  60000.0,
-
-  /* Expression: 1
-   * Referenced by: '<S6>/Constant1'
-   */
-  1.0,
-
-  /* Expression: -1
-   * Referenced by: '<S59>/Constant3'
+   * Referenced by: '<S58>/Constant3'
    */
   -1.0,
 
   /* Expression: 1
-   * Referenced by: '<S59>/Constant4'
+   * Referenced by: '<S58>/Constant4'
    */
   1.0,
 
   /* Expression: 0
-   * Referenced by: '<S59>/Switch'
+   * Referenced by: '<S58>/Switch'
    */
   0.0,
 
   /* Expression: 100
-   * Referenced by: '<S59>/Step'
+   * Referenced by: '<S58>/Step'
    */
   100.0,
 
   /* Expression: 0.0075
-   * Referenced by: '<S59>/Step'
+   * Referenced by: '<S58>/Step'
    */
   0.0075,
 
   /* Expression: 0.0075
-   * Referenced by: '<S59>/Step'
+   * Referenced by: '<S58>/Step'
    */
   0.0075,
 
   /* Expression: 0.0
-   * Referenced by: '<S59>/Delay One Step'
+   * Referenced by: '<S58>/Delay One Step'
    */
   0.0,
 
-  /* Computed Parameter: Integrator_gainval_n
-   * Referenced by: '<S300>/Integrator'
+  /* Computed Parameter: Integrator_gainval
+   * Referenced by: '<S282>/Integrator'
    */
   0.004,
 
   /* Computed Parameter: Tsamp_WtEt
-   * Referenced by: '<S295>/Tsamp'
+   * Referenced by: '<S277>/Tsamp'
    */
   250.0,
 
   /* Expression: 1
-   * Referenced by: '<S59>/Gain'
+   * Referenced by: '<S58>/Gain'
    */
   1.0,
+
+  /* Expression: -1
+   * Referenced by: '<S58>/Constant2'
+   */
+  -1.0,
+
+  /* Expression: 1
+   * Referenced by: '<S58>/Constant5'
+   */
+  1.0,
+
+  /* Expression: 0
+   * Referenced by: '<S58>/Switch1'
+   */
+  0.0,
 
   /* Expression: body.yaw.option
    * Referenced by: '<S70>/Constant'
@@ -1526,59 +1426,154 @@ windEmulatorStep4_WECS_cal_type windEmulatorStep4_WECS_cal_impl = {
   1000.0,
 
   /* Expression: -1
-   * Referenced by: '<S58>/Gain6'
+   * Referenced by: '<S59>/Gain6'
    */
   -1.0,
 
   /* Expression: -1
-   * Referenced by: '<S58>/Gain7'
+   * Referenced by: '<S59>/Gain7'
    */
   -1.0,
 
   /* Expression: -1
-   * Referenced by: '<S58>/Gain4'
+   * Referenced by: '<S59>/Gain4'
    */
   -1.0,
 
   /* Expression: -1
-   * Referenced by: '<S58>/Gain5'
+   * Referenced by: '<S59>/Gain5'
    */
   -1.0,
 
-  /* Expression: -1
-   * Referenced by: '<S59>/Constant2'
+  /* Expression: 10e-8
+   * Referenced by: '<S64>/Transport Delay'
    */
-  -1.0,
+  1.0E-7,
+
+  /* Expression: 0
+   * Referenced by: '<S64>/Transport Delay'
+   */
+  0.0,
+
+  /* Expression: 10e-8
+   * Referenced by: '<S143>/Transport Delay'
+   */
+  1.0E-7,
+
+  /* Expression: 0
+   * Referenced by: '<S143>/Transport Delay'
+   */
+  0.0,
 
   /* Expression: 1
-   * Referenced by: '<S59>/Constant5'
+   * Referenced by: '<S365>/Constant'
    */
   1.0,
 
+  /* Expression: -1
+   * Referenced by: '<S365>/Constant1'
+   */
+  -1.0,
+
   /* Expression: 0
-   * Referenced by: '<S59>/Switch1'
+   * Referenced by: '<S376>/Constant1'
    */
   0.0,
 
-  /* Expression: 10e-8
-   * Referenced by: '<S64>/Transport Delay'
-   */
-  1.0E-7,
-
   /* Expression: 0
-   * Referenced by: '<S64>/Transport Delay'
+   * Referenced by: '<S373>/shaftSpeedRefMin'
    */
   0.0,
 
-  /* Expression: 10e-8
-   * Referenced by: '<S143>/Transport Delay'
+  /* Expression: 50
+   * Referenced by: '<S373>/Rate Limiter1'
    */
-  1.0E-7,
+  50.0,
+
+  /* Expression: -50
+   * Referenced by: '<S373>/Rate Limiter1'
+   */
+  -50.0,
 
   /* Expression: 0
-   * Referenced by: '<S143>/Transport Delay'
+   * Referenced by: '<S373>/Rate Limiter1'
    */
   0.0,
+
+  /* Expression: 0
+   * Referenced by: '<S376>/Switch'
+   */
+  0.0,
+
+  /* Computed Parameter: Integrator_gainval_d
+   * Referenced by: '<S412>/Integrator'
+   */
+  0.004,
+
+  /* Computed Parameter: Filter_gainval
+   * Referenced by: '<S407>/Filter'
+   */
+  0.004,
+
+  /* Expression: -1
+   * Referenced by: '<S375>/Gain2'
+   */
+  -1.0,
+
+  /* Expression: 0
+   * Referenced by: '<S439>/Constant1'
+   */
+  0.0,
+
+  /* Expression: 0
+   * Referenced by: '<S436>/shaftSpeedRefMin'
+   */
+  0.0,
+
+  /* Expression: 50
+   * Referenced by: '<S436>/Rate Limiter1'
+   */
+  50.0,
+
+  /* Expression: -50
+   * Referenced by: '<S436>/Rate Limiter1'
+   */
+  -50.0,
+
+  /* Expression: 0
+   * Referenced by: '<S436>/Rate Limiter1'
+   */
+  0.0,
+
+  /* Expression: 0
+   * Referenced by: '<S439>/Switch'
+   */
+  0.0,
+
+  /* Computed Parameter: Integrator_gainval_b
+   * Referenced by: '<S475>/Integrator'
+   */
+  0.004,
+
+  /* Computed Parameter: Filter_gainval_d
+   * Referenced by: '<S470>/Filter'
+   */
+  0.004,
+
+  /* Expression: -1
+   * Referenced by: '<S438>/Gain2'
+   */
+  -1.0,
+
+  /* Expression: 1000*60
+   * Referenced by: '<S499>/m3toL'
+   */
+  60000.0,
+
+  /* Expression: 1000*60
+   * Referenced by: '<S500>/Gain'
+   */
+  60000.0,
 
   /* Expression: 0
    * Referenced by: '<S13>/acs880SpeedIGain'
@@ -2169,26 +2164,6 @@ windEmulatorStep4_WECS_cal_type windEmulatorStep4_WECS_cal_impl = {
    */
   false,
 
-  /* Computed Parameter: Constant_Value_bl
-   * Referenced by: '<S431>/Constant'
-   */
-  false,
-
-  /* Computed Parameter: Constant_Value_k
-   * Referenced by: '<S432>/Constant'
-   */
-  false,
-
-  /* Computed Parameter: Constant_Value_cl
-   * Referenced by: '<S494>/Constant'
-   */
-  false,
-
-  /* Computed Parameter: Constant_Value_ks
-   * Referenced by: '<S495>/Constant'
-   */
-  false,
-
   /* Expression: true
    * Referenced by: '<S46>/Constant'
    */
@@ -2272,7 +2247,27 @@ windEmulatorStep4_WECS_cal_type windEmulatorStep4_WECS_cal_impl = {
   /* Expression: true
    * Referenced by: '<S5>/Constant'
    */
-  true
+  true,
+
+  /* Computed Parameter: Constant_Value_bl
+   * Referenced by: '<S431>/Constant'
+   */
+  false,
+
+  /* Computed Parameter: Constant_Value_k3
+   * Referenced by: '<S432>/Constant'
+   */
+  false,
+
+  /* Computed Parameter: Constant_Value_cl
+   * Referenced by: '<S494>/Constant'
+   */
+  false,
+
+  /* Computed Parameter: Constant_Value_ks
+   * Referenced by: '<S495>/Constant'
+   */
+  false
 };
 
 windEmulatorStep4_WECS_cal_type *windEmulatorStep4_WECSim_cal =
